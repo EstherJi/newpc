@@ -270,6 +270,26 @@
 									</p>
 								</div>
 							</div>
+							<div id="rchart1">
+								<div class="calendar">
+									<table>
+										<thead>
+											<tr>
+												<th>星期天</th>
+												<th>星期一</th>
+												<th>星期二</th>
+												<th>星期三</th>
+												<th>星期四</th>
+												<th>星期五</th>
+												<th>星期六</th>
+											</tr>
+										</thead>
+										<tbody></tbody>
+									</table>
+								</div>
+								<p class="legend"><i class="color"></i>回款日</p>
+							</div>
+							<div class="rchart hide" id="rchart2"></div>
 						</div>
 						<div class="profit-box mt10">
 							<div class="rhd clearfix">
@@ -293,6 +313,7 @@
 									<span><i class="blue"></i>待收收益</span>
 								</p>
 							</div>
+							<div class="profit-chart" id="profit-chart"></div>
 						</div>
 						<div class="recommend-box mt10">
 							<p class="title">理财推荐</p>
@@ -421,6 +442,237 @@
 		</div>
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../../Scripts/echarts.common.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/calendar.js"></script>
+
+		<script type="text/javascript">
+			getProfitChart();
+			getRepaymentChart();
+			Calendar.init();
+
+			$('select.month').change(function(){
+				var month = $(this).val();
+				var yearNum = parseInt($('.repayment-box .year').text());
+				Calendar.changeMonthOrYear(yearNum, month);
+			});
+
+			var cur_month = new Date().getMonth();
+			$('select.month').val(cur_month);
+
+			$('.repayment-box a.prev').click(function(){
+				var yearNum = parseInt($('.repayment-box .year').text());
+				var month = $('select.month').val();
+				$('.repayment-box .year').text(parseInt(yearNum - 1));
+				Calendar.changeMonthOrYear(yearNum - 1, month);
+			});
+
+			$('.repayment-box a.next').click(function(){
+				var yearNum = parseInt($('.repayment-box .year').text());
+				var month = $('select.month').val();
+				$('.repayment-box .year').text(parseInt(yearNum + 1));
+				Calendar.changeMonthOrYear(yearNum + 1, month);
+			});
+
+			$('.repayment-box .back').click(function(){
+				$('.repayment-box .year').text(new Date().getFullYear());
+				$('select.month').val(cur_month);
+				Calendar.backToCurMonth();
+			});
+
+			function getProfitChart(){
+				var chart = echarts.init(document.getElementById('profit-chart'));
+				var option = {
+				    tooltip: {
+				        trigger: 'axis',
+				        axisPointer: {
+				            type: 'shadow'
+				        }
+				    },
+				    color: ['#ff5c33', '#39a6ff'],
+				    grid: {
+				        left: '1%',
+				        right: '1%',
+				        bottom: '3%',
+				        containLabel: true
+				    },
+				    xAxis: [
+				        {
+				            type: 'category',
+				            data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'],
+				            axisLine: {
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)',
+				                    width: 1
+				                }
+				            },
+				            axisTick: {
+				                show: false
+				            },
+				            splitLine: {
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)'
+				                },
+				                show: true
+				            },
+				            axisLabel: {
+				                textStyle: {
+				                    color: 'rgb(103, 103, 112)'
+				                }
+				            }
+				        }
+				    ],
+				    yAxis: [
+				        {
+				            type: 'value',
+				            axisLine: {
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)',
+				                    width: 1
+				                }
+				            },
+				            splitLine: {
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)'
+				                },
+				                show: true
+				            },
+				            splitArea: {
+				                show: false
+				            },
+				            axisTick: {
+				                show: false
+				            },
+				            axisLabel: {
+				                textStyle: {
+				                    color: 'rgb(103, 103, 112)'
+				                }
+				            }
+				        }
+				    ],
+				    series: [
+				        {
+				            name: '已收收益',
+				            type: 'bar',
+				            stack: '收益',
+				            data: [120, 132, 101, 134, 90, 230, 210, 101, 134, 90, 230, 210],
+				            barWidth: 26
+				        },
+				        {
+				            name: '待收收益',
+				            type: 'bar',
+				            stack: '收益',
+				            data: [220, 182, 191, 234, 290, 330, 310, 101, 134, 90, 230, 210],
+				            barWidth: 26
+				        } 
+				    ]
+				};
+				chart.setOption(option);
+			}
+
+			function getRepaymentChart(){
+				var chart = echarts.init(document.getElementById('rchart2'));
+				var option = {
+				    tooltip: {
+				        axisPointer: {
+				            lineStyle: {
+				                width: 0
+				            }
+				        }
+				    },
+				    legend: {
+				        data: ['回款日'],
+				        y: 'bottom'
+				    },
+				    color: ['rgba(7, 144, 255, .24)'],
+				    grid: {
+				        left: '1%',
+				        right: '1%',
+				        bottom: '8%',
+				        containLabel: true
+				    },
+				    calculable: true,
+				    xAxis: [
+				        {
+				            type: 'category',
+				            boundaryGap: false,
+				            data: ['2017-07', '2017-08', '2017-09', '2017-10', '2017-11', '2017-12', '2018-01', '2018-02', '2018-03', '2018-04', '2018-05', '2018-06'],
+				            axisLine: {
+				                show: false,
+				                lineStyle: {
+				                    color: 'rgb(251, 252, 253)',
+				                    width: 1
+				                }
+				            },
+				            axisTick: {
+				                show: false
+				            },
+				            splitLine: {
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)',
+				                    width: 1
+				                },
+				                show: true
+				            },
+				            axisLabel: {
+				                textStyle: {
+				                    color: 'rgb(103, 103, 112)',
+				                    align: 'right'
+				                }
+				            }
+				        }
+				    ],
+				    yAxis: [
+				        {
+				            type: 'value',
+				            axisLine: {
+				                show: true,
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)',
+				                    width: 1
+				                }
+				            },
+				            splitLine: {
+				                lineStyle: {
+				                    color: 'rgb(227, 234, 239)',
+				                    width: 1
+				                },
+				                show: true
+				            },
+				            axisTick: {
+				                show: false
+				            },
+				            axisLabel: {
+				                textStyle: {
+				                    color: 'rgb(103, 103, 112)'
+				                }
+				            },
+				            splitArea: {
+				                show: true,
+				                areaStyle: {
+				                    color: ['#fff', '#fbfcfd']
+				                }
+				            }
+				        }
+				    ],
+				    series: [
+				        {
+				            name: '回款日',   // 显示标名
+				            type: 'line',
+				            smooth: true,
+				            itemStyle: {
+				                normal: {
+				                    areaStyle: {
+				                        type: 'default'
+				                    }
+				                }
+				            },
+				            data: [10, 12, 21, 54, 260, 830, 710, 54, 260, 830, 710, 21]
+				        }
+				    ]
+				};
+				chart.setOption(option);
+			}
+		</script>
 	</body>
 </html>

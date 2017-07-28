@@ -623,7 +623,7 @@ $borderColor: #EBEFF3;
 		border: 1px solid $borderColor;
 		background-color: #fff;
 
-		.thd{
+		.rhd{
 			.tabs{
 				a{
 					&:first-child{
@@ -669,6 +669,116 @@ $borderColor: #EBEFF3;
 				height: 30px;
 				line-height: 30px;
 				text-align: center;
+			}
+		}
+
+		.rchart{
+			margin: 0 25px;
+			width: 920px;
+			height: 422px;
+		}
+
+		.calendar{
+			margin: 0 24px;
+			height: 380px;
+
+			table{
+				width: 100%;
+				border: 1px solid #E3EAEF;
+
+				tr{
+					border-bottom: 1px solid #E3EAEF;
+				}
+
+				tbody{
+					tr{
+						&:last-child{
+							border-bottom: none;
+						}
+					}
+				}
+
+				th{
+					height: 36px;
+					line-height: 36px;
+					border-right: 1px solid #E3EAEF;
+					background-color: #f0f8fe;
+					color: #454550;
+					font-weight: normal;
+					text-align: center;
+
+					&:last-child{
+						border-right: none;
+					}
+				}
+
+				td{
+					height: 56px;
+					line-height: 56px;
+					border-right: 1px solid #E3EAEF;
+					text-align: center;
+					color: #565660;
+
+					&:last-child{
+						border-right: none;
+					}
+
+					&:hover{
+						background-color: #ff5126;
+						color: #fff;
+					}
+
+					&.gray{
+						background-color: #fbfcfd;
+					}
+
+					&.cur{
+						background-color: #c3e4ff;
+
+						&:hover{
+							background-color: #2ca1ff;
+							color: #fff;
+
+							.tips{
+								display: block;
+							}
+						}
+					}
+				}
+
+				.tips{
+					top: -42px;
+					left: 90px;
+					padding: 5px;
+					width: 120px;
+					line-height: 20px;
+					font-size: 12px;
+					border-radius: 4px;
+					background-color: rgba(51, 51, 51, .7);
+					color: #fff;
+					position: absolute;
+					display: none;
+
+					span{
+						display: block;
+					}
+				}
+			}
+		}
+
+		.legend{
+			line-height: 52px;
+			color: #676770;
+			text-align: center;
+
+			.color{
+				margin-right: 10px;
+				width: 20px;
+				height: 14px;
+				border-radius: 2px;
+				background-color: #b4ddff;
+				display: inline-block;
+				vertical-align: middle;
 			}
 		}
 	}
@@ -794,6 +904,12 @@ $borderColor: #EBEFF3;
 					}
 				}
 			}
+		}
+
+		.profit-chart{
+			margin: 0 25px;
+			height: 290px;
+			width: 920px;
 		}
 	}
 

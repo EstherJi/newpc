@@ -18,6 +18,7 @@ function tab(clickObj, targetObjId, num, curName){
 $(function(){
 	tab('.m-partner-friendlink .title a', '#list', 2, 'cur');
 	tab('.m-project .tabs-box a', '#detail', 5, 'cur');
+	tab('.repayment-box .tabs a', '#rchart', 2, 'cur');
 
 	// 返回顶部按钮
 	$(window).scroll(function(){

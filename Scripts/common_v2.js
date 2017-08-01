@@ -19,6 +19,7 @@ $(function(){
 	tab('.m-partner-friendlink .title a', '#list', 2, 'cur');
 	tab('.m-project .tabs-box a', '#detail', 5, 'cur');
 	tab('.repayment-box .tabs a', '#rchart', 2, 'cur');
+	tab('.m-wallet .tabs a', '#table', 2, 'cur');
 
 	// 返回顶部按钮
 	$(window).scroll(function(){
@@ -65,24 +66,26 @@ $(function(){
 		$(this).next('.tips').css('display', 'none');
 	});
 
-	// 加息券下拉列表
-	// $('.m-project .tabs-detail-5 .coupon input').on('click', function(){
-	// 	var arrow = $(this).next('.arrow');
-	// 	if(arrow.hasClass('down')){
-	// 		arrow.removeClass('down');
-	// 		$(this).removeClass('color');
-	// 		$(this).siblings('.dropdown').hide(300);
-	// 	}else{
-	// 		arrow.addClass('down');
-	// 		$(this).addClass('color');
-	// 		$(this).siblings('.dropdown').show(300);
-	// 	}
-	// });
-
 	// 收益计算器表格只有一行时增加border-bottom
 	var _tr = $('.m-project .tabs-detail-5 table tbody tr');
 	var len = _tr.length;
 	if(len == 1){
 		_tr.addClass('bb');
 	}
+
+	// 提现页面更换银行卡弹框
+	$('.m-withdrawal .others').on('click', function(){
+		$('#cboverlay, #cbmodal').removeClass('hide');
+	});
+	$('#cbmodal .close').on('click', function(){
+		$('#cboverlay, #cbmodal').addClass('hide');
+	});
+	$('#cbmodal .add-newcard').on('click', function(){
+		$('#cbmodal .pinfo').removeClass('hide');
+		$('#cbmodal .btn').css('display', 'none');
+	});
+	$('#cbmodal .pinfo .bind').on('click', function(){
+		$('#cbmodal .pinfo').addClass('hide');
+		$('#cbmodal .btn').css('display', 'block');
+	})
 });

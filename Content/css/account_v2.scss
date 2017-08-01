@@ -172,6 +172,18 @@ $borderColor: #EBEFF3;
 
 	.main{
 		width: 970px;
+
+		// .hd{
+			.title{
+				padding-left: 24px;
+				height: 59px;
+				line-height: 59px;
+				font-size: 16px;
+				font-weight: normal;
+				color: #454550;
+				border-bottom: 1px solid #F7F9FA;
+			}
+		// }
 	}
 }
 
@@ -997,7 +1009,379 @@ $borderColor: #EBEFF3;
 	}
 }
 
+/* wallet */
+.m-wallet{
+	.hd{
+		height: 188px;
+		border: 1px solid $borderColor;
+		background-color: #fff;
 
+		.ainfo{
+			.item{
+				margin-top: 20px;
 
+				p{
+					color: #676770;
+
+					&.num{
+						padding-top: 20px;
+						font-size: 30px;
+						color: #454550;
+					}
+
+					&.red{
+						color: $redColor;
+					}
+				}
+
+				.sicon{
+					margin-left: 10px;
+				}
+
+				.btn{
+					margin-top: 25px;
+					border-radius: 4px;
+					font-size: 16px;
+					text-align: center;
+					display: inline-block;
+				}
+
+				.recharge{
+					margin: 0 22px 0 47px;
+					width: 115px;
+					height: 40px;
+					line-height: 40px;
+					color: #fff;
+					background-color: $redColor;
+
+					&:hover{
+						background-color: $redHoverColor;
+					}
+				}
+
+				.withdrawal{
+					width: 113px;
+					height: 38px;
+					line-height: 38px;
+					border: 1px solid $blueColor;
+					color: $blueColor;
+
+					&:hover{
+						color: #fff;
+						background-color: $blueColor;
+					}
+				}
+			}
+
+			.w306{
+				width: 306px;
+				border-right: 1px solid #f3f7fa;
+			}
+
+			.w260{
+				padding-left: 48px;
+				width: 260px;
+				border-right: 1px solid #f3f7fa;
+			}
+		}
+	}
+
+	.bd{
+		border: 1px solid $borderColor;
+		background-color: #fff;
+	}
+
+	.stabs{
+		height: 59px;
+		line-height: 59px;
+		border-bottom: 1px solid #F7F9FA;
+
+		.tabs{
+			a{
+				height: 58px;
+				line-height: 58px;
+				font-size: 16px;
+				color: #454550;
+				display: inline-block;
+
+				&:hover{
+					color: $blueColor;
+				}
+
+				&.cur{
+					border-bottom: 2px solid $blueColor;
+					color: $blueColor;
+				}
+
+				&.mr50{
+					margin-right: 50px;
+				}
+			}
+		}
+
+		.sbox{
+			a{
+				margin-right: 20px;
+				padding: 5px;
+				color: #676770;
+
+				&.cur{
+					font-size: 12px;
+					border-radius: 4px;
+					color: #fff;
+					background-color: $blueColor;
+
+					&:hover{
+						color: #fff;
+					}
+				}
+
+				&:hover{
+					color: $blueColor;
+				}
+			}
+
+			.status{
+				color: #676770;
+
+				select{
+					width: 113px;
+					height: 28px;
+					line-height: 28px;
+					border: 1px solid #DFE3E6;
+					border-radius: 4px;
+					font-size: 12px;
+					text-indent: 10px;
+					color: #565660;
+				}
+			}
+		}
+	}
+
+	.table-box{
+		margin: 25px 0 27px;
+
+		table{
+			width: 100%;
+
+			tr{
+				height: 44px;
+				line-height: 44px;	
+			}
+
+			tbody{
+				tr{
+					&:hover{
+						background-color: #ffede8;
+					}
+
+					&:nth-child(even){
+						background-color: #fbfcfd;
+
+						&:hover{
+							background-color: #ffede8;
+						}
+					}
+				}
+			}
+
+			thead{
+				tr{
+					background-color: #f0f8fe;
+				}
+			}
+
+			th, td{
+				text-align: center;
+			}
+
+			th{
+				color: #343440;
+			}
+
+			td{
+				color: #676770;
+			}
+		}
+	}
+
+	.pages{
+		padding-bottom: 27px;
+	}
+}
+
+.m-recharge, .m-withdrawal{
+	height: 656px;
+	border: 1px solid $borderColor;
+	background-color: #fff;
+
+	.title{
+		a{
+			color: $blueColor;
+		}
+	}
+
+	.tips{
+		margin: 25px 24px 0;
+		padding: 20px;
+		background-color: #f9fafc;
+
+		.tit{
+			padding-bottom: 12px;
+			font-size: 16px;
+			color: #454550;
+		}
+
+		.detail{
+			p{
+				line-height: 26px;
+				color: #787880;
+			}
+		}
+	}
+}
+
+.m-recharge{
+	.bank-box{
+		margin: 50px 0 0 24px;
+		width: 360px;
+		height: 200px;
+		box-shadow: 0px 4px 10px 0px rgba(7, 144, 255, 0.15);
+
+		.bg{
+			bottom: 0;
+			width: 360px;
+			height: 90px;
+			background: url(../../Content/images/account/recharge.png) no-repeat;
+			display: inline-block;
+		}
+
+		.binfo{
+			padding: 22px 0 0 20px;
+
+			p{
+				padding-bottom: 10px;
+				color: #565660;
+
+				.color{
+					color: $blueColor;
+				}
+
+				label{
+					margin-right: 15px;
+					width: 80px;
+					text-align: right;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+.m-withdrawal{
+	.tips{
+		.detail{
+			label, span{
+				display: block;
+			}
+
+			label{
+				float: left;
+			}
+
+			span{
+				margin-left: 80px;
+			}
+		}
+	}
+
+	.ipt-box{
+		.tit{
+			padding: 40px 0 27px;
+			font-size: 16px;
+			color: #454550;
+		}
+
+		table{
+			width: 100%;
+			border: 1px solid #E3EAEF;
+
+			tr{
+				height: 48px;
+				line-height: 48px;
+				border-bottom: 1px solid #E3EAEF;
+
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+
+			td{
+				border-right: 1px solid #E3EAEF;
+
+				&:last-child{
+					border-right: none;
+				}
+
+				&:nth-child(odd){
+					padding-left: 20px;
+					width: 178px;
+					background-color: #f0f8fe;
+					color: #676770;
+				}
+
+				&:nth-child(even){
+					padding-left: 30px;
+					color: #565660;
+				}
+
+				&.amount{
+					color: $redColor;
+				}
+
+				.others{
+					margin-left: 12px;
+					font-size: 12px;
+					color: $blueColor;
+				}
+
+				.ipt{
+					width: 278px;
+					height: 32px;
+					line-height: 32px;
+					border-radius: 4px;
+					border: 1px solid #F3F7FA;
+				}
+
+				.warning{
+					margin-left: 5px;
+					padding: 0 10px;
+					height: 20px;
+					line-height: 20px;
+					font-size: 12px;
+					border-radius: 2px;
+					background-color: #ffe1d9;
+					color: $redColor;
+					display: inline-block;
+				}
+
+				.btn{
+					width: 120px;
+					height: 34px;
+					line-height: 34px;
+					border-radius: 4px;
+					background-color: $redColor;
+					color: #fff;
+					text-align: center;
+					display: inline-block;
+
+					&:hover{
+						background-color: $redHoverColor;
+					}
+				}
+			}
+		}
+	}
+}
 
 

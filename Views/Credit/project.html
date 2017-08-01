@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/credit_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/modal.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -616,6 +617,30 @@
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/modal.js"></script>
 
+		<script type="text/javascript">
+			// 投标成功弹框
+			new CancelModal({
+				content: '<p>恭喜您，本次投标<span>100.00</span>元已成功！</p>',
+				title: '<i class="bricon sicon f-fl"></i>无忧微贷提醒您',
+				contentNodeCn: 'brmodal',
+				confirmBtnCn: 'red ml',
+				confirm: '继续投资',
+				cancelBtnCn: 'cancel f-fr',
+				cancel: '查看投资记录',
+				success: function(){},  // 成功返回按钮
+				fail: function(){}      // 失败返回按钮
+			}).init();
+
+			// 投标失败弹框
+			// new AlertModal({
+			// 	content: '<p>很遗憾，本次投资失败！</p>',
+			// 	title: '<i class="bricon eicon f-fl"></i>无忧微贷提醒您',
+			// 	contentNodeCn: 'brmodal',
+			// 	confirm: '返回再试一次',
+			// 	success: function(){}
+			// }).init();
+		</script>
 	</body>
 </html>

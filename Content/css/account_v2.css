@@ -101,6 +101,14 @@
           color: #0790ff; }
   .m-account .main {
     width: 970px; }
+    .m-account .main .title {
+      padding-left: 24px;
+      height: 59px;
+      line-height: 59px;
+      font-size: 16px;
+      font-weight: normal;
+      color: #454550;
+      border-bottom: 1px solid #F7F9FA; }
 
 .m-index .hd {
   height: 208px;
@@ -601,5 +609,228 @@
           .m-index .recommend-box .rlist li .info .num small {
             font-size: 14px;
             color: #676770; }
+
+/* wallet */
+.m-wallet .hd {
+  height: 188px;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-wallet .hd .ainfo .item {
+    margin-top: 20px; }
+    .m-wallet .hd .ainfo .item p {
+      color: #676770; }
+      .m-wallet .hd .ainfo .item p.num {
+        padding-top: 20px;
+        font-size: 30px;
+        color: #454550; }
+      .m-wallet .hd .ainfo .item p.red {
+        color: #ff3300; }
+    .m-wallet .hd .ainfo .item .sicon {
+      margin-left: 10px; }
+    .m-wallet .hd .ainfo .item .btn {
+      margin-top: 25px;
+      border-radius: 4px;
+      font-size: 16px;
+      text-align: center;
+      display: inline-block; }
+    .m-wallet .hd .ainfo .item .recharge {
+      margin: 0 22px 0 47px;
+      width: 115px;
+      height: 40px;
+      line-height: 40px;
+      color: #fff;
+      background-color: #ff3300; }
+      .m-wallet .hd .ainfo .item .recharge:hover {
+        background-color: #ff5c33; }
+    .m-wallet .hd .ainfo .item .withdrawal {
+      width: 113px;
+      height: 38px;
+      line-height: 38px;
+      border: 1px solid #0790ff;
+      color: #0790ff; }
+      .m-wallet .hd .ainfo .item .withdrawal:hover {
+        color: #fff;
+        background-color: #0790ff; }
+  .m-wallet .hd .ainfo .w306 {
+    width: 306px;
+    border-right: 1px solid #f3f7fa; }
+  .m-wallet .hd .ainfo .w260 {
+    padding-left: 48px;
+    width: 260px;
+    border-right: 1px solid #f3f7fa; }
+.m-wallet .bd {
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+.m-wallet .stabs {
+  height: 59px;
+  line-height: 59px;
+  border-bottom: 1px solid #F7F9FA; }
+  .m-wallet .stabs .tabs a {
+    height: 58px;
+    line-height: 58px;
+    font-size: 16px;
+    color: #454550;
+    display: inline-block; }
+    .m-wallet .stabs .tabs a:hover {
+      color: #0790ff; }
+    .m-wallet .stabs .tabs a.cur {
+      border-bottom: 2px solid #0790ff;
+      color: #0790ff; }
+    .m-wallet .stabs .tabs a.mr50 {
+      margin-right: 50px; }
+  .m-wallet .stabs .sbox a {
+    margin-right: 20px;
+    padding: 5px;
+    color: #676770; }
+    .m-wallet .stabs .sbox a.cur {
+      font-size: 12px;
+      border-radius: 4px;
+      color: #fff;
+      background-color: #0790ff; }
+      .m-wallet .stabs .sbox a.cur:hover {
+        color: #fff; }
+    .m-wallet .stabs .sbox a:hover {
+      color: #0790ff; }
+  .m-wallet .stabs .sbox .status {
+    color: #676770; }
+    .m-wallet .stabs .sbox .status select {
+      width: 113px;
+      height: 28px;
+      line-height: 28px;
+      border: 1px solid #DFE3E6;
+      border-radius: 4px;
+      font-size: 12px;
+      text-indent: 10px;
+      color: #565660; }
+.m-wallet .table-box {
+  margin: 25px 0 27px; }
+  .m-wallet .table-box table {
+    width: 100%; }
+    .m-wallet .table-box table tr {
+      height: 44px;
+      line-height: 44px; }
+    .m-wallet .table-box table tbody tr:hover {
+      background-color: #ffede8; }
+    .m-wallet .table-box table tbody tr:nth-child(even) {
+      background-color: #fbfcfd; }
+      .m-wallet .table-box table tbody tr:nth-child(even):hover {
+        background-color: #ffede8; }
+    .m-wallet .table-box table thead tr {
+      background-color: #f0f8fe; }
+    .m-wallet .table-box table th, .m-wallet .table-box table td {
+      text-align: center; }
+    .m-wallet .table-box table th {
+      color: #343440; }
+    .m-wallet .table-box table td {
+      color: #676770; }
+.m-wallet .pages {
+  padding-bottom: 27px; }
+
+.m-recharge, .m-withdrawal {
+  height: 656px;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-recharge .title a, .m-withdrawal .title a {
+    color: #0790ff; }
+  .m-recharge .tips, .m-withdrawal .tips {
+    margin: 25px 24px 0;
+    padding: 20px;
+    background-color: #f9fafc; }
+    .m-recharge .tips .tit, .m-withdrawal .tips .tit {
+      padding-bottom: 12px;
+      font-size: 16px;
+      color: #454550; }
+    .m-recharge .tips .detail p, .m-withdrawal .tips .detail p {
+      line-height: 26px;
+      color: #787880; }
+
+.m-recharge .bank-box {
+  margin: 50px 0 0 24px;
+  width: 360px;
+  height: 200px;
+  box-shadow: 0px 4px 10px 0px rgba(7, 144, 255, 0.15); }
+  .m-recharge .bank-box .bg {
+    bottom: 0;
+    width: 360px;
+    height: 90px;
+    background: url(../../Content/images/account/recharge.png) no-repeat;
+    display: inline-block; }
+  .m-recharge .bank-box .binfo {
+    padding: 22px 0 0 20px; }
+    .m-recharge .bank-box .binfo p {
+      padding-bottom: 10px;
+      color: #565660; }
+      .m-recharge .bank-box .binfo p .color {
+        color: #0790ff; }
+      .m-recharge .bank-box .binfo p label {
+        margin-right: 15px;
+        width: 80px;
+        text-align: right;
+        display: inline-block; }
+
+.m-withdrawal .tips .detail label, .m-withdrawal .tips .detail span {
+  display: block; }
+.m-withdrawal .tips .detail label {
+  float: left; }
+.m-withdrawal .tips .detail span {
+  margin-left: 80px; }
+.m-withdrawal .ipt-box .tit {
+  padding: 40px 0 27px;
+  font-size: 16px;
+  color: #454550; }
+.m-withdrawal .ipt-box table {
+  width: 100%;
+  border: 1px solid #E3EAEF; }
+  .m-withdrawal .ipt-box table tr {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #E3EAEF; }
+    .m-withdrawal .ipt-box table tr:last-child {
+      border-bottom: none; }
+  .m-withdrawal .ipt-box table td {
+    border-right: 1px solid #E3EAEF; }
+    .m-withdrawal .ipt-box table td:last-child {
+      border-right: none; }
+    .m-withdrawal .ipt-box table td:nth-child(odd) {
+      padding-left: 20px;
+      width: 178px;
+      background-color: #f0f8fe;
+      color: #676770; }
+    .m-withdrawal .ipt-box table td:nth-child(even) {
+      padding-left: 30px;
+      color: #565660; }
+    .m-withdrawal .ipt-box table td.amount {
+      color: #ff3300; }
+    .m-withdrawal .ipt-box table td .others {
+      margin-left: 12px;
+      font-size: 12px;
+      color: #0790ff; }
+    .m-withdrawal .ipt-box table td .ipt {
+      width: 278px;
+      height: 32px;
+      line-height: 32px;
+      border-radius: 4px;
+      border: 1px solid #F3F7FA; }
+    .m-withdrawal .ipt-box table td .warning {
+      margin-left: 5px;
+      padding: 0 10px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      border-radius: 2px;
+      background-color: #ffe1d9;
+      color: #ff3300;
+      display: inline-block; }
+    .m-withdrawal .ipt-box table td .btn {
+      width: 120px;
+      height: 34px;
+      line-height: 34px;
+      border-radius: 4px;
+      background-color: #ff3300;
+      color: #fff;
+      text-align: center;
+      display: inline-block; }
+      .m-withdrawal .ipt-box table td .btn:hover {
+        background-color: #ff5c33; }
 
 /*# sourceMappingURL=account_v2.css.map */

@@ -70,6 +70,8 @@
         background-color: #ff5c33; }
     .modal .btn.blue {
       background-color: #0790ff; }
+      .modal .btn.blue:hover {
+        background-color: #39a6ff; }
   .modal .cancel {
     width: 158px;
     height: 42px;
@@ -188,13 +190,16 @@
           width: 160px;
           height: 44px;
           line-height: 44px;
+          font-size: 16px;
           border-radius: 4px;
           background-color: #0790ff;
           color: #fff;
           text-align: center;
           display: inline-block; }
+          .modal .cbmodal .pinfo li .bind:hover {
+            background-color: #39a6ff; }
     .modal .cbmodal ~ .btn {
-      margin: 0 auto 40px; }
+      margin-bottom: 40px; }
   .modal .brmodal p {
     padding: 44px 0 36px;
     font-size: 16px;

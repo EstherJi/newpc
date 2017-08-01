@@ -20,6 +20,7 @@ $(function(){
 	tab('.m-project .tabs-box a', '#detail', 5, 'cur');
 	tab('.repayment-box .tabs a', '#rchart', 2, 'cur');
 	tab('.m-wallet .tabs a', '#table', 2, 'cur');
+	tab('.m-bid .tabs a', '#table', 3, 'cur');
 
 	// 返回顶部按钮
 	$(window).scroll(function(){
@@ -87,5 +88,5 @@ $(function(){
 	$('#cbmodal .pinfo .bind').on('click', function(){
 		$('#cbmodal .pinfo').addClass('hide');
 		$('#cbmodal .btn').css('display', 'block');
-	})
+	});
 });

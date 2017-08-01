@@ -11,7 +11,7 @@
 
 [标详情](https://estherji.github.io/newpc/Views/Credit/project.html)
 
-[账户纵览](https://estherji.github.io/newpc/Views/Account/index.html)
+[账户总览](https://estherji.github.io/newpc/Views/Account/index.html)
 
 [充值提现](https://estherji.github.io/newpc/Views/Account/wallet.html)
 

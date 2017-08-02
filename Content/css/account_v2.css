@@ -697,7 +697,7 @@
     .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover {
       color: #0790ff; }
     .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur {
-      border-bottom: 2px solid #39a6ff;
+      border-bottom: 2px solid #0790ff;
       color: #0790ff; }
     .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50 {
       margin-right: 50px; }
@@ -709,9 +709,10 @@
       font-size: 12px;
       border-radius: 4px;
       color: #fff;
-      background-color: #39a6ff; }
+      background-color: #0790ff; }
       .m-wallet .stabs .sbox a.cur:hover, .m-bid .stabs .sbox a.cur:hover, .m-coupon .stabs .sbox a.cur:hover {
-        color: #fff; }
+        color: #fff;
+        background-color: #39a6ff; }
     .m-wallet .stabs .sbox a:hover, .m-bid .stabs .sbox a:hover, .m-coupon .stabs .sbox a:hover {
       color: #0790ff; }
     .m-wallet .stabs .sbox a.mr0, .m-bid .stabs .sbox a.mr0, .m-coupon .stabs .sbox a.mr0 {
@@ -810,13 +811,13 @@
       height: 30px;
       line-height: 30px;
       border-radius: 4px;
-      background-color: #39a6ff;
+      background-color: #0790ff;
       color: #fff;
       font-size: 12px;
       text-align: center;
       display: inline-block; }
       .m-funsflow .sbox .export:hover {
-        background-color: #0790ff; }
+        background-color: #39a6ff; }
     .m-funsflow .sbox .dicon {
       top: 7px;
       right: 10px;
@@ -955,9 +956,9 @@
     .m-coupon .tbox a {
       color: #676770; }
       .m-coupon .tbox a:hover {
-        color: #39a6ff; }
+        color: #0790ff; }
       .m-coupon .tbox a.cur {
-        color: #39a6ff; }
+        color: #0790ff; }
       .m-coupon .tbox a.mr55 {
         margin-right: 55px; }
   .m-coupon .clist {

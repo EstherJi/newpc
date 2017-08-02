@@ -1151,7 +1151,7 @@ $borderColor: #EBEFF3;
 				}
 
 				&.cur{
-					border-bottom: 2px solid #39a6ff;
+					border-bottom: 2px solid $blueColor;
 					color: $blueColor;
 				}
 
@@ -1171,10 +1171,11 @@ $borderColor: #EBEFF3;
 					font-size: 12px;
 					border-radius: 4px;
 					color: #fff;
-					background-color: #39a6ff;
+					background-color: $blueColor;
 
 					&:hover{
 						color: #fff;
+						background-color: $blueHoverColor;
 					}
 				}
 
@@ -1347,14 +1348,14 @@ $borderColor: #EBEFF3;
 			height: 30px;
 			line-height: 30px;
 			border-radius: 4px;
-			background-color: $blueHoverColor;
+			background-color: $blueColor;
 			color: #fff;
 			font-size: 12px;
 			text-align: center;
 			display: inline-block;
 
 			&:hover{
-				background-color: $blueColor;
+				background-color: $blueHoverColor;
 			}
 		}
 
@@ -1581,11 +1582,11 @@ $borderColor: #EBEFF3;
 			color: #676770;
 
 			&:hover{
-				color: $blueHoverColor;
+				color: $blueColor;
 			}
 
 			&.cur{
-				color: $blueHoverColor;
+				color: $blueColor;
 			}
 
 			&.mr55{

@@ -60,8 +60,10 @@ Modal.prototype = {
 	},
 
 	hide: function(){
-		this.panel.style.display = 'none';
-		this.overlay.style.display = 'none';
+		// this.panel.style.display = 'none';
+		// this.overlay.style.display = 'none';
+		document.body.removeChild(this.panel);
+		document.body.removeChild(this.overlay);
 	}
 }
 

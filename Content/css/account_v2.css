@@ -738,6 +738,9 @@
       color: #343440; }
     .m-funsflow .table-box table td, .m-bid .table-box table td, .m-wallet .table-box table td {
       color: #676770; }
+  .m-funsflow .table-box .pages, .m-bid .table-box .pages, .m-wallet .table-box .pages {
+    padding-top: 27px;
+    padding-bottom: 0; }
 .m-funsflow .pages, .m-bid .pages, .m-wallet .pages {
   padding-bottom: 27px;
   text-align: center; }

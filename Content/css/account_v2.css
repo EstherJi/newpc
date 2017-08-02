@@ -538,8 +538,10 @@
         display: block;
         margin: 9px auto; }
     .m-index .profit-box .rsbox .title {
+      padding-left: 0;
       height: 30px;
       line-height: 30px;
+      border-bottom: none;
       font-size: 18px;
       color: #454550; }
       .m-index .profit-box .rsbox .title span {
@@ -566,7 +568,10 @@
   border: 1px solid #EBEFF3;
   background-color: #fff; }
   .m-index .recommend-box .title {
+    height: auto;
+    line-height: 24px;
     padding: 16px 30px 16px 24px;
+    border-bottom: none;
     font-size: 16px;
     color: #454550; }
   .m-index .recommend-box .rlist {
@@ -674,37 +679,38 @@
     border-right: 1px solid #f3f7fa; }
   .m-wallet .hd .ainfo .pl48, .m-bid .hd .ainfo .pl48 {
     padding-left: 48px; }
-.m-wallet .stabs, .m-bid .stabs {
+
+.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs {
   height: 59px;
   line-height: 59px;
   border-bottom: 1px solid #F7F9FA; }
-  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a {
+  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a {
     height: 58px;
     line-height: 58px;
     font-size: 16px;
     color: #454550;
     display: inline-block; }
-    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover {
+    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover {
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur {
+    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur {
       border-bottom: 2px solid #39a6ff;
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50 {
+    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50 {
       margin-right: 50px; }
-  .m-wallet .stabs .sbox a, .m-bid .stabs .sbox a {
+  .m-wallet .stabs .sbox a, .m-bid .stabs .sbox a, .m-coupon .stabs .sbox a {
     margin-right: 20px;
     padding: 5px;
     color: #676770; }
-    .m-wallet .stabs .sbox a.cur, .m-bid .stabs .sbox a.cur {
+    .m-wallet .stabs .sbox a.cur, .m-bid .stabs .sbox a.cur, .m-coupon .stabs .sbox a.cur {
       font-size: 12px;
       border-radius: 4px;
       color: #fff;
       background-color: #39a6ff; }
-      .m-wallet .stabs .sbox a.cur:hover, .m-bid .stabs .sbox a.cur:hover {
+      .m-wallet .stabs .sbox a.cur:hover, .m-bid .stabs .sbox a.cur:hover, .m-coupon .stabs .sbox a.cur:hover {
         color: #fff; }
-    .m-wallet .stabs .sbox a:hover, .m-bid .stabs .sbox a:hover {
+    .m-wallet .stabs .sbox a:hover, .m-bid .stabs .sbox a:hover, .m-coupon .stabs .sbox a:hover {
       color: #0790ff; }
-    .m-wallet .stabs .sbox a.mr0, .m-bid .stabs .sbox a.mr0 {
+    .m-wallet .stabs .sbox a.mr0, .m-bid .stabs .sbox a.mr0, .m-coupon .stabs .sbox a.mr0 {
       margin-right: 0; }
 
 /* table */
@@ -818,17 +824,18 @@
   background-color: #fff; }
   .m-recharge .title a, .m-withdrawal .title a {
     color: #0790ff; }
-  .m-recharge .tips, .m-withdrawal .tips {
-    margin: 25px 24px 0;
-    padding: 20px;
-    background-color: #f9fafc; }
-    .m-recharge .tips .tit, .m-withdrawal .tips .tit {
-      padding-bottom: 12px;
-      font-size: 16px;
-      color: #454550; }
-    .m-recharge .tips .detail p, .m-withdrawal .tips .detail p {
-      line-height: 26px;
-      color: #787880; }
+
+.m-recharge .tips, .m-withdrawal .tips, .m-coupon .tips {
+  margin: 25px 24px 0;
+  padding: 20px;
+  background-color: #f9fafc; }
+  .m-recharge .tips .tit, .m-withdrawal .tips .tit, .m-coupon .tips .tit {
+    padding-bottom: 12px;
+    font-size: 16px;
+    color: #454550; }
+  .m-recharge .tips .detail p, .m-withdrawal .tips .detail p, .m-coupon .tips .detail p {
+    line-height: 26px;
+    color: #787880; }
 
 /* recharge */
 .m-recharge .bank-box {
@@ -921,5 +928,98 @@
       display: inline-block; }
       .m-withdrawal .ipt-box table td .btn:hover {
         background-color: #ff5c33; }
+
+.m-coupon {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 656px; }
+  .m-coupon .tips {
+    margin-bottom: 24px; }
+    .m-coupon .tips .detail p label {
+      display: block;
+      float: left; }
+    .m-coupon .tips .detail p span {
+      margin-left: 24px;
+      display: block; }
+  .m-coupon .tbox {
+    height: 64px;
+    line-height: 64px; }
+    .m-coupon .tbox a {
+      color: #676770; }
+      .m-coupon .tbox a:hover {
+        color: #39a6ff; }
+      .m-coupon .tbox a.cur {
+        color: #39a6ff; }
+      .m-coupon .tbox a.mr55 {
+        margin-right: 55px; }
+  .m-coupon .clist {
+    padding-bottom: 20px; }
+    .m-coupon .clist .cicon {
+      background: url(../../Content/images/account/coupon.png) no-repeat;
+      display: inline-block; }
+    .m-coupon .clist li {
+      margin: 0 20px 20px 0;
+      width: 291px;
+      height: 124px;
+      border-radius: 4px;
+      border: 1px solid #EBEFF3;
+      float: left;
+      position: relative; }
+      .m-coupon .clist li:nth-child(3n) {
+        margin-right: 0; }
+      .m-coupon .clist li:after, .m-coupon .clist li:before {
+        content: '';
+        position: absolute;
+        height: 118px;
+        top: 3px;
+        background: url(../../Content/images/account/coupon.png) no-repeat;
+        display: inline-block; }
+      .m-coupon .clist li:after {
+        width: 6px;
+        left: -4px;
+        background-position: -3px 0; }
+      .m-coupon .clist li:before {
+        width: 3px;
+        right: -1px;
+        background-position: 0 0; }
+      .m-coupon .clist li .tnum {
+        width: 95px;
+        height: 124px;
+        float: left; }
+        .m-coupon .clist li .tnum.cicon1 {
+          background-position: -9px 0; }
+        .m-coupon .clist li .tnum.cicon2 {
+          background-position: -104px 0; }
+        .m-coupon .clist li .tnum.cicon3 {
+          background-position: -199px 0; }
+        .m-coupon .clist li .tnum span {
+          color: #fff;
+          display: block;
+          text-align: center; }
+        .m-coupon .clist li .tnum .num {
+          padding-top: 35px;
+          font-size: 34px;
+          font-weight: bold;
+          line-height: 1; }
+          .m-coupon .clist li .tnum .num small {
+            font-size: 18px;
+            font-weight: normal; }
+      .m-coupon .clist li .detail {
+        margin-left: 113px;
+        padding-top: 16px; }
+        .m-coupon .clist li .detail p {
+          color: #787880; }
+          .m-coupon .clist li .detail p.lg {
+            color: #565660; }
+          .m-coupon .clist li .detail p.sm {
+            font-size: 12px; }
+          .m-coupon .clist li .detail p.normal {
+            padding: 8px 0; }
+          .m-coupon .clist li .detail p.pt12 {
+            padding-top: 12px; }
+          .m-coupon .clist li .detail p .last {
+            padding-left: 4px;
+            font-size: 12px;
+            color: #ff3300; }
 
 /*# sourceMappingURL=account_v2.css.map */

@@ -1124,6 +1124,12 @@ $borderColor: #EBEFF3;
 			}
 		}
 	}	
+
+	.bd{
+		border: 1px solid $borderColor;
+		background-color: #fff;
+		min-height: 456px;
+	}
 }
 
 .m-wallet, .m-bid, .m-coupon{
@@ -1186,11 +1192,6 @@ $borderColor: #EBEFF3;
 
 /* table */
 .m-funsflow, .m-bid, .m-wallet{
-	.bd{
-		border: 1px solid $borderColor;
-		background-color: #fff;
-	}
-
 	.table-box{
 		margin: 25px 0 27px;
 
@@ -1273,6 +1274,10 @@ $borderColor: #EBEFF3;
 
 /* funsflow */
 .m-funsflow{
+	border: 1px solid $borderColor;
+	background-color: #fff;
+	min-height: 656px;
+
 	.table-box{
 		table{
 			tr{

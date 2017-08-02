@@ -22,3 +22,5 @@
 [投标记录](https://estherji.github.io/newpc/Views/Account/bid.html)
 
 [资金流水](https://estherji.github.io/newpc/Views/Account/funsflow.html)
+
+[红包奖券](https://estherji.github.io/newpc/Views/Account/coupon.html)

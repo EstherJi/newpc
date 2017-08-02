@@ -679,6 +679,10 @@
     border-right: 1px solid #f3f7fa; }
   .m-wallet .hd .ainfo .pl48, .m-bid .hd .ainfo .pl48 {
     padding-left: 48px; }
+.m-wallet .bd, .m-bid .bd {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 456px; }
 
 .m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs {
   height: 59px;
@@ -714,9 +718,6 @@
       margin-right: 0; }
 
 /* table */
-.m-funsflow .bd, .m-bid .bd, .m-wallet .bd {
-  border: 1px solid #EBEFF3;
-  background-color: #fff; }
 .m-funsflow .table-box, .m-bid .table-box, .m-wallet .table-box {
   margin: 25px 0 27px; }
   .m-funsflow .table-box table, .m-bid .table-box table, .m-wallet .table-box table {
@@ -763,59 +764,63 @@
     display: inline-block; }
 
 /* funsflow */
-.m-funsflow .table-box table tr {
-  height: 70px; }
-.m-funsflow .table-box table td:last-child {
-  text-overflow: ellipsis; }
-.m-funsflow .sbox {
-  margin-top: 25px; }
-  .m-funsflow .sbox span {
-    color: #676770; }
-  .m-funsflow .sbox .type {
-    margin-right: 30px; }
-  .m-funsflow .sbox .h30 {
-    width: 150px;
-    height: 30px;
-    line-height: 30px;
-    display: inline-block; }
-  .m-funsflow .sbox select, .m-funsflow .sbox .dipt {
-    border-radius: 4px;
-    border: 1px solid #DFE3E6;
-    font-size: 12px;
-    color: #565660; }
-  .m-funsflow .sbox select {
-    padding-left: 10px;
-    width: 200px;
-    height: 30px;
-    line-height: 30px; }
-  .m-funsflow .sbox .dipt {
-    width: 150px;
-    height: 30px;
-    line-height: 30px;
-    display: inline-block; }
-  .m-funsflow .sbox b {
-    padding: 0 4px;
-    font-weight: normal; }
-  .m-funsflow .sbox .export {
-    margin-left: 5px;
-    width: 70px;
-    height: 30px;
-    line-height: 30px;
-    border-radius: 4px;
-    background-color: #39a6ff;
-    color: #fff;
-    font-size: 12px;
-    text-align: center;
-    display: inline-block; }
-    .m-funsflow .sbox .export:hover {
-      background-color: #0790ff; }
-  .m-funsflow .sbox .dicon {
-    top: 7px;
-    right: 10px;
-    width: 17px;
-    height: 16px;
-    background: url(../../Content/images/account/dicon.png) no-repeat;
-    display: inline-block; }
+.m-funsflow {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 656px; }
+  .m-funsflow .table-box table tr {
+    height: 70px; }
+  .m-funsflow .table-box table td:last-child {
+    text-overflow: ellipsis; }
+  .m-funsflow .sbox {
+    margin-top: 25px; }
+    .m-funsflow .sbox span {
+      color: #676770; }
+    .m-funsflow .sbox .type {
+      margin-right: 30px; }
+    .m-funsflow .sbox .h30 {
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block; }
+    .m-funsflow .sbox select, .m-funsflow .sbox .dipt {
+      border-radius: 4px;
+      border: 1px solid #DFE3E6;
+      font-size: 12px;
+      color: #565660; }
+    .m-funsflow .sbox select {
+      padding-left: 10px;
+      width: 200px;
+      height: 30px;
+      line-height: 30px; }
+    .m-funsflow .sbox .dipt {
+      width: 150px;
+      height: 30px;
+      line-height: 30px;
+      display: inline-block; }
+    .m-funsflow .sbox b {
+      padding: 0 4px;
+      font-weight: normal; }
+    .m-funsflow .sbox .export {
+      margin-left: 5px;
+      width: 70px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 4px;
+      background-color: #39a6ff;
+      color: #fff;
+      font-size: 12px;
+      text-align: center;
+      display: inline-block; }
+      .m-funsflow .sbox .export:hover {
+        background-color: #0790ff; }
+    .m-funsflow .sbox .dicon {
+      top: 7px;
+      right: 10px;
+      width: 17px;
+      height: 16px;
+      background: url(../../Content/images/account/dicon.png) no-repeat;
+      display: inline-block; }
 
 /* recharge, withdrawal */
 .m-recharge, .m-withdrawal {

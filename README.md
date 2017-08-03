@@ -2,7 +2,7 @@
 新版PC静态页
 
 - 账户总览-日历支持选择月份、左右翻页变化年份
-- 弹出层使用js模板继承，针对基本模态框扩展，当前页面每个对象只能创建一个实例（单例模式）
+- 弹出层使用js模板继承，针对基本模态框扩展
 
 #### 预览地址
 [首页](https://estherji.github.io/newpc/Views/Home/Index.html)
@@ -24,3 +24,7 @@
 [资金流水](https://estherji.github.io/newpc/Views/Account/funsflow.html)
 
 [红包奖券](https://estherji.github.io/newpc/Views/Account/coupon.html)
+
+[安全认证](https://estherji.github.io/newpc/Views/Account/security.html)
+
+[银行卡](https://estherji.github.io/newpc/Views/Account/bankcard.html)

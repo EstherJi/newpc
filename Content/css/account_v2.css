@@ -236,7 +236,7 @@
           .m-index .hd .info-box .detail .sec-level .level .middle {
             color: #0790ff; }
           .m-index .hd .info-box .detail .sec-level .level .high {
-            color: green; }
+            color: #85e4c6; }
         .m-index .hd .info-box .detail .sec-level .raise {
           color: #0790ff; }
           .m-index .hd .info-box .detail .sec-level .raise .upicon {
@@ -1030,5 +1030,153 @@
             padding-left: 4px;
             font-size: 12px;
             color: #ff3300; }
+
+.m-bankcard {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 656px; }
+  .m-bankcard .bcicon {
+    background: url(../../Content/images/account/bcicon.png) no-repeat;
+    display: inline-block; }
+    .m-bankcard .bcicon.cicon {
+      width: 10px;
+      height: 10px;
+      background-position: -10px 0; }
+  .m-bankcard .bcbox {
+    padding: 30px 24px 0; }
+    .m-bankcard .bcbox .item {
+      margin: 0 20px 20px 0;
+      width: 291px;
+      height: 153px;
+      border-radius: 4px;
+      border: 1px solid #EBEFF3;
+      float: left; }
+      .m-bankcard .bcbox .item:nth-child(3n) {
+        margin-right: 0; }
+      .m-bankcard .bcbox .item .name {
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        background-color: #fbfcfd;
+        color: #565660; }
+      .m-bankcard .bcbox .item .num {
+        padding: 28px 0 22px;
+        color: #565660;
+        text-align: center; }
+        .m-bankcard .bcbox .item .num .lg {
+          padding-left: 12px;
+          font-size: 20px; }
+      .m-bankcard .bcbox .item .actions {
+        padding-right: 24px;
+        font-size: 12px; }
+        .m-bankcard .bcbox .item .actions .unbind {
+          padding-right: 14px;
+          border-right: 1px solid #CCD8E2; }
+        .m-bankcard .bcbox .item .actions .default {
+          padding-left: 10px; }
+          .m-bankcard .bcbox .item .actions .default .cicon {
+            margin-right: 4px; }
+          .m-bankcard .bcbox .item .actions .default.cur {
+            color: #0790ff; }
+            .m-bankcard .bcbox .item .actions .default.cur .cicon {
+              background-position: 0 0; }
+    .m-bankcard .bcbox .add {
+      border: none;
+      box-shadow: 0px 1px 6px 0px rgba(7, 144, 255, 0.15);
+      cursor: pointer; }
+      .m-bankcard .bcbox .add .aicon {
+        margin: 48px 0 0 128px;
+        width: 34px;
+        height: 34px;
+        background-position: -20px 0; }
+      .m-bankcard .bcbox .add .text {
+        color: #0790ff;
+        text-align: center; }
+
+.m-security {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 656px; }
+  .m-security .lbox {
+    margin: 25px 24px 10px;
+    height: 92px;
+    border: 1px dashed #CCD8E2; }
+    .m-security .lbox .ptb {
+      padding: 20px 0 10px; }
+    .m-security .lbox .pb20 {
+      padding-bottom: 20px; }
+    .m-security .lbox label {
+      width: 160px;
+      color: #454550;
+      text-align: right;
+      display: inline-block; }
+    .m-security .lbox span {
+      color: #787880; }
+    .m-security .lbox .level .progress {
+      top: 2px;
+      margin: 0 10px;
+      width: 353px;
+      height: 10px;
+      border-radius: 5px;
+      border: 1px solid #EBEFF3;
+      display: inline-block; }
+      .m-security .lbox .level .progress .child {
+        left: 1px;
+        top: 1px;
+        max-width: 351px;
+        height: 8px;
+        border-radius: 4px;
+        display: inline-block; }
+    .m-security .lbox .level.low {
+      color: #ff5c33; }
+      .m-security .lbox .level.low .progress .child {
+        background-color: #ff5c33; }
+    .m-security .lbox .level.middle {
+      color: #0790ff; }
+      .m-security .lbox .level.middle .progress .child {
+        background-color: #0790ff; }
+    .m-security .lbox .level.high {
+      color: #85e4c6; }
+      .m-security .lbox .level.high .progress .child {
+        background-color: #85e4c6; }
+  .m-security .slist {
+    padding: 0 24px 84px 24px; }
+    .m-security .slist li {
+      padding: 0 30px 0 25px;
+      height: 80px;
+      border-bottom: 1px solid #EBEFF3; }
+      .m-security .slist li span {
+        margin-top: 28px;
+        float: left; }
+        .m-security .slist li span.mt16 {
+          margin-top: 16px; }
+      .m-security .slist li .yorn {
+        margin-right: 75px;
+        color: #ff3300; }
+        .m-security .slist li .yorn .sicon {
+          margin-right: 12px;
+          width: 20px;
+          height: 20px;
+          background: url(../../Content/images/account/sicon.png) no-repeat;
+          background-position: 0 0;
+          float: left; }
+        .m-security .slist li .yorn.cur {
+          color: #908f9a; }
+          .m-security .slist li .yorn.cur .sicon {
+            background-position: -20px 0; }
+      .m-security .slist li .tit {
+        width: 135px;
+        color: #454550; }
+      .m-security .slist li .tip {
+        width: 425px;
+        color: #676770; }
+      .m-security .slist li a {
+        width: 62px;
+        margin-top: 28px;
+        color: #0790ff;
+        text-align: center;
+        display: inline-block; }
 
 /*# sourceMappingURL=account_v2.css.map */

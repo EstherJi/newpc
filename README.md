@@ -28,3 +28,5 @@
 [安全认证](https://estherji.github.io/newpc/Views/Account/security.html)
 
 [银行卡](https://estherji.github.io/newpc/Views/Account/bankcard.html)
+
+[我的消息](https://estherji.github.io/newpc/Views/Account/message.html)

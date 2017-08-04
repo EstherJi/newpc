@@ -195,6 +195,7 @@ $lightColor: #908f9a;
 						transition: transform .5s;
 						transform: translateY(-50%) rotate(-135deg);
 						z-index: 5;
+						opacity: 0;
 					}
 				}
 
@@ -202,6 +203,10 @@ $lightColor: #908f9a;
 					a, .icon-3{
 						z-index: 5;
 						position: relative;
+					}
+
+					.arrow-icon{
+						opacity: 1;
 					}
 
 					&:hover{

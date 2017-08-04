@@ -684,68 +684,69 @@
   background-color: #fff;
   min-height: 456px; }
 
-.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs {
+.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs, .m-message .stabs {
   height: 59px;
   line-height: 59px;
   border-bottom: 1px solid #F7F9FA; }
-  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a {
+  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a, .m-message .stabs .tabs a {
     height: 58px;
     line-height: 58px;
     font-size: 16px;
     color: #454550;
     display: inline-block; }
-    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover {
+    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover, .m-message .stabs .tabs a:hover {
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur {
+    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur, .m-message .stabs .tabs a.cur {
       border-bottom: 2px solid #0790ff;
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50 {
+    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50, .m-message .stabs .tabs a.mr50 {
       margin-right: 50px; }
-  .m-wallet .stabs .sbox a, .m-bid .stabs .sbox a, .m-coupon .stabs .sbox a {
-    margin-right: 20px;
-    padding: 5px;
-    color: #676770; }
-    .m-wallet .stabs .sbox a.cur, .m-bid .stabs .sbox a.cur, .m-coupon .stabs .sbox a.cur {
-      font-size: 12px;
-      border-radius: 4px;
+
+.m-wallet .stabs .sbox a, .m-bid .stabs .sbox a, .m-coupon .stabs .sbox a {
+  margin-right: 20px;
+  padding: 5px;
+  color: #676770; }
+  .m-wallet .stabs .sbox a.cur, .m-bid .stabs .sbox a.cur, .m-coupon .stabs .sbox a.cur {
+    font-size: 12px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #0790ff; }
+    .m-wallet .stabs .sbox a.cur:hover, .m-bid .stabs .sbox a.cur:hover, .m-coupon .stabs .sbox a.cur:hover {
       color: #fff;
-      background-color: #0790ff; }
-      .m-wallet .stabs .sbox a.cur:hover, .m-bid .stabs .sbox a.cur:hover, .m-coupon .stabs .sbox a.cur:hover {
-        color: #fff;
-        background-color: #39a6ff; }
-    .m-wallet .stabs .sbox a:hover, .m-bid .stabs .sbox a:hover, .m-coupon .stabs .sbox a:hover {
-      color: #0790ff; }
-    .m-wallet .stabs .sbox a.mr0, .m-bid .stabs .sbox a.mr0, .m-coupon .stabs .sbox a.mr0 {
-      margin-right: 0; }
+      background-color: #39a6ff; }
+  .m-wallet .stabs .sbox a:hover, .m-bid .stabs .sbox a:hover, .m-coupon .stabs .sbox a:hover {
+    color: #0790ff; }
+  .m-wallet .stabs .sbox a.mr0, .m-bid .stabs .sbox a.mr0, .m-coupon .stabs .sbox a.mr0 {
+    margin-right: 0; }
 
 /* table */
-.m-funsflow .table-box, .m-bid .table-box, .m-wallet .table-box {
+.m-funsflow .table-box, .m-bid .table-box, .m-wallet .table-box, .m-message .table-box {
   margin: 25px 0 27px; }
-  .m-funsflow .table-box table, .m-bid .table-box table, .m-wallet .table-box table {
+  .m-funsflow .table-box table, .m-bid .table-box table, .m-wallet .table-box table, .m-message .table-box table {
     width: 100%; }
-    .m-funsflow .table-box table tr, .m-bid .table-box table tr, .m-wallet .table-box table tr {
+    .m-funsflow .table-box table tr, .m-bid .table-box table tr, .m-wallet .table-box table tr, .m-message .table-box table tr {
       height: 44px; }
-    .m-funsflow .table-box table tbody tr:hover, .m-bid .table-box table tbody tr:hover, .m-wallet .table-box table tbody tr:hover {
+    .m-funsflow .table-box table tbody tr:hover, .m-bid .table-box table tbody tr:hover, .m-wallet .table-box table tbody tr:hover, .m-message .table-box table tbody tr:hover {
       background-color: #ffede8; }
-    .m-funsflow .table-box table tbody tr:nth-child(even), .m-bid .table-box table tbody tr:nth-child(even), .m-wallet .table-box table tbody tr:nth-child(even) {
+    .m-funsflow .table-box table tbody tr:nth-child(even), .m-bid .table-box table tbody tr:nth-child(even), .m-wallet .table-box table tbody tr:nth-child(even), .m-message .table-box table tbody tr:nth-child(even) {
       background-color: #fbfcfd; }
-      .m-funsflow .table-box table tbody tr:nth-child(even):hover, .m-bid .table-box table tbody tr:nth-child(even):hover, .m-wallet .table-box table tbody tr:nth-child(even):hover {
+      .m-funsflow .table-box table tbody tr:nth-child(even):hover, .m-bid .table-box table tbody tr:nth-child(even):hover, .m-wallet .table-box table tbody tr:nth-child(even):hover, .m-message .table-box table tbody tr:nth-child(even):hover {
         background-color: #ffede8; }
-    .m-funsflow .table-box table thead tr, .m-bid .table-box table thead tr, .m-wallet .table-box table thead tr {
+    .m-funsflow .table-box table thead tr, .m-bid .table-box table thead tr, .m-wallet .table-box table thead tr, .m-message .table-box table thead tr {
       background-color: #f0f8fe; }
-    .m-funsflow .table-box table th, .m-funsflow .table-box table td, .m-bid .table-box table th, .m-bid .table-box table td, .m-wallet .table-box table th, .m-wallet .table-box table td {
+    .m-funsflow .table-box table th, .m-funsflow .table-box table td, .m-bid .table-box table th, .m-bid .table-box table td, .m-wallet .table-box table th, .m-wallet .table-box table td, .m-message .table-box table th, .m-message .table-box table td {
       text-align: center; }
-    .m-funsflow .table-box table th, .m-bid .table-box table th, .m-wallet .table-box table th {
+    .m-funsflow .table-box table th, .m-bid .table-box table th, .m-wallet .table-box table th, .m-message .table-box table th {
       color: #343440; }
-    .m-funsflow .table-box table td, .m-bid .table-box table td, .m-wallet .table-box table td {
+    .m-funsflow .table-box table td, .m-bid .table-box table td, .m-wallet .table-box table td, .m-message .table-box table td {
       color: #676770; }
-  .m-funsflow .table-box .pages, .m-bid .table-box .pages, .m-wallet .table-box .pages {
+  .m-funsflow .table-box .pages, .m-bid .table-box .pages, .m-wallet .table-box .pages, .m-message .table-box .pages {
     padding-top: 27px;
     padding-bottom: 0; }
-.m-funsflow .pages, .m-bid .pages, .m-wallet .pages {
+.m-funsflow .pages, .m-bid .pages, .m-wallet .pages, .m-message .pages {
   padding-bottom: 27px;
   text-align: center; }
-  .m-funsflow .pages a, .m-bid .pages a, .m-wallet .pages a {
+  .m-funsflow .pages a, .m-bid .pages a, .m-wallet .pages a, .m-message .pages a {
     height: 34px;
     line-height: 34px;
     padding: 0 13px;
@@ -754,10 +755,10 @@
     border: 1px solid #DFE3E6;
     color: #908f9a;
     display: inline-block; }
-    .m-funsflow .pages a:hover, .m-bid .pages a:hover, .m-wallet .pages a:hover {
+    .m-funsflow .pages a:hover, .m-bid .pages a:hover, .m-wallet .pages a:hover, .m-message .pages a:hover {
       color: #fff;
       background-color: #0790ff; }
-  .m-funsflow .pages span.laypage_curr, .m-bid .pages span.laypage_curr, .m-wallet .pages span.laypage_curr {
+  .m-funsflow .pages span.laypage_curr, .m-bid .pages span.laypage_curr, .m-wallet .pages span.laypage_curr, .m-message .pages span.laypage_curr {
     height: 34px;
     line-height: 34px;
     padding: 0 13px;
@@ -834,15 +835,15 @@
   .m-recharge .title a, .m-withdrawal .title a {
     color: #0790ff; }
 
-.m-recharge .tips, .m-withdrawal .tips, .m-coupon .tips {
+.m-recharge .tips, .m-withdrawal .tips, .m-coupon .tips, .m-message .tips {
   margin: 25px 24px 0;
   padding: 20px;
   background-color: #f9fafc; }
-  .m-recharge .tips .tit, .m-withdrawal .tips .tit, .m-coupon .tips .tit {
+  .m-recharge .tips .tit, .m-withdrawal .tips .tit, .m-coupon .tips .tit, .m-message .tips .tit {
     padding-bottom: 12px;
     font-size: 16px;
     color: #454550; }
-  .m-recharge .tips .detail p, .m-withdrawal .tips .detail p, .m-coupon .tips .detail p {
+  .m-recharge .tips .detail p, .m-withdrawal .tips .detail p, .m-coupon .tips .detail p, .m-message .tips .detail p {
     line-height: 26px;
     color: #787880; }
 
@@ -1178,5 +1179,121 @@
         color: #0790ff;
         text-align: center;
         display: inline-block; }
+
+.m-message {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 656px; }
+  .m-message .sbox {
+    margin-top: 25px; }
+    .m-message .sbox span {
+      color: #676770; }
+    .m-message .sbox select {
+      padding-left: 10px;
+      width: 200px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 4px;
+      border: 1px solid #DFE3E6;
+      font-size: 12px;
+      color: #565660; }
+    .m-message .sbox .already {
+      margin: 0 5px;
+      width: 84px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      border-radius: 4px;
+      background-color: #0790ff;
+      color: #fff;
+      text-align: center;
+      display: inline-block; }
+      .m-message .sbox .already:hover {
+        background-color: #39a6ff; }
+    .m-message .sbox .delete {
+      width: 48px;
+      height: 28px;
+      line-height: 28px;
+      font-size: 12px;
+      border-radius: 4px;
+      border: 1px solid #DFE3E6;
+      color: #787880;
+      text-align: center;
+      display: inline-block; }
+      .m-message .sbox .delete:hover {
+        border-color: #0790ff;
+        color: #0790ff; }
+  .m-message .icon {
+    background: url(../../Content/images/account/micon.png) no-repeat;
+    display: inline-block; }
+    .m-message .icon.cicon {
+      width: 12px;
+      height: 12px;
+      background-position: 0 0; }
+      .m-message .icon.cicon.cur {
+        background-position: -12px 0; }
+    .m-message .icon.micon {
+      width: 18px;
+      height: 12px;
+      background-position: -24px 0; }
+      .m-message .icon.micon.read {
+        height: 18px;
+        background-position: -42px 0; }
+  .m-message .table-box table td:nth-child(4):hover {
+    color: #0790ff; }
+  .m-message .mtable-box {
+    margin-top: 45px; }
+    .m-message .mtable-box table {
+      width: 100%; }
+      .m-message .mtable-box table th {
+        width: 33.3%;
+        height: 44px;
+        line-height: 44px;
+        background-color: #f0f8fe;
+        color: #343440;
+        text-align: center; }
+      .m-message .mtable-box table .cicon {
+        margin-right: 10px;
+        vertical-align: middle; }
+      .m-message .mtable-box table td {
+        height: 80px;
+        border-bottom: 1px solid #EBEFF3; }
+        .m-message .mtable-box table td .lg {
+          font-size: 16px;
+          color: #454550; }
+        .m-message .mtable-box table td .sm {
+          font-size: 12px;
+          color: #787880; }
+        .m-message .mtable-box table td:not(:nth-child(1)) {
+          text-align: center; }
+        .m-message .mtable-box table td:nth-child(1) {
+          padding-left: 20px; }
+
+.m-messagedetail {
+  border: 1px solid #EBEFF3;
+  background-color: #fff;
+  min-height: 656px; }
+  .m-messagedetail .title a {
+    color: #0790ff; }
+  .m-messagedetail .logo {
+    right: 45px;
+    bottom: 62px;
+    width: 172px;
+    height: 50px;
+    background: url(../../Content/images/account/logo.png) no-repeat;
+    display: inline-block; }
+  .m-messagedetail .detail {
+    padding: 0 45px; }
+    .m-messagedetail .detail p {
+      color: #787880;
+      line-height: 26px;
+      letter-spacing: 1px; }
+    .m-messagedetail .detail .tit {
+      padding: 30px 0;
+      font-size: 20px;
+      color: #454550;
+      text-align: center; }
+    .m-messagedetail .detail .info {
+      margin-left: 82px; }
 
 /*# sourceMappingURL=account_v2.css.map */

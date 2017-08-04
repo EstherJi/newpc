@@ -1132,7 +1132,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-wallet, .m-bid, .m-coupon{
+.m-wallet, .m-bid, .m-coupon, .m-message{
 	.stabs{
 		height: 59px;
 		line-height: 59px;
@@ -1160,7 +1160,11 @@ $borderColor: #EBEFF3;
 				}
 			}
 		}
+	}
+}
 
+.m-wallet, .m-bid, .m-coupon{
+	.stabs{
 		.sbox{
 			a{
 				margin-right: 20px;
@@ -1192,7 +1196,7 @@ $borderColor: #EBEFF3;
 }
 
 /* table */
-.m-funsflow, .m-bid, .m-wallet{
+.m-funsflow, .m-bid, .m-wallet, .m-message{
 	.table-box{
 		margin: 25px 0 27px;
 
@@ -1384,7 +1388,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-recharge, .m-withdrawal, .m-coupon{
+.m-recharge, .m-withdrawal, .m-coupon, .m-message{
 	.tips{
 		margin: 25px 24px 0;
 		padding: 20px;
@@ -1947,5 +1951,189 @@ $borderColor: #EBEFF3;
 	}
 }
 
+.m-message{
+	border: 1px solid $borderColor;
+	background-color: #fff;
+	min-height: 656px;
+
+	.sbox{
+		margin-top: 25px;
+
+		span{
+			color: #676770;
+		}
+
+		select{
+			padding-left: 10px;
+			width: 200px;
+			height: 30px;
+			line-height: 30px;
+			border-radius: 4px;
+			border: 1px solid #DFE3E6;
+			font-size: 12px;
+			color: #565660;
+		}
+
+		.already{
+			margin: 0 5px;
+			width: 84px;
+			height: 30px;
+			line-height: 30px;
+			font-size: 12px;
+			border-radius: 4px;
+			background-color: $blueColor;
+			color: #fff;
+			text-align: center;
+			display: inline-block;
+
+			&:hover{
+				background-color: $blueHoverColor;
+			}
+		}
+
+		.delete{
+			width: 48px;
+			height: 28px;
+			line-height: 28px;
+			font-size: 12px;
+			border-radius: 4px;
+			border: 1px solid #DFE3E6;
+			color: #787880;
+			text-align: center;
+			display: inline-block;
+
+			&:hover{
+				border-color: $blueColor;
+				color: $blueColor;
+			}
+		}
+	}
+
+	.icon{
+		background: url(../../Content/images/account/micon.png) no-repeat;
+		display: inline-block;
+
+		&.cicon{
+			width: 12px;
+			height: 12px;
+			background-position: 0 0;
+
+			&.cur{
+				background-position: -12px 0;
+			}
+		}
+
+		&.micon{
+			width: 18px;
+			height: 12px;
+			background-position: -24px 0;
+			
+
+			&.read{
+				height: 18px;
+				background-position: -42px 0;
+			}
+		}
+	}
+
+	.table-box{
+		table{
+			td{
+				&:nth-child(4){
+					&:hover{
+						color: $blueColor;
+					}
+				}
+			}
+		}
+	}
+
+	.mtable-box{
+		margin-top: 45px;
+
+		table{
+			width: 100%;
+
+			th{
+				width: 33.3%;
+				height: 44px;
+				line-height: 44px;
+				background-color: #f0f8fe;
+				color: #343440;
+				text-align: center;
+			}
+
+			.cicon{
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+
+			td{
+				height: 80px;
+				border-bottom: 1px solid #EBEFF3;
+
+				.lg{
+					font-size: 16px;
+					color: #454550;
+				}
+
+				.sm{
+					font-size: 12px;
+					color: #787880;
+				}
+
+				&:not(:nth-child(1)){
+					text-align: center;
+				}
+
+				&:nth-child(1){
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+.m-messagedetail{
+	border: 1px solid $borderColor;
+	background-color: #fff;
+	min-height: 656px;
+
+	.title{
+		a{
+			color: $blueColor;
+		}
+	}
+
+	.logo{
+		right: 45px;
+		bottom: 62px;
+		width: 172px;
+		height: 50px;
+		background: url(../../Content/images/account/logo.png) no-repeat;
+		display: inline-block;
+	}
+
+	.detail{
+		padding: 0 45px;
+
+		p{
+			color: #787880;
+			line-height: 26px;
+			letter-spacing: 1px;
+		}
+
+		.tit{
+			padding: 30px 0;
+			font-size: 20px;
+			color: #454550;
+			text-align: center;
+		}
+
+		.info{
+			margin-left: 82px;
+		}
+	}
+}
 
 

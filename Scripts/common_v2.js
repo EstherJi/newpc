@@ -22,6 +22,7 @@ $(function(){
 	tab('.m-wallet .tabs a', '#table', 2, 'cur');
 	tab('.m-bid .tabs a', '#table', 3, 'cur');
 	tab('.m-coupon .tabs a', '#coupon', 2, 'cur');
+	tab('.m-message .tabs a', '#message', 2, 'cur');
 
 	// 返回顶部按钮
 	$(window).scroll(function(){

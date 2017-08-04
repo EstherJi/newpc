@@ -153,10 +153,13 @@
         top: 50%;
         transition: transform .5s;
         transform: translateY(-50%) rotate(-135deg);
-        z-index: 5; }
+        z-index: 5;
+        opacity: 0; }
       .m-nav .nav .nav-menu li.is-login a, .m-nav .nav .nav-menu li.is-login .icon-3 {
         z-index: 5;
         position: relative; }
+      .m-nav .nav .nav-menu li.is-login .arrow-icon {
+        opacity: 1; }
       .m-nav .nav .nav-menu li.is-login:hover .arrow-icon {
         transition: transform .5s;
         transform: rotate(45deg); }

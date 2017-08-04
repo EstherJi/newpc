@@ -30,3 +30,5 @@
 [银行卡](https://estherji.github.io/newpc/Views/Account/bankcard.html)
 
 [我的消息](https://estherji.github.io/newpc/Views/Account/message.html)
+
+[邀请好友](https://estherji.github.io/newpc/Views/Account/invitation.html)

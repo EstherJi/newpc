@@ -1641,6 +1641,15 @@ $borderColor: #EBEFF3;
 				background-position: 0 0;
 			}
 
+			.used{
+				right: 10px;
+				bottom: 8px;
+				width: 67px;
+				height: 55px;
+				background: url(../../Content/images/account/used.png) no-repeat;
+				display: inline-block;
+			}
+
 			.tnum{
 				width: 95px;
 				height: 124px;

@@ -1,0 +1,190 @@
+/* passport */
+.m-passport {
+  padding: 0 70px;
+  margin: 30px 0 60px;
+  height: 656px;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-passport .mt70 {
+    margin-top: 70px; }
+  .m-passport .ipt-box h3 {
+    padding: 54px 0 36px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #454550; }
+  .m-passport .ipt-box .ricon {
+    background: url(../../Content/images/passport/ricon.png) no-repeat;
+    display: inline-block; }
+    .m-passport .ipt-box .ricon.ricon-1 {
+      margin: 14px 16px;
+      width: 12px;
+      height: 20px;
+      background-position: 0 0; }
+    .m-passport .ipt-box .ricon.ricon-2 {
+      margin: 16px;
+      width: 12px;
+      height: 16px;
+      background-position: -12px 0; }
+    .m-passport .ipt-box .ricon.ricon-3 {
+      margin: 16px;
+      width: 12px;
+      height: 16px;
+      background-position: -24px 0; }
+    .m-passport .ipt-box .ricon.ricon-4 {
+      margin: 18px 15.5px;
+      width: 13px;
+      height: 12px;
+      background-position: -36px 0; }
+    .m-passport .ipt-box .ricon.ricon-5 {
+      margin-right: 8px;
+      width: 14px;
+      height: 14px;
+      background-position: -49px 0;
+      vertical-align: middle; }
+      .m-passport .ipt-box .ricon.ricon-5.uncheck {
+        background-position: -63px 0; }
+  .m-passport .ipt-box .ipt {
+    margin-bottom: 20px;
+    width: 418px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 4px;
+    border: 1px solid #E3EAEF;
+    transition: all .2s ease-in-out; }
+    .m-passport .ipt-box .ipt span {
+      width: 44px;
+      height: 48px;
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+      background-color: #fbfcfd;
+      border-right: 1px solid #E3EAEF;
+      float: left; }
+    .m-passport .ipt-box .ipt input {
+      padding-left: 20px;
+      width: 234px;
+      height: 30px;
+      border: none; }
+      .m-passport .ipt-box .ipt input::-webkit-input-placeholder {
+        color: #908f9a; }
+    .m-passport .ipt-box .ipt .icode {
+      width: 118px;
+      height: 48px;
+      line-height: 48px;
+      border-left: 1px solid #E3EAEF;
+      color: #0790ff;
+      display: inline-block;
+      text-align: center;
+      float: right; }
+      .m-passport .ipt-box .ipt .icode.disable {
+        color: #908f9a; }
+      .m-passport .ipt-box .ipt .icode img {
+        width: 96px;
+        height: 25px;
+        margin: 11.5px auto; }
+    .m-passport .ipt-box .ipt.ript {
+      margin-bottom: 14px;
+      display: none;
+      transition: all .2s ease-in-out; }
+  .m-passport .ipt-box .tips {
+    color: #565660; }
+    .m-passport .ipt-box .tips a {
+      color: #0790ff; }
+    .m-passport .ipt-box .tips.pb5 {
+      padding-bottom: 5px; }
+  .m-passport .ipt-box .recommend {
+    padding: 4px 0 8px 22px;
+    position: relative;
+    cursor: pointer; }
+    .m-passport .ipt-box .recommend:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border: 1px solid #b9bbbd;
+      border-bottom-width: 0;
+      border-right-width: 0;
+      transition: transform .5s;
+      transform: translateY(50%) rotate(-135deg); }
+    .m-passport .ipt-box .recommend.open:after {
+      transform: translateY(110%) rotate(45deg);
+      transition: transform .5s; }
+    .m-passport .ipt-box .recommend ~ .tips {
+      padding-top: 6px; }
+  .m-passport .btn {
+    width: 420px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #0790ff;
+    color: #fff;
+    text-align: center;
+    display: block; }
+    .m-passport .btn.reg {
+      margin-top: 20px; }
+    .m-passport .btn:hover {
+      background-color: #39a6ff; }
+  .m-passport .ibox {
+    margin-left: 490px;
+    padding-top: 60px; }
+    .m-passport .ibox .tips {
+      font-size: 16px;
+      color: #676770; }
+      .m-passport .ibox .tips a {
+        color: #0790ff; }
+    .m-passport .ibox .img {
+      width: 374px;
+      height: 351px;
+      margin: 70px auto; }
+  .m-passport .slist {
+    margin: 0 -70px;
+    padding: 70px 0 85px; }
+    .m-passport .slist li {
+      float: left;
+      width: 33.3%;
+      text-align: center;
+      position: relative; }
+      .m-passport .slist li .circle {
+        margin: 0 auto 10px;
+        width: 37px;
+        height: 37px;
+        line-height: 37px;
+        font-size: 18px;
+        border-radius: 50%;
+        border: 2px solid #D7DCE0;
+        color: #d7dce0;
+        text-align: center;
+        display: block; }
+      .m-passport .slist li span {
+        font-size: 16px;
+        color: #787880;
+        display: block; }
+      .m-passport .slist li:not(:nth-child(1)):before {
+        content: '';
+        position: absolute;
+        width: 328px;
+        height: 0;
+        border-top: 1px dashed #DDE5EC;
+        top: 20px;
+        left: -41%; }
+      .m-passport .slist li.cur .circle {
+        border-color: #0790ff;
+        color: #0790ff; }
+      .m-passport .slist li.cur span {
+        color: #0790ff; }
+      .m-passport .slist li.cur:not(:nth-child(1)):before {
+        border-color: #0790ff; }
+  .m-passport .step .ipt-box .ipt {
+    margin: 0 auto 20px; }
+  .m-passport .step .ipt-box .btn-box {
+    padding-top: 10px; }
+  .m-passport .step .btn {
+    margin: 0 auto; }
+  .m-passport .step3 p {
+    padding: 25px 0 75px;
+    font-size: 16px;
+    color: #454550;
+    text-align: center; }
+
+/*# sourceMappingURL=passport_v2.css.map */

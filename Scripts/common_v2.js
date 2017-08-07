@@ -91,4 +91,37 @@ $(function(){
 		$('#cbmodal .pinfo').addClass('hide');
 		$('#cbmodal .btn').css('display', 'block');
 	});
+
+	// 推荐人输入框显示隐藏
+	$('.m-passport .recommend').on('click', function(){
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$('.m-passport .ript').hide();
+		}else{
+			$(this).addClass('open');
+			$('.m-passport .ript').show();
+		}
+	});
+
+	// 复选框选中取消
+	$('.m-passport .ricon-5').on('click', function(){
+		if($(this).hasClass('uncheck')){
+			$(this).removeClass('uncheck');
+		}else{
+			$(this).addClass('uncheck');
+		}
+	});
+
+	// 重置密码步骤显示隐藏
+	$('.m-passport .btn.next').on('click', function(){
+		$('.m-passport .slist li:nth-child(2)').addClass('cur');
+		$('.m-passport .step1').addClass('hide');
+		$('.m-passport .step2').removeClass('hide');
+	});
+	$('.m-passport .btn.complete').on('click', function(){
+		$('.m-passport .slist li:nth-child(3)').addClass('cur');
+		$('.m-passport .step2').addClass('hide');
+		$('.m-passport .step3').removeClass('hide');
+	});
+
 });

@@ -1,0 +1,298 @@
+
+$blueColor: #0790ff;
+$blueHoverColor: #39a6ff;
+
+/* passport */
+.m-passport{
+	padding: 0 70px;
+	margin: 30px 0 60px;
+	height: 656px;
+	border: 1px solid #EBEFF3;
+	background-color: #fff;
+
+	.mt70{
+		margin-top: 70px;
+	}
+
+	.ipt-box{
+		h3{
+			padding: 54px 0 36px;
+			font-size: 20px;
+			font-weight: normal;
+			color: #454550;
+		}
+
+		.ricon{
+			background: url(../../Content/images/passport/ricon.png) no-repeat;
+			display: inline-block;
+
+			&.ricon-1{
+				margin: 14px 16px;
+				width: 12px;
+				height: 20px;
+				background-position: 0 0;
+			}
+
+			&.ricon-2{
+				margin: 16px;
+				width: 12px;
+				height: 16px;
+				background-position: -12px 0;
+			}
+
+			&.ricon-3{
+				margin: 16px;
+				width: 12px;
+				height: 16px;
+				background-position: -24px 0;
+			}
+
+			&.ricon-4{
+				margin: 18px 15.5px;
+				width: 13px;
+				height: 12px;
+				background-position: -36px 0;
+			}
+
+			&.ricon-5{
+				margin-right: 8px;
+				width: 14px;
+				height: 14px;
+				background-position: -49px 0;
+				vertical-align: middle;
+
+				&.uncheck{
+					background-position: -63px 0;
+				}
+			}
+		}
+
+		.ipt{
+			margin-bottom: 20px;
+			width: 418px;
+			height: 48px;
+			line-height: 48px;
+			border-radius: 4px;
+			border: 1px solid #E3EAEF;
+			transition: all .2s ease-in-out;
+
+			span{
+				width: 44px;
+				height: 48px;
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				background-color: #fbfcfd;
+				border-right: 1px solid #E3EAEF;
+				float: left;
+			}
+
+			input{
+				padding-left: 20px;
+				width: 234px;
+				height: 30px;
+				border: none;
+
+				&::-webkit-input-placeholder{
+					color: #908f9a;
+				}
+			}
+
+			.icode{
+				width: 118px;
+				height: 48px;
+				line-height: 48px;
+				border-left: 1px solid #E3EAEF;
+				color: $blueColor;
+				display: inline-block;
+				text-align: center;
+				float: right;
+
+				&.disable{
+					color: #908f9a;
+				}
+
+				img{
+					width: 96px;
+					height: 25px;
+					margin: 11.5px auto;
+				}
+			}
+
+			&.ript{
+				margin-bottom: 14px;
+				display: none;
+				transition: all .2s ease-in-out;
+			}
+		}
+
+		.tips{
+			color: #565660;
+
+			a{
+				color: $blueColor;
+			}
+
+			&.pb5{
+				padding-bottom: 5px;
+			}
+		}
+
+		.recommend{
+			padding: 4px 0 8px 22px;
+			position: relative;
+			cursor: pointer;
+
+			&:after{
+				content: '';
+				position: absolute;
+				left: 0;
+				width: 8px;
+				height: 8px;
+				border: 1px solid #b9bbbd;
+				border-bottom-width: 0;
+				border-right-width: 0;
+				transition: transform .5s;
+				transform: translateY(50%) rotate(-135deg);
+			}
+
+			&.open{
+				&:after{
+					transform: translateY(110%) rotate(45deg);
+					transition: transform .5s;
+				}
+			}
+
+			& ~ .tips{
+				padding-top: 6px;
+			}
+		}
+	}
+
+	.btn{
+		width: 420px;
+		height: 50px;
+		line-height: 50px;
+		font-size: 16px;
+		border-radius: 4px;
+		background-color: $blueColor;
+		color: #fff;
+		text-align: center;
+		display: block;
+
+		&.reg{
+			margin-top: 20px;
+		}
+
+		&:hover{
+			background-color: $blueHoverColor;
+		}
+	}
+
+	.ibox{
+		margin-left: 490px;
+		padding-top: 60px;
+
+		.tips{
+			font-size: 16px;
+			color: #676770;
+
+			a{
+				color: $blueColor;
+			}
+		}
+
+		.img{
+			width: 374px;
+			height: 351px;
+			margin: 70px auto;
+		}
+	}
+
+	.slist{
+		margin: 0 -70px;
+		padding: 70px 0 85px;
+
+		li{
+			float: left;
+			width: 33.3%;
+			text-align: center;
+			position: relative;
+
+			.circle{
+				margin: 0 auto 10px;
+				width: 37px;
+				height: 37px;
+				line-height: 37px;
+				font-size: 18px;
+				border-radius: 50%;
+				border: 2px solid #D7DCE0;
+				color: #d7dce0;
+				text-align: center;
+				display: block;
+			}
+
+			span{
+				font-size: 16px;
+				color: #787880;
+				display: block;
+			}
+
+			&:not(:nth-child(1)){
+				&:before{
+					content: '';
+					position: absolute;
+					width: 328px;
+					height: 0;
+					border-top: 1px dashed #DDE5EC;
+					top: 20px;
+					left: -41%;
+				}
+			}
+
+			&.cur{
+				.circle{
+					border-color: $blueColor;
+					color: $blueColor;
+				}
+
+				span{
+					color: $blueColor;
+				}
+
+				&:not(:nth-child(1)){
+					&:before{
+						border-color: $blueColor;
+					}
+				}
+			}
+		}
+	}
+
+	.step{
+		.ipt-box{
+			.ipt{
+				margin: 0 auto 20px;
+			}
+
+			.btn-box{
+				padding-top: 10px;
+			}
+		}
+		
+		.btn{
+			margin: 0 auto;
+		}
+	}
+
+	.step3{
+		p{
+			padding: 25px 0 75px;
+			font-size: 16px;
+			color: #454550;
+			text-align: center;
+		}
+	}
+}
+
+
+

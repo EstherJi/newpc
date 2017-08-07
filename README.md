@@ -32,3 +32,7 @@
 [我的消息](https://estherji.github.io/newpc/Views/Account/message.html)
 
 [邀请好友](https://estherji.github.io/newpc/Views/Account/invitation.html)
+
+[登录](https://estherji.github.io/newpc/Views/Passport/login.html)
+[注册](https://estherji.github.io/newpc/Views/Passport/register.html)
+[找回密码](https://estherji.github.io/newpc/Views/Passport/findpassword.html)

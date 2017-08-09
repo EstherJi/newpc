@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="无忧微贷网是一家致力于打造专业、诚信网络借贷的平台，主要业务有投资理财、短期理财、理财计划、个人理财、网络理财、小额分散、消费金融等。"/>
+		<meta name="keywords" content="无忧微贷网-投资理财、短期理财、理财计划、个人理财、网络理财、小额分散、消费金融"/>
+		<title>无忧微贷</title>
+		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/account_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/modal.css">
+		<link rel="stylesheet" type="text/css" href="../../Scripts/layui/css/layui.css">
+	</head>
+	<body>
+		<div class="m-nav">
+			<div class="nav-wrap">
+				<div class="content clearfix">
+					<p class="hotline f-fl"><i class="nav-icon icon-1 f-fl"></i>客服热线：13632818831（9:00 ~ 18:00）</p>
+					<ul class="nav-wrap-menu f-fr">
+						<li><a href="javascript:;">登录</a></li>
+						<li><a href="javascript:;">注册</a></li>
+						<li><a href="javascript:;">帮助中心</a></li>
+						<li class="phone f-pr">
+							<a href="javascript:;"><i class="nav-icon icon-2 f-fl"></i>手机APP</a>
+							<div class="dropdown f-pa">
+								<p class="img f-fl"><img src="../../Content/images/app.png"></p>
+								<div class="tips">
+									<p class="small-logo"><img src="../../Content/images/logo-small.png"></p>
+									<p class="bold">无忧微贷APP</p>
+									<p>让金融更简单</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="content clearfix">
+					<div class="logo f-fl"><img src="../../Content/images/logo.png"></div>
+					<ul class="nav-menu f-fr">
+						<li class="cur"><a href="#">首页</a></li>
+						<li><a href="#">我要投资</a></li>
+						<li><a href="#">我要借款</a></li>
+						<li><a href="#">信息披露</a></li>
+						<!-- 登录后增加.is-login 显示下拉列表-->
+						<li class="f-pr account is-login">
+							<a href="#"><i class="nav-icon icon-3 f-fl"></i>我的账户</a>
+							<i class="arrow-icon f-pa"></i>
+							<div class="dropdown f-pa">
+								<div class="item">
+									<p>可用余额（元）<i class="see-icon see f-fr"></i></p>
+									<p class="num">4,550,345.86</p>
+								</div>
+								<div class="item"><a href="#">我要充值</a></div>
+								<div class="item"><a href="#">安全退出</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 固定顶部 -->
+			<div class="nav fixed">
+				<div class="content clearfix">
+					<div class="logo f-fl"><img src="../../Content/images/logo.png"></div>
+					<ul class="nav-menu f-fr">
+						<li class="cur"><a href="#">首页</a></li>
+						<li><a href="#">我要投资</a></li>
+						<li><a href="#">我要借款</a></li>
+						<li><a href="#">信息披露</a></li>
+						<!-- 登录后增加.is-login 显示下拉列表-->
+						<li class="f-pr account is-login">
+							<a href="#"><i class="nav-icon icon-3 f-fl"></i>我的账户</a>
+							<i class="arrow-icon f-pa"></i>
+							<div class="dropdown f-pa">
+								<div class="item">
+									<p>可用余额（元）<i class="see-icon see f-fr"></i></p>
+									<p class="num">4,550,345.86</p>
+								</div>
+								<div class="item"><a href="#">我要充值</a></div>
+								<div class="item"><a href="#">安全退出</a></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- main content -->
+		<div class="m-account clearfix">
+			<div class="content">
+				<p class="risk-test">
+					<span>您尚未完成出借人风险评测，为了顺利投资，请<a href="#">立即测评！</a></span>
+					<i class="index-icon cicon f-fr"></i>
+				</p>
+				<div class="side f-fl">
+					<div class="item">
+						<p><i class="side-icon icon-1"></i>我的账户</p>
+						<ul>
+							<li><a href="#">账户总览</a></li>
+							<li><a href="#">充值提现</a></li>
+							<li><a href="#">投资记录</a></li>
+							<li><a href="#">资金流水</a></li>
+							<li class="cur"><a href="#">自动投标</a></li>
+							<li><a href="#">债权转让</a></li>
+						</ul>
+					</div>
+					<div class="item">
+						<p><i class="side-icon icon-2"></i>我的奖励</p>
+						<ul>
+							<li><a href="#">红包奖券</a></li>
+						</ul>
+					</div>
+					<div class="item">
+						<p><i class="side-icon icon-3"></i>账号管理</p>
+						<ul>
+							<li><a href="#">安全认证</a></li>
+							<li><a href="#">银行卡</a></li>
+							<li><a href="#">我的消息</a></li>
+						</ul>
+					</div>
+					<div class="item">
+						<p><i class="side-icon icon-4"></i>推广赚钱</p>
+						<ul class="bb-none">
+							<li><a href="#">邀请好友</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="main f-fr">
+					<div class="m-autobid">
+						<div class="stabs plr24 clearfix">
+							<div class="tabs f-fl">
+								<a class="cur mr50" data-id="1">自动投标</a>
+								<a data-id="2">自动投标记录</a>
+							</div>
+						</div>
+						<div id="item1">
+							<div class="step step1">
+								<p class="tit">还在为抢不到标烦恼？自动投资优质短期稳定标的，便捷理财、坐享收益！让资金不再闲置！</p>
+								<ul class="ablist clearfix">
+									<li>
+										<i class="abicon icon1"></i>
+										<span>设置/开启自动投标</span>
+									</li>
+									<li>
+										<i class="abicon icon2"></i>
+										<span>排队等待</span>
+									</li>
+									<li>
+										<i class="abicon icon3"></i>
+										<span>自动投标</span>
+									</li>
+								</ul>
+							</div>
+							<div class="step">
+								<p class="tit">预约自动投标当前有效人数<span>27956</span>人</p>
+								<ul class="plist clearfix">
+									<li>
+										<div class="hd">
+											散标方案
+											<label class="label-switch f-fr">
+												<input type="checkbox" checked="checked">
+												<div class="checkbox">
+													<span>已启用</span>
+												</div>
+											</label>
+										</div>
+										<div class="bd">
+											<p>预期年化收益率：<span class="red">7～10%</span></p>
+											<p>投资期限：<span class="red">3～6个月</span></p>
+											<p>当前排名：<span class="red">18496 位</span></p>
+											<p>账户保留金额：<span class="black">2000.00 元</span></p>
+											<p>有效期限：<span class="black">长期有效</span></p>
+										</div>
+										<div class="op">
+											<a class="delete">删除</a>
+											<a class="modify">修改</a>
+										</div>
+									</li> 
+									<li>
+										<div class="hd">
+											散标方案
+											<label class="label-switch f-fr">
+												<input type="checkbox">
+												<div class="checkbox">
+													<span>已停用</span>
+												</div>
+											</label>
+										</div>
+										<div class="bd">
+											<p>预期年化收益率：<span class="red">7～10%</span></p>
+											<p>投资期限：<span class="red">3～6个月</span></p>
+											<p>当前排名：<span class="red">18496 位</span></p>
+											<p>账户保留金额：<span class="black">2000.00 元</span></p>
+											<p>有效期限：<span class="black">长期有效</span></p>
+										</div>
+										<div class="op">
+											<a class="delete">删除</a>
+											<a class="modify">修改</a>
+										</div>
+									</li> 
+									<li class="add">
+										<i class="abicon icon4"></i>
+										<p class="text">添加自动投标方案</p>
+									</li>
+								</ul>
+							</div>
+							<div class="rules">
+								<p class="tit">自动投标规则</p>
+								<div class="detail">
+									<dl>
+										<dt>1、注册无忧微贷平台的出借人均可开启自动投标；</dt>
+									</dl>
+									<dl>
+										<dt>2、时效性：出借人保存自动投标设置并开启后，自动投标功能立即生效；</dt>
+									</dl>
+									<dl>
+										<dt>3、额度限制：本平台有权将借款标按一定比例划分为自动投标与手动投标；</dt>
+									</dl>
+									<dl>
+										<dt>4、每个用户最多能添加3个自动投标规则；</dt>
+									</dl>
+									<dl>
+										<dt>5、已开启自动投标，当新标上线时预约资金将被冻结，不能用于投资或提现；</dt>
+									</dl>
+									<dl>
+										<dt>6、已开启自动投标，但用户当前的账户可用余额&lt;100元时，不参与自动投标；</dt>
+									</dl>
+									<dl>
+										<dt>7、状态为[停用]的自动投标负责不参与自动投标；</dt>
+									</dl>
+									<dl>
+										<dt>8、设置[账户保留金额]为[不保留]，系统将用户账内全部可用余额用于自动投标；</dt>
+									</dl>
+									<dl>
+										<dt>9、自动投标完成后，如未满标用户仍可手动投标，手动不限投标次数；</dt>
+									</dl>
+									<dl>
+										<dt>10、自动投标排队规则如下：</dt>
+										<dd>a、自动投标排名按照开启自动投标规则的时间先后顺序进行排序。</dd>
+										<dd>b、修改自动投标规则不影响当前排名。</dd>
+										<dd>c、自动排队期间，点击[停用]再重新点击[启用]，则重新排队。</dd>
+										<dd>d、轮到用户进行投标时，若没有标符合用户设置的自动投标条件，视为主动放弃此次投标机会，重新排队。</dd>
+										<dd>e、自动投标成功后，用户将重新回到队尾。</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+						<div class="" id="item2">
+							<div class="table-box plr24">
+								<!-- 显示14条数据 -->
+								<table>
+									<thead>
+										<tr>
+											<th>项目名称</th>
+											<th>借款利率</th>
+											<th>出借金额（元）</th>
+											<th>出借时间</th>
+											<th>预期收益</th>
+											<th>出借状态</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>深圳丰田汽车抵押</td>
+											<td>14.4%</td>
+											<td>150,000.00</td>
+											<td>2017-09-17 13:54</td>
+											<td>5,400.00</td>
+											<td>投标中</td>
+										</tr>
+										<tr>
+											<td>深圳丰田汽车抵押</td>
+											<td>14.4%</td>
+											<td>150,000.00</td>
+											<td>2017-09-17 13:54</td>
+											<td>5,400.00</td>
+											<td>回款中</td>
+										</tr>
+										<tr>
+											<td>深圳丰田汽车抵押</td>
+											<td>14.4%</td>
+											<td>150,000.00</td>
+											<td>2017-09-17 13:54</td>
+											<td>5,400.00</td>
+											<td>已回款</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="pages"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end main content -->
+
+		<div class="m-footer">
+			<div class="content">
+				<div class="footer-menu clearfix">
+					<ul class="website-map f-fl clearfix">
+						<li>
+							<p>关于我们</p>
+							<a href="#">平台简介</a>
+							<a href="#">荣耀资历</a>
+							<a href="#">加入我们</a>
+							<a href="#">联系我们</a>
+						</li>
+						<li>
+							<p>信息披露</p>
+							<a href="#">平台信息</a>
+							<a href="#">平台数据</a>
+							<a href="#">运营信息</a>
+						</li>
+						<li>
+							<p>安全保障</p>
+							<a href="#">法律法规</a>
+							<a href="#">安全保障</a>
+						</li>
+					</ul>
+					<div class="contact f-fr">
+						<p class="img"><img src="../../Content/images/logo-footer.png"></p>
+						<p>无忧微贷客服热线</p>
+						<p class="num">13632818831</p>
+						<p>客服工作时间：9:00-18:00</p>
+						<p>深圳市福田区4036号荣超大厦9楼</p>
+					</div>
+					<ul class="qrcode clearfix">
+						<li>
+							<p class="img"><img src="../../Content/images/wechat.png"></p>
+							<p>关注公众号，活动早知道</p>
+						</li>
+						<li>
+							<p class="app"><img src="../../Content/images/app.png"></p>
+							<p>下载APP，随时享理财</p>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-wrap">
+					<p>
+						<span>版权所有 &copy; </span>
+	                    <span>2017深圳市引爆互联网金融服务有限公司</span>
+	                    <span><a href="http://www.miitbeian.gov.cn">粤ICP备17018158号-2</a></span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="m-toolbar">
+			<ul>
+				<li class="phone">
+					<i class="icon icon-1"></i>
+					<div class="dropdown f-pa">
+						<p>下载APP</p>
+						<p>随时随地享理财</p>
+						<p class="img"><img src="../../Content/images/app.png"></p>
+					</div>
+				</li>
+				<li><i class="icon icon-2"></i></li>
+				<li class="edit">
+					<i class="icon icon-3"></i>
+					<div class="dropdown f-pa">
+						<p class="textarea"><textarea placeholder="我们期待您的意见和反馈，我们会不断优化产品，为您提供更好的体验与服务。"></textarea></p>
+						<a class="submit">提交</a>
+					</div> 
+				</li>
+				<li><i class="icon icon-4"></i></li>
+				<li class="scroll-top"><i class="icon icon-5"></i></li>
+			</ul>
+		</div>
+
+		<!-- 设置自动投标 -->
+		<div class="sabmodal">
+			<div class="item">
+				<label>投资期限区间：</label>
+				<div class="cbox">
+					<input type="text" class="ipt" value="12">
+					<b>~</b>
+					<input type="text" class="ipt" value="15">
+					<span class="pl5">%</span>
+				</div>
+			</div>
+			<div class="item">
+				<label>投资期限：</label>
+				<div class="cbox">
+					<input type="text" class="ipt" value="1">
+					<b>~</b>
+					<input type="text" class="ipt" value="3">
+					<span class="pl5">个月</span>
+				</div>
+			</div>
+			<div class="item">
+				<label class="f-pr">
+					<i class="sabicon qicon"></i>
+					账户保留金额：
+					<span class="tips f-pa">保留金额不会加入自动投标，无需保留将所有可用余额加入自动投标</span>
+				</label>
+				<div class="cbox">
+					<span class="choose"><i class="sabicon ricon"></i>无需保留</span>
+					<span class="choose custom"><i class="sabicon ricon"></i>需保留</span>
+					<div class="cnbox nbox">
+						<input type="text" class="ipt" value="2000">
+						<span class="pl5">元</span>
+						<p>担心余额不足影响自动投标？<a href="#">查看还款计划</a></p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<label>还款方式：</label>
+				<div class="cbox">
+					<span class="choose"><i class="sabicon ricon"></i>不限</span>
+					<span class="choose custom"><i class="sabicon ricon"></i>自定义</span>
+					<div class="cnbox chbox clearfix">
+						<p class=""><i class="sabicon cicon"></i>一次性还本付息</p>
+						<p><i class="sabicon cicon"></i>等额本息</p>
+						<p><i class="sabicon cicon"></i>先息后本</p>
+						<p><i class="sabicon cicon"></i>等本等息</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<label>投资类型：</label>
+				<div class="cbox">
+					<span class="choose"><i class="sabicon ricon"></i>不限</span>
+					<span class="choose custom"><i class="sabicon ricon"></i>自定义</span>
+					<div class="cnbox chbox ml clearfix">
+						<p class=""><i class="sabicon cicon"></i>车贷</p>
+						<p><i class="sabicon cicon"></i>红本抵押</p>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<label>有效期限：</label>
+				<div class="cbox">
+					<span class="choose"><i class="sabicon ricon"></i>不限</span>
+					<span class="choose custom"><i class="sabicon ricon"></i>自定义</span>
+					<div class="cnbox nbox f-pr">
+						<i class="sabicon dicon f-pa"></i>
+						<input type="text" class="ipt layui-input" id="start" value="2017-08-07">
+						<b>~</b>
+						<input type="text" class="ipt layui-input" id="end">
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<label>有效期限：</label>
+				<div class="cbox">
+					<span class="read need"><i class="sabicon ricon"></i>我已阅读并同意<a href="#">《无忧微贷自动投标协议》</a></span>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
+		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/modal.js"></script>
+		<script type="text/javascript" src="../../Scripts/layui/layui.js"></script>
+
+		<script type="text/javascript">
+			$('.label-switch input[type="checkbox"]:checked').on('click', function(){
+				new CancelModal({
+					content: '<p>停用此项会重新排队，您确认停用吗？</p>',
+					title: '<i class="warning f-fl"></i>温馨提示',
+					contentNodeCn: 'brmodal',
+					confirmBtnCn: 'red ml',
+					cancelBtnCn: 'cancel f-fr',
+					success: function(){},  // 成功返回按钮
+					fail: function(){}      // 失败返回按钮
+				}).init();
+			});
+
+			$('.m-autobid .plist .add').on('click', function(){
+				new AlertModal({
+					content: $('.sabmodal').html(),
+					title: '设置自动投标',
+					panelCn: 'modal lg',
+					contentNodeCn: 'sabmodal',
+					confirm: '保存方案',
+					success: function(){}
+				}).init();
+				
+				$('.modal .sabmodal').on('click', '.choose', function(){
+					$(this).addClass('need').siblings('.choose').removeClass('need');
+					if($(this).hasClass('custom')){
+						$(this).next('.cnbox').show();
+					}else{
+						$(this).parent('.cbox').children('.cnbox').hide();
+					}
+				});
+
+				$('.modal .sabmodal').on('click', '.cicon', function(){
+					var obj = $(this).parent('p');
+					if(obj.hasClass('cur')){
+						obj.removeClass('cur');
+					}else{
+						obj.addClass('cur');
+					}
+				});
+
+				layui.use('laydate', function(){
+					var laydate = layui.laydate;
+
+					var start = {
+						min: laydate.now(),
+						max: '2099-06-16 23:59:59',
+						istoday: false,
+						choose: function(datas){
+							end.min = datas;
+							end.start = datas;
+						}
+					};
+
+					var end = {
+						min: laydate.now(),
+						max: '2099-06-16 23:59:59',
+						istoday: false,
+						choose: function(datas){
+							start.max = datas;
+						}
+					};
+
+					$('.modal .sabmodal #start').on('click', function(){
+						start.elem = this;
+						laydate(start);
+					});
+
+					$('.modal .sabmodal #end').on('click', function(){
+						end.elem = this;
+						laydate(end);
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

@@ -20,7 +20,7 @@ var Modal = function(data){
 	this.confirmBtn = document.createElement('a');  // 确定按钮组件
 	this.closeBtn = document.createElement('span');   // 关闭按钮组件
 
-	this.panel.className = 'modal';
+	this.panel.className = data.panelCn || 'modal';
 	this.contentNode.className = data.contentNodeCn || 'modal-content';
 	this.closeBtn.className = 'close';
 	this.confirmBtn.className = 'btn ' + (data.confirmBtnCn || 'blue');

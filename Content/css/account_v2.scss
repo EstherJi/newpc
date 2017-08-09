@@ -97,7 +97,7 @@ $borderColor: #EBEFF3;
 
 	.side{
 		width: 218px;
-		height: 656px;
+		// height: 656px;
 		border: 1px solid #EBEFF3;
 		background-color: #fff;
 
@@ -1132,7 +1132,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-wallet, .m-bid, .m-coupon, .m-message{
+.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid{
 	.stabs{
 		height: 59px;
 		line-height: 59px;
@@ -1196,7 +1196,7 @@ $borderColor: #EBEFF3;
 }
 
 /* table */
-.m-funsflow, .m-bid, .m-wallet, .m-message, .m-invition{
+.m-funsflow, .m-bid, .m-wallet, .m-message, .m-invition, .m-autobid{
 	.table-box{
 		margin: 25px 0 27px;
 
@@ -1286,7 +1286,7 @@ $borderColor: #EBEFF3;
 .m-funsflow{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.table-box{
 		table{
@@ -1377,7 +1377,7 @@ $borderColor: #EBEFF3;
 
 /* recharge, withdrawal */
 .m-recharge, .m-withdrawal{
-	height: 656px;
+	height: 757px;
 	border: 1px solid $borderColor;
 	background-color: #fff;
 
@@ -1558,7 +1558,7 @@ $borderColor: #EBEFF3;
 .m-coupon{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.tips{
 		margin-bottom: 24px;
@@ -1724,7 +1724,7 @@ $borderColor: #EBEFF3;
 .m-bankcard{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.bcicon{
 		background: url(../../Content/images/account/bcicon.png) no-repeat;
@@ -1823,7 +1823,7 @@ $borderColor: #EBEFF3;
 .m-security{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.lbox{
 		margin: 25px 24px 10px;
@@ -1964,7 +1964,7 @@ $borderColor: #EBEFF3;
 .m-message{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.sbox{
 		margin-top: 25px;
@@ -2107,7 +2107,7 @@ $borderColor: #EBEFF3;
 .m-messagedetail{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.title{
 		a{
@@ -2149,7 +2149,7 @@ $borderColor: #EBEFF3;
 .m-invition{
 	border: 1px solid $borderColor;
 	background-color: #fff;
-	min-height: 656px;
+	min-height: 757px;
 
 	.ilist{
 		padding: 0 55px 0 24px;
@@ -2276,5 +2276,285 @@ $borderColor: #EBEFF3;
 		}
 	}
 }
+
+.m-autobid{
+	min-height: 757px;
+	border: 1px solid $borderColor;
+	background-color: #fff;
+
+	.step{
+		margin: 0 24px;
+
+		&.step1{
+			padding-top: 5px;
+			border-bottom: 1px solid #EBEFF3;
+		}
+
+		.tit{
+			padding-top: 20px;
+			color: #454550;
+
+			span{
+				padding: 0 5px;
+				color: $blueColor;
+			}
+		}
+
+		.abicon{
+			margin: 0 auto 15px;
+			width: 80px;
+			height: 80px;
+			background: url(../../Content/images/account/abicon.png) no-repeat;
+			display: block;
+			position: relative;
+
+			&.icon1{
+				background-position: -46px 0;
+			}
+
+			&.icon2{
+				background-position: -206px 0;
+			}
+
+			&.icon3{
+				background-position: -126px 0;
+			}
+
+			&.icon4{
+				margin: 90px auto 10px;
+				width: 46px;
+				height: 46px;
+				background-position: 0 0;
+			}
+		}
+
+		.ablist{
+			padding: 46px 0;
+
+			li{
+				width: 33.3%;
+				float: left;
+				text-align: center;
+
+				span{
+					color: #676770;
+				}
+
+				&:not(:nth-child(1)){
+					.abicon{
+						&:after{
+							content: '';
+							position: absolute;
+							width: 191px;
+							height: 0;
+							border-top: 1px dashed rgba(7, 144, 255, .3);
+							top: 40px;
+							right: 125%;
+						}
+					}
+				}
+			}
+		}
+
+		.plist{
+			padding: 20px 0;
+
+			li{
+				margin: 0 18px 18px 0;
+				width: 291px;
+				height: 294px;
+				border: 1px solid #EBEFF3;
+				float: left;
+
+				&:nth-child(3n){
+					margin-right: 0;
+				}
+
+				&.add{
+					border: none;
+					box-shadow: 0px 1px 6px 0px rgba(7, 144, 255, 0.15);
+					cursor: pointer;
+
+					.text{
+						color: $blueColor;
+						text-align: center;
+					}
+				}
+
+				.hd{
+					padding: 0 20px;
+					height: 44px;
+					line-height: 44px;
+					font-size: 16px;
+					color: #565660;
+					background-color: #fbfcfd;
+				}
+
+				.label-switch{
+					width: 74px;
+					height: 24px;
+					top: 10px;
+					position: relative;
+					cursor: pointer;
+					display: inline-block;
+					box-sizing: border-box;
+					align-self: center;
+					-webkit-align-self: center;
+
+					span{
+						position: absolute;
+						color: #fff;
+						font-size: 12px;
+						line-height: 24px;
+						left: 28px;
+						z-index: 1;
+					}
+
+					.checkbox{
+						width: 74px;
+						height: 24px;
+						border-radius: 12px;
+						-webkit-transition-duration: 500ms;
+						transition-duration: 500ms;
+						position: relative;
+						cursor: pointer;
+						box-sizing: border-box;
+						-webkit-appearance: none;
+						-moz-appearance: none;
+						z-index: 0;
+
+						&:before{
+							width: 74px;
+							height: 24px;
+							border-radius: 12px;
+							background-color: #CED3D7;
+							content: '';
+							position: absolute;
+							box-sizing: border-box;
+							transition-duration: 500ms;
+							-webkit-transition-duration: 500ms;
+							-webkit-transform: scale(1);
+							transform: scale(1);
+							z-index: 1;
+						}
+
+						&:after{
+							width: 20px;
+							height: 20px;
+							top: 2px;
+							left: 1px;
+							border-radius: 50%;
+							background-color: #fff;
+							content: '';
+							position: absolute;
+							transition-duration: 500ms;
+							-webkit-transition-duration: 500ms;
+							transform: translateX(0px);
+							-webkit-transform: translateX(0px);
+							z-index: 2;
+						}
+					}
+
+					input[type='checkbox']{
+						display: none;
+						outline: none;
+
+						&:checked{
+							& + .checkbox{
+								background-color: $blueColor;
+
+								&:before{
+									transform: scale(0);
+									-webkit-transform: scale(0);
+								}
+
+								&:after{
+									transform: translateX(52px);
+									-webkit-transform: translateX(52px);
+								}
+
+								span{
+									transform: translateX(-22px);
+									-webkit-transform: translateX(-22px);
+								}
+							}
+						}
+					}
+				}
+
+				.bd{
+					padding: 16px 20px 0;
+					height: 190px;
+
+					p{
+						margin-bottom: 12px;
+						color: #676770;
+
+						span{
+							padding-left: 3px;
+						}
+
+						.red{
+							color: $redColor;
+						}
+
+						.black{
+							color: #454550;
+						}
+					}
+				}
+
+				.op{
+					height: 43px;
+					line-height: 43px;
+					border-top: 1px solid #EBEFF3;
+					background-color: #fbfcfd;
+
+					a{
+						width: 49%;
+						line-height: 16px;
+						display: inline-block;
+						text-align: center;
+
+						&.delete{
+							color: $blueColor;
+							border-right: 1px solid #CCD8E2;
+						}
+
+						&.modify{
+							color: #454550;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.rules{
+		.tit{
+			padding: 0 24px;
+			padding-bottom: 16px;
+			font-size: 16px;
+			border-bottom: 1px solid #EBEFF3;
+			color: #454550;
+		}
+
+		.detail{
+			margin: 25px 24px;
+			padding: 22px 24px;
+			background-color: #f9fafc;
+
+			dt, dd{
+				line-height: 26px;
+				color: #787880;
+			}
+
+			dd{
+				padding-left: 30px;
+			}
+		}
+	}
+}
+
 
 

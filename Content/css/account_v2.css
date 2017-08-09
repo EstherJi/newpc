@@ -55,7 +55,6 @@
         background-position: -6px 0; }
   .m-account .side {
     width: 218px;
-    height: 656px;
     border: 1px solid #EBEFF3;
     background-color: #fff; }
     .m-account .side p {
@@ -684,22 +683,22 @@
   background-color: #fff;
   min-height: 456px; }
 
-.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs, .m-message .stabs {
+.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs, .m-message .stabs, .m-autobid .stabs {
   height: 59px;
   line-height: 59px;
   border-bottom: 1px solid #F7F9FA; }
-  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a, .m-message .stabs .tabs a {
+  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a, .m-message .stabs .tabs a, .m-autobid .stabs .tabs a {
     height: 58px;
     line-height: 58px;
     font-size: 16px;
     color: #454550;
     display: inline-block; }
-    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover, .m-message .stabs .tabs a:hover {
+    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover, .m-message .stabs .tabs a:hover, .m-autobid .stabs .tabs a:hover {
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur, .m-message .stabs .tabs a.cur {
+    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur, .m-message .stabs .tabs a.cur, .m-autobid .stabs .tabs a.cur {
       border-bottom: 2px solid #0790ff;
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50, .m-message .stabs .tabs a.mr50 {
+    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50, .m-message .stabs .tabs a.mr50, .m-autobid .stabs .tabs a.mr50 {
       margin-right: 50px; }
 
 .m-wallet .stabs .sbox a, .m-bid .stabs .sbox a, .m-coupon .stabs .sbox a {
@@ -720,33 +719,33 @@
     margin-right: 0; }
 
 /* table */
-.m-funsflow .table-box, .m-bid .table-box, .m-wallet .table-box, .m-message .table-box, .m-invition .table-box {
+.m-funsflow .table-box, .m-bid .table-box, .m-wallet .table-box, .m-message .table-box, .m-invition .table-box, .m-autobid .table-box {
   margin: 25px 0 27px; }
-  .m-funsflow .table-box table, .m-bid .table-box table, .m-wallet .table-box table, .m-message .table-box table, .m-invition .table-box table {
+  .m-funsflow .table-box table, .m-bid .table-box table, .m-wallet .table-box table, .m-message .table-box table, .m-invition .table-box table, .m-autobid .table-box table {
     width: 100%; }
-    .m-funsflow .table-box table tr, .m-bid .table-box table tr, .m-wallet .table-box table tr, .m-message .table-box table tr, .m-invition .table-box table tr {
+    .m-funsflow .table-box table tr, .m-bid .table-box table tr, .m-wallet .table-box table tr, .m-message .table-box table tr, .m-invition .table-box table tr, .m-autobid .table-box table tr {
       height: 44px; }
-    .m-funsflow .table-box table tbody tr:hover, .m-bid .table-box table tbody tr:hover, .m-wallet .table-box table tbody tr:hover, .m-message .table-box table tbody tr:hover, .m-invition .table-box table tbody tr:hover {
+    .m-funsflow .table-box table tbody tr:hover, .m-bid .table-box table tbody tr:hover, .m-wallet .table-box table tbody tr:hover, .m-message .table-box table tbody tr:hover, .m-invition .table-box table tbody tr:hover, .m-autobid .table-box table tbody tr:hover {
       background-color: #ffede8; }
-    .m-funsflow .table-box table tbody tr:nth-child(even), .m-bid .table-box table tbody tr:nth-child(even), .m-wallet .table-box table tbody tr:nth-child(even), .m-message .table-box table tbody tr:nth-child(even), .m-invition .table-box table tbody tr:nth-child(even) {
+    .m-funsflow .table-box table tbody tr:nth-child(even), .m-bid .table-box table tbody tr:nth-child(even), .m-wallet .table-box table tbody tr:nth-child(even), .m-message .table-box table tbody tr:nth-child(even), .m-invition .table-box table tbody tr:nth-child(even), .m-autobid .table-box table tbody tr:nth-child(even) {
       background-color: #fbfcfd; }
-      .m-funsflow .table-box table tbody tr:nth-child(even):hover, .m-bid .table-box table tbody tr:nth-child(even):hover, .m-wallet .table-box table tbody tr:nth-child(even):hover, .m-message .table-box table tbody tr:nth-child(even):hover, .m-invition .table-box table tbody tr:nth-child(even):hover {
+      .m-funsflow .table-box table tbody tr:nth-child(even):hover, .m-bid .table-box table tbody tr:nth-child(even):hover, .m-wallet .table-box table tbody tr:nth-child(even):hover, .m-message .table-box table tbody tr:nth-child(even):hover, .m-invition .table-box table tbody tr:nth-child(even):hover, .m-autobid .table-box table tbody tr:nth-child(even):hover {
         background-color: #ffede8; }
-    .m-funsflow .table-box table thead tr, .m-bid .table-box table thead tr, .m-wallet .table-box table thead tr, .m-message .table-box table thead tr, .m-invition .table-box table thead tr {
+    .m-funsflow .table-box table thead tr, .m-bid .table-box table thead tr, .m-wallet .table-box table thead tr, .m-message .table-box table thead tr, .m-invition .table-box table thead tr, .m-autobid .table-box table thead tr {
       background-color: #f0f8fe; }
-    .m-funsflow .table-box table th, .m-funsflow .table-box table td, .m-bid .table-box table th, .m-bid .table-box table td, .m-wallet .table-box table th, .m-wallet .table-box table td, .m-message .table-box table th, .m-message .table-box table td, .m-invition .table-box table th, .m-invition .table-box table td {
+    .m-funsflow .table-box table th, .m-funsflow .table-box table td, .m-bid .table-box table th, .m-bid .table-box table td, .m-wallet .table-box table th, .m-wallet .table-box table td, .m-message .table-box table th, .m-message .table-box table td, .m-invition .table-box table th, .m-invition .table-box table td, .m-autobid .table-box table th, .m-autobid .table-box table td {
       text-align: center; }
-    .m-funsflow .table-box table th, .m-bid .table-box table th, .m-wallet .table-box table th, .m-message .table-box table th, .m-invition .table-box table th {
+    .m-funsflow .table-box table th, .m-bid .table-box table th, .m-wallet .table-box table th, .m-message .table-box table th, .m-invition .table-box table th, .m-autobid .table-box table th {
       color: #343440; }
-    .m-funsflow .table-box table td, .m-bid .table-box table td, .m-wallet .table-box table td, .m-message .table-box table td, .m-invition .table-box table td {
+    .m-funsflow .table-box table td, .m-bid .table-box table td, .m-wallet .table-box table td, .m-message .table-box table td, .m-invition .table-box table td, .m-autobid .table-box table td {
       color: #676770; }
-  .m-funsflow .table-box .pages, .m-bid .table-box .pages, .m-wallet .table-box .pages, .m-message .table-box .pages, .m-invition .table-box .pages {
+  .m-funsflow .table-box .pages, .m-bid .table-box .pages, .m-wallet .table-box .pages, .m-message .table-box .pages, .m-invition .table-box .pages, .m-autobid .table-box .pages {
     padding-top: 27px;
     padding-bottom: 0; }
-.m-funsflow .pages, .m-bid .pages, .m-wallet .pages, .m-message .pages, .m-invition .pages {
+.m-funsflow .pages, .m-bid .pages, .m-wallet .pages, .m-message .pages, .m-invition .pages, .m-autobid .pages {
   padding-bottom: 27px;
   text-align: center; }
-  .m-funsflow .pages a, .m-bid .pages a, .m-wallet .pages a, .m-message .pages a, .m-invition .pages a {
+  .m-funsflow .pages a, .m-bid .pages a, .m-wallet .pages a, .m-message .pages a, .m-invition .pages a, .m-autobid .pages a {
     height: 34px;
     line-height: 34px;
     padding: 0 13px;
@@ -755,10 +754,10 @@
     border: 1px solid #DFE3E6;
     color: #908f9a;
     display: inline-block; }
-    .m-funsflow .pages a:hover, .m-bid .pages a:hover, .m-wallet .pages a:hover, .m-message .pages a:hover, .m-invition .pages a:hover {
+    .m-funsflow .pages a:hover, .m-bid .pages a:hover, .m-wallet .pages a:hover, .m-message .pages a:hover, .m-invition .pages a:hover, .m-autobid .pages a:hover {
       color: #fff;
       background-color: #0790ff; }
-  .m-funsflow .pages span.laypage_curr, .m-bid .pages span.laypage_curr, .m-wallet .pages span.laypage_curr, .m-message .pages span.laypage_curr, .m-invition .pages span.laypage_curr {
+  .m-funsflow .pages span.laypage_curr, .m-bid .pages span.laypage_curr, .m-wallet .pages span.laypage_curr, .m-message .pages span.laypage_curr, .m-invition .pages span.laypage_curr, .m-autobid .pages span.laypage_curr {
     height: 34px;
     line-height: 34px;
     padding: 0 13px;
@@ -772,7 +771,7 @@
 .m-funsflow {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-funsflow .table-box table tr {
     height: 70px; }
   .m-funsflow .table-box table td:last-child {
@@ -829,7 +828,7 @@
 
 /* recharge, withdrawal */
 .m-recharge, .m-withdrawal {
-  height: 656px;
+  height: 757px;
   border: 1px solid #EBEFF3;
   background-color: #fff; }
   .m-recharge .title a, .m-withdrawal .title a {
@@ -942,7 +941,7 @@
 .m-coupon {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-coupon .tips {
     margin-bottom: 24px; }
     .m-coupon .tips .detail p label {
@@ -1042,7 +1041,7 @@
 .m-bankcard {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-bankcard .bcicon {
     background: url(../../Content/images/account/bcicon.png) no-repeat;
     display: inline-block; }
@@ -1106,7 +1105,7 @@
 .m-security {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-security .lbox {
     margin: 25px 24px 10px;
     height: 92px;
@@ -1190,7 +1189,7 @@
 .m-message {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-message .sbox {
     margin-top: 25px; }
     .m-message .sbox span {
@@ -1279,7 +1278,7 @@
 .m-messagedetail {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-messagedetail .title a {
     color: #0790ff; }
   .m-messagedetail .logo {
@@ -1306,7 +1305,7 @@
 .m-invition {
   border: 1px solid #EBEFF3;
   background-color: #fff;
-  min-height: 656px; }
+  min-height: 757px; }
   .m-invition .ilist {
     padding: 0 55px 0 24px; }
     .m-invition .ilist li {
@@ -1384,5 +1383,191 @@
         color: #565660; }
   .m-invition .table-box table .no {
     color: #ff3300; }
+
+.m-autobid {
+  min-height: 757px;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-autobid .step {
+    margin: 0 24px; }
+    .m-autobid .step.step1 {
+      padding-top: 5px;
+      border-bottom: 1px solid #EBEFF3; }
+    .m-autobid .step .tit {
+      padding-top: 20px;
+      color: #454550; }
+      .m-autobid .step .tit span {
+        padding: 0 5px;
+        color: #0790ff; }
+    .m-autobid .step .abicon {
+      margin: 0 auto 15px;
+      width: 80px;
+      height: 80px;
+      background: url(../../Content/images/account/abicon.png) no-repeat;
+      display: block;
+      position: relative; }
+      .m-autobid .step .abicon.icon1 {
+        background-position: -46px 0; }
+      .m-autobid .step .abicon.icon2 {
+        background-position: -206px 0; }
+      .m-autobid .step .abicon.icon3 {
+        background-position: -126px 0; }
+      .m-autobid .step .abicon.icon4 {
+        margin: 90px auto 10px;
+        width: 46px;
+        height: 46px;
+        background-position: 0 0; }
+    .m-autobid .step .ablist {
+      padding: 46px 0; }
+      .m-autobid .step .ablist li {
+        width: 33.3%;
+        float: left;
+        text-align: center; }
+        .m-autobid .step .ablist li span {
+          color: #676770; }
+        .m-autobid .step .ablist li:not(:nth-child(1)) .abicon:after {
+          content: '';
+          position: absolute;
+          width: 191px;
+          height: 0;
+          border-top: 1px dashed rgba(7, 144, 255, 0.3);
+          top: 40px;
+          right: 125%; }
+    .m-autobid .step .plist {
+      padding: 20px 0; }
+      .m-autobid .step .plist li {
+        margin: 0 18px 18px 0;
+        width: 291px;
+        height: 294px;
+        border: 1px solid #EBEFF3;
+        float: left; }
+        .m-autobid .step .plist li:nth-child(3n) {
+          margin-right: 0; }
+        .m-autobid .step .plist li.add {
+          border: none;
+          box-shadow: 0px 1px 6px 0px rgba(7, 144, 255, 0.15);
+          cursor: pointer; }
+          .m-autobid .step .plist li.add .text {
+            color: #0790ff;
+            text-align: center; }
+        .m-autobid .step .plist li .hd {
+          padding: 0 20px;
+          height: 44px;
+          line-height: 44px;
+          font-size: 16px;
+          color: #565660;
+          background-color: #fbfcfd; }
+        .m-autobid .step .plist li .label-switch {
+          width: 74px;
+          height: 24px;
+          top: 10px;
+          position: relative;
+          cursor: pointer;
+          display: inline-block;
+          box-sizing: border-box;
+          align-self: center;
+          -webkit-align-self: center; }
+          .m-autobid .step .plist li .label-switch span {
+            position: absolute;
+            color: #fff;
+            font-size: 12px;
+            line-height: 24px;
+            left: 28px;
+            z-index: 1; }
+          .m-autobid .step .plist li .label-switch .checkbox {
+            width: 74px;
+            height: 24px;
+            border-radius: 12px;
+            -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+            position: relative;
+            cursor: pointer;
+            box-sizing: border-box;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            z-index: 0; }
+            .m-autobid .step .plist li .label-switch .checkbox:before {
+              width: 74px;
+              height: 24px;
+              border-radius: 12px;
+              background-color: #CED3D7;
+              content: '';
+              position: absolute;
+              box-sizing: border-box;
+              transition-duration: 500ms;
+              -webkit-transition-duration: 500ms;
+              -webkit-transform: scale(1);
+              transform: scale(1);
+              z-index: 1; }
+            .m-autobid .step .plist li .label-switch .checkbox:after {
+              width: 20px;
+              height: 20px;
+              top: 2px;
+              left: 1px;
+              border-radius: 50%;
+              background-color: #fff;
+              content: '';
+              position: absolute;
+              transition-duration: 500ms;
+              -webkit-transition-duration: 500ms;
+              transform: translateX(0px);
+              -webkit-transform: translateX(0px);
+              z-index: 2; }
+          .m-autobid .step .plist li .label-switch input[type='checkbox'] {
+            display: none;
+            outline: none; }
+            .m-autobid .step .plist li .label-switch input[type='checkbox']:checked + .checkbox {
+              background-color: #0790ff; }
+              .m-autobid .step .plist li .label-switch input[type='checkbox']:checked + .checkbox:before {
+                transform: scale(0);
+                -webkit-transform: scale(0); }
+              .m-autobid .step .plist li .label-switch input[type='checkbox']:checked + .checkbox:after {
+                transform: translateX(52px);
+                -webkit-transform: translateX(52px); }
+              .m-autobid .step .plist li .label-switch input[type='checkbox']:checked + .checkbox span {
+                transform: translateX(-22px);
+                -webkit-transform: translateX(-22px); }
+        .m-autobid .step .plist li .bd {
+          padding: 16px 20px 0;
+          height: 190px; }
+          .m-autobid .step .plist li .bd p {
+            margin-bottom: 12px;
+            color: #676770; }
+            .m-autobid .step .plist li .bd p span {
+              padding-left: 3px; }
+            .m-autobid .step .plist li .bd p .red {
+              color: #ff3300; }
+            .m-autobid .step .plist li .bd p .black {
+              color: #454550; }
+        .m-autobid .step .plist li .op {
+          height: 43px;
+          line-height: 43px;
+          border-top: 1px solid #EBEFF3;
+          background-color: #fbfcfd; }
+          .m-autobid .step .plist li .op a {
+            width: 49%;
+            line-height: 16px;
+            display: inline-block;
+            text-align: center; }
+            .m-autobid .step .plist li .op a.delete {
+              color: #0790ff;
+              border-right: 1px solid #CCD8E2; }
+            .m-autobid .step .plist li .op a.modify {
+              color: #454550; }
+  .m-autobid .rules .tit {
+    padding: 0 24px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    border-bottom: 1px solid #EBEFF3;
+    color: #454550; }
+  .m-autobid .rules .detail {
+    margin: 25px 24px;
+    padding: 22px 24px;
+    background-color: #f9fafc; }
+    .m-autobid .rules .detail dt, .m-autobid .rules .detail dd {
+      line-height: 26px;
+      color: #787880; }
+    .m-autobid .rules .detail dd {
+      padding-left: 30px; }
 
 /*# sourceMappingURL=account_v2.css.map */

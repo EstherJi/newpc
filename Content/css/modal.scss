@@ -118,6 +118,14 @@ $redHoverColor: #ff5c33;
 		}
 	}
 
+	&.lg{
+		width: 790px;
+
+		.btn{
+			margin-left: 315px;
+		}
+	}
+
 	.cwmodal{
 		p{
 			margin: 40px 30px 54px;
@@ -488,7 +496,184 @@ $redHoverColor: #ff5c33;
 			}
 		}
 	}
+
+	.sabmodal{
+		padding: 30px 30px 15px;
+
+		.sabicon{
+			width: 14px;
+			height: 14px;
+			background: url(../../Content/images/modal/sabicon.png) no-repeat;
+			display: inline-block;
+
+			&.qicon{
+				background-position: -42px 0;
+				float: left;
+				margin-top: 4px;
+
+				&:hover{
+					background-position: 0 0;
+
+					& ~ .tips{
+						display: block;
+					}
+				}
+			}
+
+			&.ricon{
+				margin-right: 10px;
+				background-position: -14px 0;
+				vertical-align: middle;
+			}
+
+			&.cicon{
+				margin-right: 10px;
+				background-position: -56px 0;
+				vertical-align: middle;
+			}
+
+			&.dicon{
+				right: 20px;
+				top: 6px;
+				width: 17px;
+				height: 16px;
+				background-position: -84px 0;
+			}
+		}
+
+		.item{
+			margin-bottom: 20px;
+
+			label{
+				width: 120px;
+				color: #565660;
+				text-align: right;
+				float: left;
+
+				.tips{
+					left: 24px;
+					top: -10px;
+					padding: 5px;
+					width: 100px;
+					font-size: 10px;
+					box-shadow: 0 1px 6px 0 rgba(7, 144, 255, 0.15);
+					color: $blueColor;
+					background-color: #fff;
+					text-align: left;
+					display: none;
+
+					&:after{
+						content: '';
+						position: absolute;
+						left: -6px;
+						top: 15px;
+						border-top: 6px solid transparent;
+						border-bottom: 6px solid transparent;
+						border-right: 6px solid #fff;
+						filter: drop-shadow(0 1px 4px rgba(7, 144, 255, 0.15));
+					}
+				}
+			}
+
+			.cbox{
+				margin-left: 138px;
+
+				b{
+					padding: 0 3px;
+					color: #565660;
+					font-weight: normal;
+				}
+
+				a{
+					color: $blueColor;
+				}
+
+				.pl5{
+					padding-left: 5px;
+				}
+
+				.choose{
+					width: 175px;
+					color: #676770;
+					display: inline-block;
+
+					&:nth-child(2){
+						width: 90px;
+					}
+
+					&.need{
+						color: $blueColor;
+					}
+				}
+
+				.need{
+					color: #676770;
+
+					.ricon{
+						background-position: -28px 0;
+					}
+				}
+
+				.ipt{
+					padding-left: 0;
+					width: 148px;
+					height: 30px;
+					line-height: 30px;
+					font-size: 16px;
+					border-radius: 4px;
+					border: 1px solid #E3EAEF;
+					color: $redColor;
+					text-align: center;
+					display: inline-block;
+				}
+
+				.nbox{
+					margin-left: 265px;
+					margin-top: -20px;
+					display: none;
+
+					p{
+						padding-top: 8px;
+						color: #565660;
+
+						a{
+							color: $blueColor;
+						}
+					}
+				}
+
+				.chbox{
+					padding-top: 12px;
+					display: none;
+
+					p{
+						margin-right: 44px;
+						float: left;
+
+						&.cur{
+							.cicon{
+								background-position: -70px 0;
+							}
+						}
+					}
+
+					&.ml{
+						margin-left: 178px;
+
+						p{
+							margin-right: 72px;
+						}
+					}
+				}
+			}
+		}
+
+		& ~ .btn{
+			margin-bottom: 34px;
+		}
+	}
 }
+
 
 
 

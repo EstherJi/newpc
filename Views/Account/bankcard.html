@@ -276,7 +276,7 @@
 		<script type="text/javascript" src="../../Scripts/modal.js"></script>
 		<script type="text/javascript">
 			$('.m-bankcard .add').on('click', function(){
-				new AlertModal({
+				var obj = new AlertModal({
 					content: $('.abmodal').html(),
 					title: '添加银行卡',
 					contentNodeCn: 'abmodal',

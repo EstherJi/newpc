@@ -23,6 +23,8 @@
 
 [资金流水](https://estherji.github.io/newpc/Views/Account/funsflow.html)
 
+[自动投标](https://estherji.github.io/newpc/Views/Account/autobid.html)
+
 [红包奖券](https://estherji.github.io/newpc/Views/Account/coupon.html)
 
 [安全认证](https://estherji.github.io/newpc/Views/Account/security.html)

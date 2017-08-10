@@ -436,5 +436,54 @@
               margin-right: 72px; }
     .modal .sabmodal ~ .btn {
       margin-bottom: 34px; }
+  .modal .rmodal ~ .btn {
+    font-size: 16px; }
+  .modal .rsmodal {
+    padding: 28px 30px 34px; }
+    .modal .rsmodal ~ .rbox {
+      padding: 8px 0 36px;
+      text-align: center; }
+      .modal .rsmodal ~ .rbox .reset {
+        color: #0790ff; }
+    .modal .rsmodal p {
+      color: #676770;
+      letter-spacing: 1px; }
+    .modal .rsmodal .tit {
+      text-align: center; }
+    .modal .rsmodal .type {
+      padding: 8px 0 25px;
+      font-size: 26px;
+      letter-spacing: 1px;
+      color: #454550;
+      text-align: center; }
+    .modal .rsmodal .detail {
+      line-height: 26px; }
+    .modal .rsmodal .progress {
+      margin-bottom: 20px;
+      width: 538px;
+      height: 10px;
+      border-radius: 5px;
+      border: 1px solid #EBEFF3; }
+      .modal .rsmodal .progress .pchild {
+        left: 1px;
+        top: 1px;
+        height: 8px;
+        background: url(../../Content/images/modal/rprogress.png) no-repeat;
+        display: inline-block; }
+        .modal .rsmodal .progress .pchild.p1 {
+          width: 120px;
+          background-position: 0 0; }
+        .modal .rsmodal .progress .pchild.p2 {
+          width: 220px;
+          background-position: 0 -8px; }
+        .modal .rsmodal .progress .pchild.p3 {
+          width: 320px;
+          background-position: 0 -16px; }
+        .modal .rsmodal .progress .pchild.p4 {
+          width: 430px;
+          background-position: 0 -24px; }
+        .modal .rsmodal .progress .pchild.p5 {
+          width: 536px;
+          background-position: 0 -32px; }
 
 /*# sourceMappingURL=modal.css.map */

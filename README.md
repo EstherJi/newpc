@@ -38,3 +38,5 @@
 [登录](https://estherji.github.io/newpc/Views/Passport/login.html)
 [注册](https://estherji.github.io/newpc/Views/Passport/register.html)
 [找回密码](https://estherji.github.io/newpc/Views/Passport/findpassword.html)
+
+[风险评测](https://estherji.github.io/newpc/Views/Help/risk.html)

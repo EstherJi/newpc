@@ -1,0 +1,78 @@
+.m-risk {
+  margin: 30px 0;
+  background-color: #fff;
+  border: 1px solid #EBEFF3;
+  letter-spacing: 1px; }
+  .m-risk .title {
+    padding: 34px 0 20px;
+    font-size: 24px;
+    font-weight: normal;
+    color: #454550;
+    text-align: center; }
+  .m-risk .tips {
+    padding: 0 60px 32px;
+    line-height: 26px;
+    border-bottom: 1px solid #EBEFF3;
+    color: #787880; }
+  .m-risk .detail {
+    padding: 0 60px; }
+  .m-risk .item {
+    margin-top: 30px; }
+    .m-risk .item .question {
+      padding: 8px 34px 8px 38px;
+      font-size: 16px;
+      color: #454550;
+      background-color: #f4fafe; }
+      .m-risk .item .question label, .m-risk .item .question span {
+        display: block; }
+      .m-risk .item .question label {
+        float: left; }
+      .m-risk .item .question span {
+        margin-left: 24px; }
+    .m-risk .item .ans {
+      padding-left: 38px; }
+      .m-risk .item .ans p {
+        padding-top: 20px;
+        color: #676770; }
+        .m-risk .item .ans p .icon {
+          margin: 2px 15px 0 0;
+          width: 16px;
+          height: 16px;
+          border-radius: 50%;
+          border: 1px solid #BEBEC5;
+          float: left;
+          position: relative; }
+        .m-risk .item .ans p.cur {
+          color: #0790ff; }
+          .m-risk .item .ans p.cur .icon {
+            border-color: #0790ff; }
+            .m-risk .item .ans p.cur .icon:after {
+              content: '';
+              position: absolute;
+              top: 3px;
+              left: 3px;
+              width: 10px;
+              height: 10px;
+              border-radius: 50%;
+              background-color: #0790ff; }
+        .m-risk .item .ans p span {
+          padding: 5px 0 0 52px;
+          font-size: 12px;
+          line-height: 24px;
+          color: #908f9a;
+          display: block; }
+  .m-risk .btn {
+    margin: 36px auto 40px;
+    width: 160px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #0790ff;
+    color: #fff;
+    text-align: center;
+    display: block; }
+    .m-risk .btn:hover {
+      background-color: #39a6ff; }
+
+/*# sourceMappingURL=others.css.map */

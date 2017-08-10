@@ -1,0 +1,115 @@
+$blueColor: #0790ff;
+$blueHoverColor: #39a6ff;
+
+.m-risk{
+	margin: 30px 0;
+	background-color: #fff;
+	border: 1px solid #EBEFF3;
+	letter-spacing: 1px;
+
+	.title{
+		padding: 34px 0 20px;
+		font-size: 24px;
+		font-weight: normal;
+		color: #454550;
+		text-align: center;
+	}
+
+	.tips{
+		padding: 0 60px 32px;
+		line-height: 26px;
+		border-bottom: 1px solid #EBEFF3;
+		color: #787880; 
+	}
+
+	.detail{
+		padding: 0 60px;
+	}
+
+	.item{
+		margin-top: 30px;
+
+		.question{
+			padding: 8px 34px 8px 38px;
+			font-size: 16px;
+			color: #454550;
+			background-color: #f4fafe;
+
+			label, span{
+				display: block;
+			}
+
+			label{
+				float: left;
+			}
+
+			span{
+				margin-left: 24px;
+			}
+		}
+
+		.ans{
+			padding-left: 38px;
+
+			p{
+				padding-top: 20px;
+				color: #676770;
+
+				.icon{
+					margin: 2px 15px 0 0;
+					width: 16px;
+					height: 16px;
+					border-radius: 50%;
+					border: 1px solid #BEBEC5;
+					float: left;
+					position: relative;
+				}
+
+				&.cur{
+					color: $blueColor;
+
+					.icon{
+						border-color: $blueColor;
+
+						&:after{
+							content: '';
+							position: absolute;
+							top: 3px;
+							left: 3px;
+							width: 10px;
+							height: 10px;
+							border-radius: 50%;
+							background-color: $blueColor;
+						}
+					}
+				}
+
+				span{
+					padding: 5px 0 0 52px;
+					font-size: 12px;
+					line-height: 24px;
+					color: #908f9a;
+					display: block;
+				}
+			}
+		}
+	}
+
+	.btn{
+		margin: 36px auto 40px;
+		width: 160px;
+		height: 44px;
+		line-height: 44px;
+		font-size: 16px;
+		border-radius: 4px;
+		background-color: $blueColor;
+		color: #fff;
+		text-align: center;
+		display: block;
+
+		&:hover{
+			background-color: $blueHoverColor;
+		}
+	}
+}
+

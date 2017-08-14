@@ -172,11 +172,14 @@
           line-height: 48px;
           border-radius: 4px;
           border: 1px solid #E3EAEF;
-          text-indent: 15px; }
+          text-indent: 15px;
+          color: #565660; }
           .modal .cbmodal .pinfo li .ipt.small {
             width: 263px; }
           .modal .cbmodal .pinfo li .ipt::-webkit-input-placeholder {
             color: #908f9a; }
+          .modal .cbmodal .pinfo li .ipt:focus {
+            border-color: #0790ff; }
         .modal .cbmodal .pinfo li .code {
           width: 154px;
           height: 48px;
@@ -271,7 +274,7 @@
         text-align: center;
         display: inline-block; }
         .modal .abmodal .ablist li .code.disable {
-          color: #565660;
+          color: #908f9a;
           border: 1px solid #E3EAEF; }
     .modal .abmodal ~ .btn {
       margin: 0 0 36px 120px;
@@ -302,7 +305,7 @@
         text-indent: 15px;
         border-radius: 4px;
         border: 1px solid #E3EAEF;
-        color: #676770; }
+        color: #565660; }
         .modal .authmodal p input::-webkit-input-placeholder {
           color: #908f9a; }
         .modal .authmodal p input:focus {
@@ -319,7 +322,7 @@
         text-align: center;
         display: inline-block; }
         .modal .authmodal p .code.disable {
-          color: #565660;
+          color: #908f9a;
           border: 1px solid #E3EAEF; }
       .modal .authmodal p .mobile {
         margin: 4px 0 4px 18px;

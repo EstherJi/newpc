@@ -108,7 +108,7 @@
       font-weight: normal;
       color: #454550;
       background-color: #fff;
-      border-bottom: 1px solid #F7F9FA; }
+      border-bottom: 1px solid #ebeff3; }
 
 .m-index .hd {
   height: 208px;
@@ -756,6 +756,7 @@
     display: inline-block; }
     .m-funsflow .pages a:hover, .m-bid .pages a:hover, .m-wallet .pages a:hover, .m-message .pages a:hover, .m-invition .pages a:hover, .m-autobid .pages a:hover {
       color: #fff;
+      border-color: #0790ff;
       background-color: #0790ff; }
   .m-funsflow .pages span.laypage_curr, .m-bid .pages span.laypage_curr, .m-wallet .pages span.laypage_curr, .m-message .pages span.laypage_curr, .m-invition .pages span.laypage_curr, .m-autobid .pages span.laypage_curr {
     height: 34px;
@@ -801,6 +802,7 @@
       width: 150px;
       height: 30px;
       line-height: 30px;
+      text-indent: 10px;
       display: inline-block; }
     .m-funsflow .sbox b {
       padding: 0 4px;
@@ -915,7 +917,10 @@
       line-height: 32px;
       text-indent: 15px;
       border-radius: 4px;
-      border: 1px solid #F3F7FA; }
+      border: 1px solid #F3F7FA;
+      color: #565660; }
+      .m-withdrawal .ipt-box table td .ipt:focus {
+        border-color: #0790ff; }
     .m-withdrawal .ipt-box table td .warning {
       margin-left: 5px;
       padding: 0 10px;

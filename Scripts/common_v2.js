@@ -113,6 +113,13 @@ $(function(){
 		}
 	});
 
+	// 登录注册input聚焦时div边框高亮
+	$('.m-passport input').focus(function(){
+		$(this).parent('.ipt').css('border-color', '#0790ff');
+	}).blur(function(){
+		$(this).parent('.ipt').css('border-color', '#E3EAEF');
+	});
+
 	// 重置密码步骤显示隐藏
 	$('.m-passport .btn.next').on('click', function(){
 		$('.m-passport .slist li:nth-child(2)').addClass('cur');

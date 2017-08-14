@@ -7,8 +7,7 @@
 		<title>无忧微贷</title>
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
-		<link rel="stylesheet" type="text/css" href="../../Content/css/account_v2.css">
-		<!-- <link rel="stylesheet" type="text/css" href="../../Scripts/layui/css/layui.css"> -->
+		<link rel="stylesheet" type="text/css" href="../../Content/css/others.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -85,115 +84,52 @@
 		</div>
 
 		<!-- main content -->
-		<div class="m-account clearfix">
+		<div class="m-about clearfix">
+			<div class="banner"></div>
 			<div class="content">
-				<p class="risk-test">
-					<span>您尚未完成出借人风险评测，为了顺利投资，请<a href="#">立即测评！</a></span>
-					<i class="index-icon cicon f-fr"></i>
-				</p>
 				<div class="side f-fl">
 					<div class="item">
-						<p><i class="side-icon icon-1"></i>我的账户</p>
+						<p><i class="aicon icon-1"></i>关于我们</p>
 						<ul>
-							<li><a href="#">账户总览</a></li>
-							<li><a href="#">充值提现</a></li>
-							<li><a href="#">投资记录</a></li>
-							<li class="cur"><a href="#">资金流水</a></li>
+							<li class="cur"><a href="#">公司简介</a></li>
+							<li><a href="#">平台优势</a></li>
+							<li><a href="#">资质荣耀</a></li>
+							<li><a href="#">加入我们</a></li>
+							<li><a href="#">联系我们</a></li>
 						</ul>
 					</div>
 					<div class="item">
-						<p><i class="side-icon icon-2"></i>我的奖励</p>
-						<ul>
-							<li><a href="#">红包奖券</a></li>
-						</ul>
-					</div>
-					<div class="item">
-						<p><i class="side-icon icon-3"></i>账号管理</p>
-						<ul>
-							<li><a href="#">安全认证</a></li>
-							<li><a href="#">银行卡</a></li>
-							<li><a href="#">我的消息</a></li>
-						</ul>
-					</div>
-					<div class="item">
-						<p><i class="side-icon icon-4"></i>推广赚钱</p>
+						<p><i class="aicon icon-2"></i>平台动态</p>
 						<ul class="bb-none">
-							<li><a href="#">邀请好友</a></li>
+							<li><a href="#">平台公告</a></li>
+							<li><a href="#">风险教育</a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="main f-fr">
-					<div class="m-funsflow">
-						<h3 class="title">资金流水</h3>
-						<div class="sbox plr24">
-							<span class="type">
-								类型：
-								<select>
-									<option value="0">全部</option>
-									<option value="1">提现</option>
-								</select>
-							</span>
-							<span class="date">
-								交易日期：
-								<span class="h30 f-pr">
-									<input type="text" class="dipt layui-input" id="start">
-									<i class="dicon f-pa"></i>
-								</span>
-								<b>-</b>
-								<span class="h30 f-pr">
-									<input type="text" class="dipt layui-input" id="end">
-									<i class="dicon f-pa"></i>
-								</span>
-							</span>
-							<a class="export">导出结果</a>
+					<div class="m-intro">
+						<h3 class="title">公司简介</h3>
+						<div class="bimg"><img src="../../Content/images/others/ibanner.png"></div>
+						<div class="intro">
+							<p>深圳市引爆互联网金融服务有限公司，是一家专业从事金融投资与管理的信息服务公司。自主研发的“无忧微贷”（www.51weidai.com）于2017年5月1日正式上线运营，是专注汽车、小额房产融资的网络投融资平台。 无忧微贷拥有完善的风控体系、财务系统以及专业的营销团队，由拥有丰富金融行业从业经历人士、十几年汽车、房产领域经营者和资深互联网从业人员组成，以科学的管理制度、严格的风险控制体系、不断完善的发展战略，严格的筛选业务流程标准，稳扎稳打求发展。我们相信，随着互联网的发展和中国个人信用体系的逐步健全，先进的理念和创新的技术将给中国互联网金融带来历史性的变革，“无忧微贷”（www.51weidai.com）将是这场变革中的重要一极力量。</p>
+							<p>无忧微贷致力于为广大有需求的金融消费者提供“安全诚信、高效便捷、公开透明”的投、融资信息服务，帮助中小微企业和个人解决投、融资难题。平台拥有严格的风险控制体系和近十年的房产经营经验，专注于深圳地区房产、车辆抵押，现金赎楼三类极低风险的债权类产品，具有安全性高、门槛低、回报稳定、资金流动性强等行业领先优势，不断为用户提供丰富、便捷的互联网金融产品，为更多的会员带来普惠性金融的新体验。</p>
 						</div>
-						<div class="table-box plr24">
-							<!-- 显示16条数据 -->
-							<table>
-								<thead>
-									<tr>
-										<th width="14.2%">类型</th>
-										<th width="14.2%">交易时间</th>
-										<th width="14%">交易对方</th>
-										<th width="14.2%">交易余额</th>
-										<th width="14.2%">可用余额</th>
-										<th width="14.2%">冻结金额</th>
-										<th width="15%">交易信息</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>收款</td>
-										<td>2017-07-17 13:54</td>
-										<td>abmin</td>
-										<td>20,000.00</td>
-										<td>480.00</td>
-										<td>20,000.00</td>
-										<td>[钟先生资金周转]的还款</td>
-									</tr>
-									<tr>
-										<td>收款</td>
-										<td>2017-07-17 13:54</td>
-										<td>abmin</td>
-										<td>20,000.00</td>
-										<td>480.00</td>
-										<td>20,000.00</td>
-										<td>提现申请通过扣除冻结款</td>
-									</tr>
-									<tr>
-										<td>收款</td>
-										<td>2017-07-17 13:54</td>
-										<td>abmin</td>
-										<td>20,000.00</td>
-										<td>480.00</td>
-										<td>20,000.00</td>
-										<td>扣除您在标的[钟资金周转]中所...</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="environment">
+							<p class="tit">办公环境</p>
+							<div class="ibox clearfix">
+								<p class="limg f-fl"><img src="../../Content/images/others/limg.png"></p>
+								<div class="rimg f-fr">
+									<p class="clearfix">
+										<span class="rulimg f-fl"><img src="../../Content/images/others/rulimg.png"></span>
+										<span class="rurimg f-fr"><img src="../../Content/images/others/rurimg.png"></span>
+									</p>
+									<p class="clearfix">
+										<span class="rdlimg f-fl"><img src="../../Content/images/others/rdlimg.png"></span>
+										<span class="rdrimg f-fr"><img src="../../Content/images/others/rdrimg.png"></span>
+									</p>
+								</div>
+							</div>
 						</div>
-						<!-- 分页 -->
-						<div class="pages"></div>
 					</div>
 				</div>
 			</div>
@@ -275,40 +211,5 @@
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
-		<script type="text/javascript" src="../../Scripts/layui/layui.js"></script>
-		<script type="text/javascript">
-			layui.use('laydate', function(){
-				var laydate = layui.laydate;
-
-				var start = {
-					min: laydate.now(),
-					max: '2099-06-16 23:59:59',
-					istoday: false,
-					choose: function(datas){
-						end.min = datas;
-						end.start = datas;
-					}
-				};
-
-				var end = {
-					min: laydate.now(),
-					max: '2099-06-16 23:59:59',
-					istoday: false,
-					choose: function(datas){
-						start.max = datas;
-					}
-				};
-
-				$('#start').on('click', function(){
-					start.elem = this;
-					laydate(start);
-				});
-
-				$('#end').on('click', function(){
-					end.elem = this;
-					laydate(end);
-				});
-			});
-		</script>
 	</body>
 </html>

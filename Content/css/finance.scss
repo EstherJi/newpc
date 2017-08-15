@@ -1,0 +1,115 @@
+$blueColor: #0790ff;
+$blueHoverColor: #39a6ff;
+
+.m-finance{
+	height: 747px;
+	background-color: #f6f7fb;
+
+	.fimg{
+		left: -118px;
+		top: 186px;
+		width: 750px;
+		height: 545px;
+		background: url(../../Content/images/finance.jpg) no-repeat;
+	}
+
+	.fbox{
+		right: 0;
+		top: 35px;
+		width: 598px;
+		height: 668px;
+		letter-spacing: 1px;
+		border: 1px solid #EBEFF3;
+		background-color: #fff;
+
+		.title{
+			height: 60px;
+			line-height: 60px;
+			font-size: 20px;
+			border-bottom: 1px solid #EBEFF3;
+			color: #454550;
+			text-align: center;
+		}
+
+		.item{
+			margin: 0 30px 20px;
+
+			&.mt25{
+				margin-top: 25px;
+			}
+
+			&.mb25{
+				margin-bottom: 25px;
+			}
+
+			label{
+				width: 78px;
+				height: 48px;
+				line-height: 48px;
+				color: #565660;
+				text-align: right;
+				float: left;
+			}
+
+			input, select, textarea{
+				margin-left: 10px;
+				text-indent: 15px;
+				border-radius: 4px;
+				border: 1px solid #E3EAEF;
+				color: #676770;
+
+				&:focus{
+					border-color: $blueColor;
+				}
+			}
+
+			input{
+				width: 447px;
+				height: 48px;
+				line-height: 48px;
+
+				&::-webkit-input-placeholder{
+					color: #908f9a;
+				}
+			}
+
+			select{
+				width: 449px;
+				height: 50px;
+				line-height: 50px;
+
+				&.sm{
+					width: 165px;
+				}
+			}
+
+			textarea{
+				padding-top: 15px;
+				width: 447px;
+				height: 103px;
+
+				&::-webkit-input-placeholder{
+					color: #908f9a;
+				}
+			}
+		}
+
+		.btn{
+			margin-left: 120px;
+			width: 449px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 18px;
+			border-radius: 4px;
+			background-color: $blueColor;
+			color: #fff;
+			text-align: center;
+			display: block;
+
+			&:hover{
+				background-color: $blueHoverColor;
+			}
+		}
+	}
+}
+

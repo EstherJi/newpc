@@ -452,7 +452,7 @@
       .m-project .bid-box .ipt-box .arrow .up {
         height: 20px;
         line-height: 20px;
-        border-bottom: 1px solid #DBE3EB; }
+        border-top: 1px solid #DBE3EB; }
         .m-project .bid-box .ipt-box .arrow .up:after {
           width: 8px;
           height: 8px;

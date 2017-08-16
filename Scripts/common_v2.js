@@ -132,4 +132,11 @@ $(function(){
 		$('.m-passport .step3').removeClass('hide');
 	});
 
+	// 项目详情查看优惠券
+	$('.m-project .bid-tips .view').hover(function(){
+		$('.m-project .bid-tips .clist').show();
+	}, function(){
+		$('.m-project .bid-tips .clist').hide();
+	});
+
 });

@@ -507,6 +507,47 @@
     padding: 5px 20px 0;
     font-size: 12px;
     color: rgba(144, 143, 154, 0.8); }
+    .m-project .bid-box .bid-tips .ctips {
+      color: rgba(103, 103, 112, 0.8); }
+      .m-project .bid-box .bid-tips .ctips .cicon {
+        margin: 2px 5px 0 0;
+        width: 16px;
+        height: 12px;
+        background: url(../../Content/images/credit/cicon.png) no-repeat;
+        float: left; }
+      .m-project .bid-box .bid-tips .ctips a {
+        color: #0790ff; }
+    .m-project .bid-box .bid-tips .clist {
+      right: 3px;
+      top: 28px;
+      width: 160px;
+      padding-left: 10px;
+      box-shadow: 0 1px 6px 0 rgba(7, 144, 255, 0.15);
+      background-color: #fff;
+      display: none; }
+      .m-project .bid-box .bid-tips .clist > span {
+        width: 160px;
+        height: 34px;
+        line-height: 34px;
+        border-bottom: 1px dashed #DFE3E6;
+        color: #676770;
+        display: inline-block; }
+        .m-project .bid-box .bid-tips .clist > span:last-child {
+          border-bottom: none; }
+        .m-project .bid-box .bid-tips .clist > span .num {
+          padding-right: 4px;
+          color: #ff3300; }
+      .m-project .bid-box .bid-tips .clist:after {
+        content: '';
+        position: absolute;
+        top: -6px;
+        right: 35px;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-bottom: 6px solid #fff;
+        filter: drop-shadow(0 1px 4px rgba(7, 144, 255, 0.15)); }
   .m-project .bid-box .btn {
     margin: 12px 20px 0;
     width: 310px;
@@ -903,5 +944,116 @@
         display: inline-block; }
         .m-project .project-recommend .recommend-list li .percent-btn-box .btn:hover {
           background-color: #ff5c33; }
+
+.m-bidconfirm {
+  margin: 30px 0;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-bidconfirm .title {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #454550;
+    border-bottom: 1px solid #EBEFF3; }
+  .m-bidconfirm .detail {
+    padding: 30px 50px 50px; }
+    .m-bidconfirm .detail .pl50 {
+      padding-left: 50px; }
+    .m-bidconfirm .detail .w480 {
+      width: 480px; }
+    .m-bidconfirm .detail .binfo {
+      height: 50px;
+      line-height: 50px;
+      letter-spacing: 1px;
+      background-color: #f9fafc; }
+      .m-bidconfirm .detail .binfo > span {
+        font-size: 16px;
+        color: #565660;
+        display: inline-block; }
+      .m-bidconfirm .detail .binfo .red {
+        padding-left: 10px;
+        color: #ff3300; }
+      .m-bidconfirm .detail .binfo .blue {
+        padding-left: 10px;
+        color: #0790ff; }
+    .m-bidconfirm .detail .minfo {
+      padding: 30px 0 35px;
+      border-bottom: 1px dashed #CCD8E2; }
+      .m-bidconfirm .detail .minfo .pb10 {
+        padding-bottom: 10px; }
+      .m-bidconfirm .detail .minfo p > span {
+        letter-spacing: 1px;
+        color: #676770;
+        display: inline-block; }
+        .m-bidconfirm .detail .minfo p > span span {
+          padding-left: 15px; }
+        .m-bidconfirm .detail .minfo p > span .red {
+          color: #ff3300; }
+        .m-bidconfirm .detail .minfo p > span .bold {
+          color: #565660; }
+    .m-bidconfirm .detail .iptbox {
+      padding: 30px 0 10px; }
+      .m-bidconfirm .detail .iptbox p {
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+        color: #565660; }
+        .m-bidconfirm .detail .iptbox p a {
+          color: #0790ff; }
+        .m-bidconfirm .detail .iptbox p.pl {
+          padding-left: 140px; }
+      .m-bidconfirm .detail .iptbox .cicon {
+        margin: 3px 8px 0 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        border: 1px solid #C2C1C7;
+        float: left;
+        position: relative; }
+        .m-bidconfirm .detail .iptbox .cicon.cur {
+          border-color: #0790ff; }
+          .m-bidconfirm .detail .iptbox .cicon.cur:after {
+            top: 3px;
+            left: 3px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #0790ff;
+            display: inline-block;
+            content: '';
+            position: absolute; }
+      .m-bidconfirm .detail .iptbox label {
+        color: #565660; }
+      .m-bidconfirm .detail .iptbox input, .m-bidconfirm .detail .iptbox select {
+        margin-left: 10px;
+        text-indent: 15px;
+        border-radius: 4px;
+        border: 1px solid #E3EAEF;
+        color: #676770; }
+      .m-bidconfirm .detail .iptbox input {
+        width: 448px;
+        height: 48px;
+        line-height: 48px; }
+        .m-bidconfirm .detail .iptbox input::-webkit-input-placeholder {
+          color: #908f9a; }
+      .m-bidconfirm .detail .iptbox select {
+        width: 450px;
+        height: 50px;
+        line-height: 50px; }
+    .m-bidconfirm .detail .btn {
+      margin-left: 140px;
+      width: 450px;
+      height: 50px;
+      line-height: 50px;
+      font-size: 16px;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      background-color: #0790ff;
+      color: #fff;
+      text-align: center;
+      display: block; }
+      .m-bidconfirm .detail .btn:hover {
+        background-color: #39a6ff; }
 
 /*# sourceMappingURL=credit_v2.css.map */

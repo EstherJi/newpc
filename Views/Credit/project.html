@@ -163,7 +163,14 @@
 							</div>
 							<button class="all f-fr">全额</button>
 						</div>
-						<p class="bid-tips">递增金额：1,000.00元</p>
+						<div class="bid-tips f-pr clearfix">
+							<span class="f-fl">递增金额：1,000.00元</span>
+							<span class="ctips f-fr"><i class="cicon"></i>您有卡券可使用<a class="view">【查看】</a></span>
+							<p class="clist f-pa">
+								<span><span class="num">￥200.00</span>新手福利专享</span>
+								<span><span class="num">￥150.00</span>老用户福利专享</span>
+							</p>
+						</div>
 						<a href="#" class="btn bid">确认投资</a>
 						<!-- <a href="#" class="btn login">确认投资</a>
 						<a href="#" class="btn complete">已满标</a> -->
@@ -583,13 +590,13 @@
 						</li>
 					</ul>
 				</div>
-				<div class="footer-wrap">
-					<p>
-						<span>版权所有 &copy; </span>
-	                    <span>2017深圳市引爆互联网金融服务有限公司</span>
-	                    <span><a href="http://www.miitbeian.gov.cn">粤ICP备17018158号-2</a></span>
-					</p>
-				</div>
+			</div>
+			<div class="footer-wrap">
+				<p>
+					<span>版权所有 &copy; </span>
+                    <span>2017深圳市引爆互联网金融服务有限公司</span>
+                    <span><a href="http://www.miitbeian.gov.cn">粤ICP备17018158号-2</a></span>
+				</p>
 			</div>
 		</div>
 		<div class="m-toolbar">
@@ -621,17 +628,17 @@
 
 		<script type="text/javascript">
 			// 投标成功弹框
-			new CancelModal({
-				content: '<p>恭喜您，本次投标<span>100.00</span>元已成功！</p>',
-				title: '<i class="bricon sicon f-fl"></i>无忧微贷提醒您',
-				contentNodeCn: 'brmodal',
-				confirmBtnCn: 'red ml',
-				confirm: '继续投资',
-				cancelBtnCn: 'cancel f-fr',
-				cancel: '查看投资记录',
-				success: function(){},  // 成功返回按钮
-				fail: function(){}      // 失败返回按钮
-			}).init();
+			// new CancelModal({
+			// 	content: '<p>恭喜您，本次投标<span>100.00</span>元已成功！</p>',
+			// 	title: '<i class="bricon sicon f-fl"></i>无忧微贷提醒您',
+			// 	contentNodeCn: 'brmodal',
+			// 	confirmBtnCn: 'red ml',
+			// 	confirm: '继续投资',
+			// 	cancelBtnCn: 'cancel f-fr',
+			// 	cancel: '查看投资记录',
+			// 	success: function(){},  // 成功返回按钮
+			// 	fail: function(){}      // 失败返回按钮
+			// }).init();
 
 			// 投标失败弹框
 			// new AlertModal({

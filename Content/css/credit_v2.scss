@@ -1,5 +1,6 @@
 $lightColor: #908f9a;
 $blueColor: #0790ff;
+$blueHoverColor: #39a6ff;
 $redColor: #ff3300;
 $redHoverColor: #ff5c33;
 
@@ -784,6 +785,63 @@ $redHoverColor: #ff5c33;
 			padding: 5px 20px 0;
 			font-size: 12px;
 			color: rgba(144, 143, 154, 0.8);
+
+			.ctips{
+				color: rgba(103, 103, 112, 0.8);
+
+				.cicon{
+					margin: 2px 5px 0 0;
+					width: 16px;
+					height: 12px;
+					background: url(../../Content/images/credit/cicon.png) no-repeat;
+					float: left;
+				}
+
+				a{
+					color: $blueColor;
+				}
+			}
+
+			.clist{
+				right: 3px;
+				top: 28px;
+				width: 160px;
+				padding-left: 10px;
+				box-shadow: 0 1px 6px 0 rgba(7, 144, 255, .15);
+				background-color: #fff;
+				display: none;
+
+				& > span{
+					width: 160px;
+					height: 34px;
+					line-height: 34px;
+					border-bottom: 1px dashed #DFE3E6;
+					color: #676770;
+					display: inline-block;
+
+					&:last-child{
+						border-bottom: none;
+					}
+
+					.num{
+						padding-right: 4px;
+						color: $redColor;
+					}
+				}
+
+				&:after{
+					content: '';
+					position: absolute;
+					top: -6px;
+					right: 35px;
+					width: 0;
+					height: 0;
+					border-left: 6px solid transparent;
+					border-right: 6px solid transparent;
+					border-bottom: 6px solid #fff;
+					filter: drop-shadow(0 1px 4px rgba(7, 144, 255, .15));
+				}
+			}
 		}
 
 		.btn{
@@ -1456,5 +1514,176 @@ $redHoverColor: #ff5c33;
 		}
 	}
 }
+
+.m-bidconfirm{
+	margin: 30px 0;
+	border: 1px solid #EBEFF3;
+	background-color: #fff;
+
+	.title{
+		height: 60px;
+		line-height: 60px;
+		padding-left: 50px;
+		font-size: 18px;
+		letter-spacing: 1px;
+		color: #454550;
+		border-bottom: 1px solid #EBEFF3;
+	}
+
+	.detail{
+		padding: 30px 50px 50px;
+
+		.pl50{
+			padding-left: 50px;
+		}
+
+		.w480{
+			width: 480px;
+		}
+
+		.binfo{
+			height: 50px;
+			line-height: 50px;
+			letter-spacing: 1px;
+			background-color: #f9fafc;
+
+			& > span{
+				font-size: 16px;
+				color: #565660;
+				display: inline-block;
+			}
+
+			.red{
+				padding-left: 10px;
+				color: $redColor;
+			}
+
+			.blue{
+				padding-left: 10px;
+				color: $blueColor;
+			}
+		}
+
+		.minfo{
+			padding: 30px 0 35px;
+			border-bottom: 1px dashed #CCD8E2;
+
+			.pb10{
+				padding-bottom: 10px;
+			}
+
+			p{
+				& > span{
+					letter-spacing: 1px;
+					color: #676770;
+					display: inline-block;
+
+					span{
+						padding-left: 15px;
+					}
+
+					.red{
+						color: $redColor;
+					}
+
+					.bold{
+						color: #565660;
+					}
+				}
+			}
+		}
+
+		.iptbox{
+			padding: 30px 0 10px;
+
+			p{
+				padding-bottom: 20px;
+				letter-spacing: 1px;
+				color: #565660;
+
+				a{
+					color: $blueColor;
+				}
+
+				&.pl{
+					padding-left: 140px;
+				}
+			}
+
+			.cicon{
+				margin: 3px 8px 0 0;
+				width: 12px;
+				height: 12px;
+				border-radius: 50%;
+				border: 1px solid #C2C1C7;
+				float: left;
+				position: relative;
+
+				&.cur{
+					border-color: $blueColor;
+
+					&:after{
+						top: 3px;
+						left: 3px;
+						width: 6px;
+						height: 6px;
+						border-radius: 50%;
+						background-color: $blueColor;
+						display: inline-block;
+						content: '';
+						position: absolute;
+					}
+				}
+			}
+
+			label{
+				color: #565660;
+			}
+
+			input, select{
+				margin-left: 10px;
+				text-indent: 15px;
+				border-radius: 4px;
+				border: 1px solid #E3EAEF;
+				color: #676770;
+			}
+
+			input{
+				width: 448px;
+				height: 48px;
+				line-height: 48px;
+
+				&::-webkit-input-placeholder{
+					color: #908f9a;
+				}
+			}
+
+			select{
+				width: 450px;
+				height: 50px;
+				line-height: 50px;
+			}
+		}
+
+		.btn{
+			margin-left: 140px;
+			width: 450px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 16px;
+			letter-spacing: 1px;
+			border-radius: 4px;
+			background-color: $blueColor;
+			color: #fff;
+			text-align: center;
+			display: block;
+
+			&:hover{
+				background-color: $blueHoverColor;
+			}
+		}
+	}
+}
+
 
 

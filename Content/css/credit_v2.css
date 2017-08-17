@@ -124,11 +124,11 @@
     .credit-list .credit:last-child {
       border-bottom: none; }
     .credit-list .credit:hover {
-      transform: translateY(-10px);
-      -webkit-transform: translateY(-10px);
-      -moz-transform: translateY(-10px);
-      -o-transform: translateY(-10px);
-      box-shadow: 0px 4px 10px 0px rgba(7, 144, 255, 0.15); }
+      transform: translate3d(10px, -10px, 0px);
+      -webkit-transform: translate3d(10px, -10px, 0px);
+      -moz-transform: translate3d(10px, -10px, 0px);
+      -o-transform: translate3d(10px, -10px, 0px);
+      box-shadow: 0px 4px 10px 2px rgba(7, 144, 255, 0.15); }
     .credit-list .credit h3 {
       padding: 20px 40px 0;
       font-size: 18px;
@@ -716,8 +716,8 @@
   padding: 0 40px 16px; }
   .m-project .tabs-detail-1 .risk .detail p, .m-project .tabs-detail-1 .record .detail p, .m-project .tabs-detail-1 .repayment .detail p {
     color: #898990; }
-.m-project .tabs-detail-2, .m-project .tabs-detail-3, .m-project .tabs-detail-4 {
-  height: 730px; }
+.m-project .tabs-detail-1, .m-project .tabs-detail-2, .m-project .tabs-detail-3, .m-project .tabs-detail-4, .m-project .tabs-detail-5 {
+  min-height: 730px; }
 .m-project .tabs-detail-2 ul {
   padding: 35px 40px 0; }
   .m-project .tabs-detail-2 ul li {

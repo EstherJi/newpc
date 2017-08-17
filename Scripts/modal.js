@@ -90,7 +90,7 @@ var CancelModal = function(data){
 	this.cancelBtn = document.createElement('a');
 	this.cancelBtn.className = data.cancelBtnCn || 'cancel';
 	this.cancelBtn.innerHTML = this.cancel || '取消';
-	this.fail = data.cancel || function(){};  // 取消按钮执行事件
+	this.fail = data.fail || function(){};  // 取消按钮执行事件
 }
 
 CancelModal.prototype = new Modal();

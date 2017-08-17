@@ -628,17 +628,19 @@
 
 		<script type="text/javascript">
 			// 投标成功弹框
-			// new CancelModal({
-			// 	content: '<p>恭喜您，本次投标<span>100.00</span>元已成功！</p>',
-			// 	title: '<i class="bricon sicon f-fl"></i>无忧微贷提醒您',
-			// 	contentNodeCn: 'brmodal',
-			// 	confirmBtnCn: 'red ml',
-			// 	confirm: '继续投资',
-			// 	cancelBtnCn: 'cancel f-fr',
-			// 	cancel: '查看投资记录',
-			// 	success: function(){},  // 成功返回按钮
-			// 	fail: function(){}      // 失败返回按钮
-			// }).init();
+			new CancelModal({
+				content: '<p>恭喜您，本次投标<span>100.00</span>元已成功！</p>',
+				title: '<i class="bricon sicon f-fl"></i>无忧微贷提醒您',
+				contentNodeCn: 'brmodal',
+				confirmBtnCn: 'red ml',
+				confirm: '继续投资',
+				cancelBtnCn: 'cancel f-fr',
+				cancel: '查看投资记录',
+				success: function(){},  // 成功返回按钮
+				fail: function(){
+					console.info(111);
+				}      // 失败返回按钮
+			}).init();
 
 			// 投标失败弹框
 			// new AlertModal({

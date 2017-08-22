@@ -105,7 +105,7 @@ $(function(){
 	});
 
 	// 复选框选中取消
-	$('.m-passport .ricon-5').on('click', function(){
+	$('.m-passport .cicon').on('click', function(){
 		if($(this).hasClass('uncheck')){
 			$(this).removeClass('uncheck');
 		}else{

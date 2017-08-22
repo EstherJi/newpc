@@ -67,6 +67,20 @@ $blueHoverColor: #39a6ff;
 			}
 		}
 
+		.cicon{
+			margin-right: 8px;
+			width: 14px;
+			height: 14px;
+			background: url(../../Content/images/cicon.png) no-repeat;
+			background-position: 0 0;
+			display: inline-block;
+			vertical-align: middle;
+
+			&.uncheck{
+				background-position: -14px 0;
+			}
+		}
+
 		.ipt{
 			margin-bottom: 20px;
 			width: 418px;

@@ -7,7 +7,7 @@
 		<title>无忧微贷</title>
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
-		<link rel="stylesheet" type="text/css" href="../../Content/css/passport_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/info_v2.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -84,44 +84,175 @@
 		</div>
 
 		<!-- main content -->
-		<div class="content">
-			<div class="m-passport">
-				<div class="ipt-box f-fl">
-					<h3>欢迎注册</h3>
-					<div class="ipt">
-						<span><i class="ricon ricon-1"></i></span>
-						<input type="text" placeholder="请输入您的手机号码">
+		<div class="m-info clearfix">
+			<div class="banner"></div>
+			<div class="content">
+				<div class="side f-fl">
+					<div class="item">
+						<p><i class="iicon"></i>信息披露</p>
+						<ul>
+							<li><a href="#">基本信息</a></li>
+							<li><a href="#">管理团队</a></li>
+							<li><a href="#">重大事项</a></li>
+							<li class="cur"><a href="#">运营数据</a></li>
+							<li><a href="#">运营报告</a></li>
+						</ul>
 					</div>
-					<div class="ipt">
-						<span><i class="ricon ricon-2"></i></span>
-						<input type="password" placeholder="请输入您的密码">
-					</div>
-					<div class="ipt cipt">
-						<span><i class="ricon ricon-3"></i></span>
-						<input type="text" placeholder="请输入图形验证码">
-						<a class="icode"><img src="../../Content/images/passport/icode.png"></a>
-					</div>
-					<div class="ipt cipt">
-						<span><i class="ricon ricon-3"></i></span>
-						<input type="text" placeholder="请输入短信验证码">
-						<!-- 不可点击 .disable -->
-						<a class="icode">获取验证码</a>
-					</div>
-					<p class="tips recommend">推荐人邀请码或手机号（选填）</p>
-					<div class="ipt ript">
-						<span><i class="ricon ricon-4"></i></span>
-						<input type="text" placeholder="请输入推荐人邀请码">
-					</div>
-					<p class="tips"><i class="cicon"></i>我同意<a href="#">《无忧微贷金融平台在线服务协议》</a></p>
-					<a href="#" class="btn reg">注册</a>
 				</div>
-				<div class="ibox">
-					<p class="tips f-fr">已有账号？<a href="#">立即登录</a></p>
-					<p class="img"><img src="../../Content/images/passport/register.png"></p>
+				<div class="main f-fr">
+					<div class="m-data">
+						<div class="item mb10">
+							<h3 class="title">运营数据<span>截至日期：2017-08-14</span></h3>
+							<ul class="nbox clearfix">
+								<li>
+									<p class="num">9192<span>万</span>3500<span>元</span></p>
+									<p class="sm">累计交易总额</p>
+								</li>
+								<li>
+									<p class="num">4425<span>笔</span></p>
+									<p class="sm">累计交易笔数</p>
+								</li>
+								<li>
+									<p class="num">89<span>万</span>8640<span>元</span></p>
+									<p class="sm">投资人累计收益</p>
+								</li>
+							</ul>
+							<div class="cbox clearfix">
+								<div class="cbox1 f-fl">
+									<p>月度交易总额（万元）</p>
+									<div class="chart" id="chart1"></div>
+									<p class="sm">2017年</p>
+								</div>
+								<div class="cbox1 f-fr">
+									<p>月度交易笔数（千笔）</p>
+									<div class="chart" id="chart2"></div>
+									<p class="sm">2017年</p>
+								</div>
+							</div>
+						</div>
+						<div class="item mb10">
+							<h3 class="title">投资人信息<span>截至日期：2017-08-14</span></h3>
+							<ul class="nbox clearfix">
+								<li>
+									<p class="num">7248<span>人</span></p>
+									<p class="sm">投资人总数</p>
+								</li>
+								<li>
+									<p class="num">9285<span>元</span></p>
+									<p class="sm">人均累计投资金额</p>
+								</li>
+								<li>
+									<p class="num">344<span>分钟</span></p>
+									<p class="sm">当月平均满标时间</p>
+								</li>
+							</ul>
+							<div class="cbox pb clearfix">
+								<div class="cbox1 f-fl">
+									<p>最大单户投资余额占比：</p>
+									<div class="chart" id="chart3"></div>
+								</div>
+								<div class="cbox1 f-fr">
+									<p>最大十户投资余额占比：</p>
+									<div class="chart" id="chart4"></div>
+								</div>
+							</div>
+							<div class="cbox pt pb clearfix">
+								<div class="cbox1 f-fl">
+									<p>投资人基本情况</p>
+									<div class="chart" id="chart5"></div>
+								</div>
+								<div class="cbox1 f-fr">
+									<div class="chart mt" id="chart6"></div>
+								</div>
+							</div>
+							<div class="cbox pt pb30 clearfix">
+								<div class="cbox2 f-fl">
+									<p>投资人地域分布</p>
+									<div class="chart" id="chart7"></div>
+								</div>
+								<div class="cbox3 f-fr">
+									<div class="chart" id="chart8"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item mb10">	
+							<h3 class="title">融资人信息<span>截至日期：2017-08-14</span></h3>
+							<ul class="nbox clearfix">
+								<li>
+									<p class="num">491<span>人</span></p>
+									<p class="sm">融资人总数</p>
+								</li>
+								<li>
+									<p class="num">3097<span>元</span></p>
+									<p class="sm">人均累计融资金额</p>
+								</li>
+								<li>
+									<p class="num">152<span>万</span>1627<span>元</span></p>
+									<p class="sm">待偿金额</p>
+								</li>
+							</ul>
+							<div class="cbox pb clearfix">
+								<div class="cbox1 f-fl">
+									<p>最大单户融资余额占比：</p>
+									<div class="chart" id="chart9"></div>
+								</div>
+								<div class="cbox1 f-fr">
+									<p>最大十户融资余额占比：</p>
+									<div class="chart" id="chart10"></div>
+								</div>
+							</div>
+							<div class="cbox pt pb clearfix">
+								<div class="cbox1 f-fl">
+									<p>融资人基本情况</p>
+									<div class="chart" id="chart11"></div>
+								</div>
+								<div class="cbox1 f-fr">
+									<div class="chart mt" id="chart12"></div>
+								</div>
+							</div>
+							<div class="cbox pt pb30 clearfix">
+								<div class="cbox2 f-fl">
+									<p>融资人地域分布</p>
+									<div class="chart" id="chart13"></div>
+								</div>
+								<div class="cbox3 f-fr">
+									<div class="chart" id="chart14"></div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<h3 class="title">平台待偿、逾期、坏账数据<span>截至日期：2017-08-14</span></h3>
+							<ul class="nbox mb0 clearfix">
+								<li>
+									<p class="num">0<span>元</span></p>
+									<p class="sm">待偿金额</p>
+								</li>
+								<li>
+									<p class="num">5<span>笔</span></p>
+									<p class="sm">逾期笔数</p>
+								</li>
+								<li>
+									<p class="num">36<span>笔</span></p>
+									<p class="sm">逾期项目总数</p>
+								</li>
+							</ul>
+							<ul class="nbox1 clearfix">
+								<li class="f-fl">项目逾期率：0.0001%</li>
+								<li class="f-fr">金额逾期率：0.0004%</li>
+							</ul>
+							<div class="cbox">
+								<div class="cbox4">
+									<p>逾期坏账金额（万元）</p>
+									<div class="chart" id="chart15"></div>
+									<p class="sm">2017年</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-- main content end -->
+		<!-- end main content -->
 
 		<div class="m-footer">
 			<div class="content">
@@ -198,5 +329,8 @@
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/echarts.common.min.js"></script>
+		<script type="text/javascript" src="../../Scripts/china.js"></script>
+		<script type="text/javascript" src="../../Scripts/operational_data.js"></script>
 	</body>
 </html>

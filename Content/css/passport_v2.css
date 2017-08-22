@@ -43,6 +43,16 @@
       vertical-align: middle; }
       .m-passport .ipt-box .ricon.ricon-5.uncheck {
         background-position: -63px 0; }
+  .m-passport .ipt-box .cicon {
+    margin-right: 8px;
+    width: 14px;
+    height: 14px;
+    background: url(../../Content/images/cicon.png) no-repeat;
+    background-position: 0 0;
+    display: inline-block;
+    vertical-align: middle; }
+    .m-passport .ipt-box .cicon.uncheck {
+      background-position: -14px 0; }
   .m-passport .ipt-box .ipt {
     margin-bottom: 20px;
     width: 418px;

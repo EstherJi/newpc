@@ -14,9 +14,6 @@ $(function(){
 		}else if(h > $('#chart11').offset().top){
 			getFinancierInfo();
 			getFinancierDetail();
-		}else if(h > $('#chart9').offset().top){
-			getSingleFinancing();
-			getTenFinancing();
 		}else if(h >$('#chart7').offset().top){
 			getAreaNumbers();
 			getMapNumbers();
@@ -568,95 +565,95 @@ function getMapNumbers(){
 
 // 融资人信息
 
-function getSingleFinancing(){
-	var chart = echarts.init(document.getElementById('chart9'));
-	var option = {
-	    tooltip : {
-	        trigger: 'item',
-	        formatter: '{a} <br/>{b} : {c} ({d}%)'
-	    },
-	    color: ['#0790ff', '#c1e3ff'],
-	    legend: {
-	        orient: 'horizontal',
-	        x: 'center',
-	        y: 'bottom',
-	        itemGap: 20,
-	        textStyle: {
-	            color: 'rgb(120, 120, 128)',
-	            fontSize: 14
-	        },
-	        data: ['最大单户','其他']
-	    },
-	    series : [
-	        {
-	            name: '最大单户融资余额占比',
-	            type: 'pie',
-	            radius: '100px',
-	            center: ['50%', '45%'],
-	            data:[
-	                {value: 70, name: '最大单户', selected: true},
-	                {value: 310, name: '其他'}
-	            ],
-	            itemStyle: {
-	                normal: {
-	                    label: {
-	                        show: false
-	                    },
-	                    labelLine: {
-	                        show: false
-	                    }
-	                }
-	            }
-	        }
-	    ]
-	};
-	chart.setOption(option);
-}
+// function getSingleFinancing(){
+// 	var chart = echarts.init(document.getElementById('chart9'));
+// 	var option = {
+// 	    tooltip : {
+// 	        trigger: 'item',
+// 	        formatter: '{a} <br/>{b} : {c} ({d}%)'
+// 	    },
+// 	    color: ['#0790ff', '#c1e3ff'],
+// 	    legend: {
+// 	        orient: 'horizontal',
+// 	        x: 'center',
+// 	        y: 'bottom',
+// 	        itemGap: 20,
+// 	        textStyle: {
+// 	            color: 'rgb(120, 120, 128)',
+// 	            fontSize: 14
+// 	        },
+// 	        data: ['最大单户','其他']
+// 	    },
+// 	    series : [
+// 	        {
+// 	            name: '最大单户融资余额占比',
+// 	            type: 'pie',
+// 	            radius: '100px',
+// 	            center: ['50%', '45%'],
+// 	            data:[
+// 	                {value: 70, name: '最大单户', selected: true},
+// 	                {value: 310, name: '其他'}
+// 	            ],
+// 	            itemStyle: {
+// 	                normal: {
+// 	                    label: {
+// 	                        show: false
+// 	                    },
+// 	                    labelLine: {
+// 	                        show: false
+// 	                    }
+// 	                }
+// 	            }
+// 	        }
+// 	    ]
+// 	};
+// 	chart.setOption(option);
+// }
 
-function getTenFinancing(){
-	var chart = echarts.init(document.getElementById('chart10'));
-	var option = {
-	    tooltip : {
-	        trigger: 'item',
-	        formatter: '{a} <br/>{b} : {c} ({d}%)'
-	    },
-	    color: ['#ff5c33', '#ffd6cc'],
-	    legend: {
-	        orient: 'horizontal',
-	        x: 'center',
-	        y: 'bottom',
-	        itemGap: 20,
-	        textStyle: {
-	            color: 'rgb(120, 120, 128)',
-	            fontSize: 14
-	        },
-	        data: ['最大十户','其他']
-	    },
-	    series : [
-	        {
-	            name: '最大十户融资余额占比',
-	            type: 'pie',
-	            radius: '100px',
-	            center: ['50%', '45%'],
-	            data:[
-	                {value: 70, name: '最大十户', selected: true},
-	                {value: 310, name: '其他'}
-	            ],
-	            itemStyle: {
-	                normal: {
-	                    label: {
-	                        show: false
-	                    },
-	                    labelLine: {
-	                        show: false
-	                    }
-	                }
-	            }
-	        }
-	    ]
-	};
-	chart.setOption(option);
-}
+// function getTenFinancing(){
+// 	var chart = echarts.init(document.getElementById('chart10'));
+// 	var option = {
+// 	    tooltip : {
+// 	        trigger: 'item',
+// 	        formatter: '{a} <br/>{b} : {c} ({d}%)'
+// 	    },
+// 	    color: ['#ff5c33', '#ffd6cc'],
+// 	    legend: {
+// 	        orient: 'horizontal',
+// 	        x: 'center',
+// 	        y: 'bottom',
+// 	        itemGap: 20,
+// 	        textStyle: {
+// 	            color: 'rgb(120, 120, 128)',
+// 	            fontSize: 14
+// 	        },
+// 	        data: ['最大十户','其他']
+// 	    },
+// 	    series : [
+// 	        {
+// 	            name: '最大十户融资余额占比',
+// 	            type: 'pie',
+// 	            radius: '100px',
+// 	            center: ['50%', '45%'],
+// 	            data:[
+// 	                {value: 70, name: '最大十户', selected: true},
+// 	                {value: 310, name: '其他'}
+// 	            ],
+// 	            itemStyle: {
+// 	                normal: {
+// 	                    label: {
+// 	                        show: false
+// 	                    },
+// 	                    labelLine: {
+// 	                        show: false
+// 	                    }
+// 	                }
+// 	            }
+// 	        }
+// 	    ]
+// 	};
+// 	chart.setOption(option);
+// }
 
 function getFinancierInfo(){
 	var chart = echarts.init(document.getElementById('chart11'));

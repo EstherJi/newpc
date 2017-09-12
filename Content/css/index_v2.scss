@@ -261,29 +261,26 @@ a.btn{
 
 			.icon{
 				margin-top: 40px;
+				height: 58px;
 			}
 
 			.icon-1{
 				width: 60px;
-				height: 58px;
 				background: url(../../Content/images/home/feature-icon-1.png) no-repeat;
 			}
 
 			.icon-2{
 				width: 57px;
-				height: 59px;
 				background: url(../../Content/images/home/feature-icon-2.png) no-repeat;
 			}
 
 			.icon-3{
 				width: 49px;
-				height: 58px;
 				background: url(../../Content/images/home/feature-icon-3.png) no-repeat;
 			}
 
 			.icon-4{
 				width: 60px;
-				height: 58px;
 				background: url(../../Content/images/home/feature-icon-4.png) no-repeat;
 			}
 
@@ -302,7 +299,7 @@ a.btn{
 	}
 }
 
-.m-hot-recommend, .m-invest{
+.m-hot-recommend, .m-invest, .m-newbie{
 	.left{
 		width: 290px;
 
@@ -341,6 +338,104 @@ a.btn{
 
 	.right{
 		margin-left: 310px;
+	}
+}
+
+.m-newbie{
+	.left{
+		height: 190px;
+		background: url(../../Content/images/home/newbie.png) no-repeat;
+	}
+
+	.right{
+		height: 190px;
+	}
+
+	.newlist{
+		li{
+			width: 444px;
+			height: 190px;
+			border-right: 1px solid #f5f5f5;
+			background-color: #fff;
+			float: left;
+
+			&:last-child{
+				width: 445px;
+				border-right: none;
+			}
+
+			.name{
+				padding: 22px 0 30px 30px;
+
+				a{
+					font-size: 18px;
+					font-weight: normal;
+					color: #343440;
+					vertical-align: middle;
+
+					&:hover{
+						color: $blueColor;
+					}
+				}
+
+				span{
+					margin-left: 12px;
+					padding: 2px 4px;
+					color: $redColor;
+					border-radius: 2px;
+					background-color: #ffd6cc;
+					font-weight: normal;
+				}
+			}
+
+			.rate{
+				padding-left: 30px;
+				margin-right: 36px;
+				text-align: center;
+
+				.num{
+					padding-left: 8px;
+					line-height: 36px;
+					font-size: 46px;
+					color: $redColor;
+
+					small{
+						font-size: 22px;
+					}
+				}
+			}
+
+			.deadline{
+				margin-right: 60px;
+				text-align: center;
+
+				.num{
+					// padding-left: 12px;
+					font-size: 28px;
+					color: #565660;
+
+					small{
+						font-size: 14px;
+						color: #676770;
+					}
+				}
+			}
+
+			.rate, .deadline{
+				.num{
+					padding-bottom: 10px;
+					height: 36px;
+				}
+			}
+
+			.btn{
+				margin-top: 20px;
+				width: 123px;
+				height: 36px;
+				line-height: 36px;
+				font-size: 16px;
+			}
+		}
 	}
 }
 
@@ -404,7 +499,7 @@ a.btn{
 					line-height: 20px;
 					border-radius: 2px;
 					color: $redColor;
-					background-color: rgba(255, 51, 0, .3);
+					background-color: rgba(255, 51, 0, .2);
 
 					&:after{
 						content: '';
@@ -413,7 +508,7 @@ a.btn{
 						height: 0;
 						border-left: 5px solid transparent;
 						border-right: 5px solid transparent;
-						border-top: 5px solid rgba(255, 51, 0, .3);
+						border-top: 5px solid rgba(255, 51, 0, .2);
 						bottom: -5px;
 						left: 10px;
 					}
@@ -532,12 +627,65 @@ a.btn{
 				
 				a{
 					color: #343440;
+					vertical-align: middle;
 
 					&:hover{
 						color: $blueColor;
 					}
 				}
+
+				.tag{
+					margin-right: 3px;
+					width: 20px;
+					height: 20px;
+					line-height: 20px;
+					font-size: 14px;
+					border-radius: 2px;
+					background-color: #ff5b5b;
+					color: #fff;
+					display: inline-block;
+					text-align: center;
+				}
+
+				.award{
+					margin-left: 12px;
+					width: 87px;
+					height: 20px;
+					line-height: 20px;
+					font-size: 12px;
+					color: $redColor;
+					border-radius: 2px;
+					border: 1px solid $redColor;
+					background-color: #fff5f2;
+					display: inline-block;
+
+					.bg{
+						border-top-left-radius: 2px;
+						border-bottom-left-radius: 2px;
+						width: 47px;
+						background-color: $redColor;
+						color: #fff;
+						text-align: center;
+						display: inline-block;
+					}
+
+					.num{
+						width: 40px;
+						text-align: center;
+						display: inline-block;
+					}
+				}
+
+				.redpackage{
+					margin-left: 10px;
+					width: 33px;
+					height: 36px;
+					background: url(../../Content/images/redpackage.gif) no-repeat;
+					display: inline-block;
+					vertical-align: bottom;
+				}
 			}
+
 
 			.info{
 				.item{

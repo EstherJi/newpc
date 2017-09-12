@@ -232,7 +232,7 @@ $redHoverColor: #ff5c33;
 				height: 20px;
 				line-height: 20px;
 				color: $redColor;
-				background-color: rgba(255, 51, 0, 0.3);
+				background-color: rgba(255, 51, 0, 0.2);
 			}
 
 			.tips-2{
@@ -450,6 +450,7 @@ $redHoverColor: #ff5c33;
 				background-position: 0 0;
 			}
 		}
+
 		.name{
 			margin: 0 30px;
 			height: 66px;
@@ -475,8 +476,78 @@ $redHoverColor: #ff5c33;
 			}
 
 			.type{
-				background-color: #ffc1b2;
+				background-color: rgba(255, 51, 0, 0.2);
 				color: $redColor;
+
+				&.ml{
+					margin-left: 10px;
+				}
+			}
+
+			.bname{
+				vertical-align: middle;
+			}
+
+			.tag{
+				margin-right: 5px;
+				width: 20px;
+				height: 20px;
+				font-size: 14px;
+				line-height: 20px;
+				border-radius: 2px;
+				color: #fff;
+				display: inline-block;
+				text-align: center;
+
+				&.etag{
+					background-color: #48d6b6;
+				}
+
+				&.ntag{
+					background-color: $redColor;
+				}
+
+				&.ytag{
+					background-color: #ff5b5b;
+				}
+			}
+
+			.award{
+				margin-left: 15px;
+				width: 87px;
+				height: 20px;
+				line-height: 20px;
+				font-size: 12px;
+				color: $redColor;
+				border-radius: 2px;
+				border: 1px solid $redColor;
+				background-color: #fff5f2;
+				display: inline-block;
+
+				.bg{
+					border-top-left-radius: 2px;
+					border-bottom-left-radius: 2px;
+					width: 47px;
+					background-color: $redColor;
+					color: #fff;
+					text-align: center;
+					display: inline-block;
+				}
+
+				.num{
+					width: 40px;
+					text-align: center;
+					display: inline-block;
+				}
+			}
+
+			.redpackage{
+				margin-left: 10px;
+				width: 33px;
+				height: 36px;
+				background: url(../../Content/images/redpackage.gif) no-repeat;
+				display: inline-block;
+				vertical-align: middle;
 			}
 		}
 
@@ -894,6 +965,30 @@ $redHoverColor: #ff5c33;
 
 	.bd{
 		margin-bottom: 30px;
+
+		.login-sign{
+			.img{
+				width: 284px;
+				height: 91px;
+				margin: 110px auto 12px;
+
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+			.tip{
+				padding-bottom: 120px;
+				letter-spacing: 1px;
+				color: #676770;
+				text-align: center;
+
+				a{
+					color: $blueColor;
+				}
+			}
+		}
 	}
 
 	.project-detail{
@@ -950,6 +1045,29 @@ $redHoverColor: #ff5c33;
 			padding: 20px 40px 16px;
 			font-size: 16px;
 			color: #343440;
+
+			.tips{
+				top: -12px;
+				left: 100px;
+				padding: 5px;
+				line-height: 16px;
+				font-size: 10px;
+				box-shadow: 0 1px 6px 0 rgba(7, 144, 255, .15);
+				color: $blueColor;
+				background-color: #fff;
+				display: none;
+
+				&:after{
+					content: '';
+					position: absolute;
+					border-top: 7px solid #fff;
+					border-right: 7px solid transparent;
+					border-left: 7px solid transparent;
+					left: 56px;
+					bottom: -7px;
+					filter: drop-shadow(0 1px 6px rgba(7, 144, 255, .15));
+				}
+			}
 		}
 
 		.progress-box{
@@ -1064,7 +1182,7 @@ $redHoverColor: #ff5c33;
 
 				tr{
 					height: 42px;
-					line-height: 42px;
+					// line-height: 42px;
 					border-bottom: 1px solid #E3EAEF;
 
 					&:last-child{
@@ -1073,6 +1191,7 @@ $redHoverColor: #ff5c33;
 				}
 
 				td{
+					padding: 10px;
 					border-right: 1px solid #E3EAEF;
 					text-align: center;
 
@@ -1113,6 +1232,86 @@ $redHoverColor: #ff5c33;
 						left: -7px;
 						margin-top: -6px;
 					}
+
+					&.tips1{
+						left: 125px;
+					}
+				}
+			}
+		}
+
+		.table-box-1{
+			table{
+				margin: 0 40px 20px;
+				width: 760px;
+
+				tr{
+					height: 44px;
+					line-height: 44px;	
+				}
+
+				tbody{
+					tr{
+						&:hover{
+							background-color: #ffede8;
+						}
+
+						&:nth-child(even){
+							background-color: #fbfcfd;
+
+							&:hover{
+								background-color: #ffede8;
+							}
+						}
+					}
+				}
+
+				thead{
+					tr{
+						background-color: #f0f8fe;
+					}
+				}
+
+				th, td{
+					text-align: center;
+				}
+
+				th{
+					color: #343440;
+					width: 33.3%;
+				}
+
+				td{
+					color: #676770;
+					border-bottom: 1px solid #F3F7FA;
+				}
+			}
+		}
+
+		.etable-box{
+			table{
+				margin: 0 40px 25px;
+				border: 1px solid #E3EAEF;
+
+				td{
+					line-height: 28px;
+					letter-spacing: 1px;
+					color: #898990;
+					border-right: 1px solid #E3EAEF;
+
+					&:last-child{
+						border-right: none;
+					}
+
+					&:nth-child(odd){
+						width: 158px;
+						background-color: #f4fafe;
+						text-align: center;
+					}
+
+					&:nth-child(even){
+						padding: 15px 30px;
+					}
 				}
 			}
 		}
@@ -1122,6 +1321,7 @@ $redHoverColor: #ff5c33;
 				padding: 0 40px 16px;
 
 				p{
+					line-height: 28px;
 					color: #898990;
 				}
 			}
@@ -1217,7 +1417,7 @@ $redHoverColor: #ff5c33;
 				top: 14.5px;
 				width: 16px;
 				height: 15px;
-				background-position: -12px 0;
+				background-position: -28px 0;
 			}
 
 			&.app-icon{
@@ -1225,6 +1425,13 @@ $redHoverColor: #ff5c33;
 				width: 12px;
 				height: 20px;
 				background-position: 0 0;
+			}
+
+			&.aicon{
+				top: 14px;
+				width: 16px;
+				height: 16px;
+				background-position: -12px 0;
 			}
 		}
 	}

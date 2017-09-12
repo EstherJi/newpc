@@ -718,6 +718,53 @@
   .m-wallet .stabs .sbox a.mr0, .m-bid .stabs .sbox a.mr0, .m-coupon .stabs .sbox a.mr0 {
     margin-right: 0; }
 
+.m-bid .table-box table th {
+  width: 14.3%; }
+.m-bid .table-box table td > a {
+  position: relative;
+  color: #676770; }
+  .m-bid .table-box table td > a:hover {
+    color: #0790ff; }
+.m-bid .table-box table td .icon-down {
+  margin-left: 10px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #b9bbbd;
+  border-bottom-width: 0;
+  border-right-width: 0;
+  transition: transform .5;
+  -webkit-transition: transform .5s;
+  transform: translateY(40%) rotate(-135deg);
+  position: absolute; }
+.m-bid .table-box table td .down {
+  padding-top: 44px;
+  top: 0;
+  left: 20px;
+  width: 110px;
+  border-radius: 2px;
+  box-shadow: 0px 3px 4px 0px rgba(57, 166, 255, 0.12);
+  background-color: #fff;
+  transition: all .2s ease-in-out;
+  display: none;
+  z-index: 3; }
+  .m-bid .table-box table td .down > a {
+    padding-bottom: 10px;
+    margin-left: -18px;
+    color: #676770;
+    display: block; }
+    .m-bid .table-box table td .down > a:hover {
+      color: #0790ff; }
+.m-bid .table-box table td:hover > a {
+  z-index: 5; }
+.m-bid .table-box table td:hover .icon-down {
+  z-index: 5;
+  transition: transform .5s;
+  -webkit-transition: transform .5s;
+  transform: translateY(70%) rotate(45deg); }
+.m-bid .table-box table td:hover .down {
+  transition: all .2s ease-in-out;
+  display: block; }
+
 /* table */
 .m-funsflow .table-box, .m-bid .table-box, .m-wallet .table-box, .m-message .table-box, .m-invition .table-box, .m-autobid .table-box {
   margin: 25px 0 27px; }

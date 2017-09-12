@@ -176,22 +176,19 @@ a.btn {
     width: 300px;
     float: left; }
     .m-feature ul li .icon {
-      margin-top: 40px; }
+      margin-top: 40px;
+      height: 58px; }
     .m-feature ul li .icon-1 {
       width: 60px;
-      height: 58px;
       background: url(../../Content/images/home/feature-icon-1.png) no-repeat; }
     .m-feature ul li .icon-2 {
       width: 57px;
-      height: 59px;
       background: url(../../Content/images/home/feature-icon-2.png) no-repeat; }
     .m-feature ul li .icon-3 {
       width: 49px;
-      height: 58px;
       background: url(../../Content/images/home/feature-icon-3.png) no-repeat; }
     .m-feature ul li .icon-4 {
       width: 60px;
-      height: 58px;
       background: url(../../Content/images/home/feature-icon-4.png) no-repeat; }
     .m-feature ul li .info {
       margin-left: 80px;
@@ -200,17 +197,17 @@ a.btn {
         font-size: 18px;
         color: #565660; }
 
-.m-hot-recommend .left, .m-invest .left {
+.m-hot-recommend .left, .m-invest .left, .m-newbie .left {
   width: 290px; }
-  .m-hot-recommend .left h3, .m-hot-recommend .left p, .m-invest .left h3, .m-invest .left p {
+  .m-hot-recommend .left h3, .m-hot-recommend .left p, .m-invest .left h3, .m-invest .left p, .m-newbie .left h3, .m-newbie .left p {
     padding-left: 30px;
     letter-spacing: 1px;
     color: #fff; }
-  .m-hot-recommend .left h3, .m-invest .left h3 {
+  .m-hot-recommend .left h3, .m-invest .left h3, .m-newbie .left h3 {
     padding-top: 22px;
     padding-bottom: 14px;
     font-size: 22px; }
-  .m-hot-recommend .left .more, .m-invest .left .more {
+  .m-hot-recommend .left .more, .m-invest .left .more, .m-newbie .left .more {
     bottom: 30px;
     left: 0;
     right: 0;
@@ -223,11 +220,71 @@ a.btn {
     font-size: 18px;
     color: #fff;
     text-align: center; }
-    .m-hot-recommend .left .more:hover, .m-invest .left .more:hover {
+    .m-hot-recommend .left .more:hover, .m-invest .left .more:hover, .m-newbie .left .more:hover {
       background-color: #fff;
       color: #0790ff; }
-.m-hot-recommend .right, .m-invest .right {
+.m-hot-recommend .right, .m-invest .right, .m-newbie .right {
   margin-left: 310px; }
+
+.m-newbie .left {
+  height: 190px;
+  background: url(../../Content/images/home/newbie.png) no-repeat; }
+.m-newbie .right {
+  height: 190px; }
+.m-newbie .newlist li {
+  width: 444px;
+  height: 190px;
+  border-right: 1px solid #f5f5f5;
+  background-color: #fff;
+  float: left; }
+  .m-newbie .newlist li:last-child {
+    width: 445px;
+    border-right: none; }
+  .m-newbie .newlist li .name {
+    padding: 22px 0 30px 30px; }
+    .m-newbie .newlist li .name a {
+      font-size: 18px;
+      font-weight: normal;
+      color: #343440;
+      vertical-align: middle; }
+      .m-newbie .newlist li .name a:hover {
+        color: #0790ff; }
+    .m-newbie .newlist li .name span {
+      margin-left: 12px;
+      padding: 2px 4px;
+      color: #ff3300;
+      border-radius: 2px;
+      background-color: #ffd6cc;
+      font-weight: normal; }
+  .m-newbie .newlist li .rate {
+    padding-left: 30px;
+    margin-right: 36px;
+    text-align: center; }
+    .m-newbie .newlist li .rate .num {
+      padding-left: 8px;
+      line-height: 36px;
+      font-size: 46px;
+      color: #ff3300; }
+      .m-newbie .newlist li .rate .num small {
+        font-size: 22px; }
+  .m-newbie .newlist li .deadline {
+    margin-right: 60px;
+    text-align: center; }
+    .m-newbie .newlist li .deadline .num {
+      font-size: 28px;
+      color: #565660; }
+      .m-newbie .newlist li .deadline .num small {
+        font-size: 14px;
+        color: #676770; }
+  .m-newbie .newlist li .rate .num, .m-newbie .newlist li .deadline .num {
+    padding-bottom: 10px;
+    height: 36px; }
+  .m-newbie .newlist li .btn {
+    margin-top: 20px;
+    width: 123px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px; }
 
 .m-hot-recommend .left {
   height: 340px;
@@ -267,7 +324,7 @@ a.btn {
       line-height: 20px;
       border-radius: 2px;
       color: #ff3300;
-      background-color: rgba(255, 51, 0, 0.3); }
+      background-color: rgba(255, 51, 0, 0.2); }
       .m-hot-recommend .hot-recommend-list li .rate .tips:after {
         content: '';
         position: absolute;
@@ -275,7 +332,7 @@ a.btn {
         height: 0;
         border-left: 5px solid transparent;
         border-right: 5px solid transparent;
-        border-top: 5px solid rgba(255, 51, 0, 0.3);
+        border-top: 5px solid rgba(255, 51, 0, 0.2);
         bottom: -5px;
         left: 10px; }
   .m-hot-recommend .hot-recommend-list li .info {
@@ -351,9 +408,51 @@ a.btn {
     font-size: 18px;
     font-weight: normal; }
     .m-invest .invest-list li .name a {
-      color: #343440; }
+      color: #343440;
+      vertical-align: middle; }
       .m-invest .invest-list li .name a:hover {
         color: #0790ff; }
+    .m-invest .invest-list li .name .tag {
+      margin-right: 3px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      border-radius: 2px;
+      background-color: #ff5b5b;
+      color: #fff;
+      display: inline-block;
+      text-align: center; }
+    .m-invest .invest-list li .name .award {
+      margin-left: 12px;
+      width: 87px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      color: #ff3300;
+      border-radius: 2px;
+      border: 1px solid #ff3300;
+      background-color: #fff5f2;
+      display: inline-block; }
+      .m-invest .invest-list li .name .award .bg {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        width: 47px;
+        background-color: #ff3300;
+        color: #fff;
+        text-align: center;
+        display: inline-block; }
+      .m-invest .invest-list li .name .award .num {
+        width: 40px;
+        text-align: center;
+        display: inline-block; }
+    .m-invest .invest-list li .name .redpackage {
+      margin-left: 10px;
+      width: 33px;
+      height: 36px;
+      background: url(../../Content/images/redpackage.gif) no-repeat;
+      display: inline-block;
+      vertical-align: bottom; }
   .m-invest .invest-list li .info .item {
     float: left; }
     .m-invest .invest-list li .info .item:first-child {

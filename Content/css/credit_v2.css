@@ -147,7 +147,7 @@
         height: 20px;
         line-height: 20px;
         color: #ff3300;
-        background-color: rgba(255, 51, 0, 0.3); }
+        background-color: rgba(255, 51, 0, 0.2); }
       .credit-list .credit h3 .tips-2 {
         width: 65px;
         height: 18px;
@@ -302,8 +302,58 @@
       background-color: #ff3300;
       color: #fff; }
     .m-project .project-info .name .type {
-      background-color: #ffc1b2;
+      background-color: rgba(255, 51, 0, 0.2);
       color: #ff3300; }
+      .m-project .project-info .name .type.ml {
+        margin-left: 10px; }
+    .m-project .project-info .name .bname {
+      vertical-align: middle; }
+    .m-project .project-info .name .tag {
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+      font-size: 14px;
+      line-height: 20px;
+      border-radius: 2px;
+      color: #fff;
+      display: inline-block;
+      text-align: center; }
+      .m-project .project-info .name .tag.etag {
+        background-color: #48d6b6; }
+      .m-project .project-info .name .tag.ntag {
+        background-color: #ff3300; }
+      .m-project .project-info .name .tag.ytag {
+        background-color: #ff5b5b; }
+    .m-project .project-info .name .award {
+      margin-left: 15px;
+      width: 87px;
+      height: 20px;
+      line-height: 20px;
+      font-size: 12px;
+      color: #ff3300;
+      border-radius: 2px;
+      border: 1px solid #ff3300;
+      background-color: #fff5f2;
+      display: inline-block; }
+      .m-project .project-info .name .award .bg {
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+        width: 47px;
+        background-color: #ff3300;
+        color: #fff;
+        text-align: center;
+        display: inline-block; }
+      .m-project .project-info .name .award .num {
+        width: 40px;
+        text-align: center;
+        display: inline-block; }
+    .m-project .project-info .name .redpackage {
+      margin-left: 10px;
+      width: 33px;
+      height: 36px;
+      background: url(../../Content/images/redpackage.gif) no-repeat;
+      display: inline-block;
+      vertical-align: middle; }
   .m-project .project-info .info {
     margin: 0 30px;
     padding: 30px 0;
@@ -579,6 +629,20 @@
     height: 100px; }
 .m-project .bd {
   margin-bottom: 30px; }
+  .m-project .bd .login-sign .img {
+    width: 284px;
+    height: 91px;
+    margin: 110px auto 12px; }
+    .m-project .bd .login-sign .img img {
+      width: 100%;
+      height: 100%; }
+  .m-project .bd .login-sign .tip {
+    padding-bottom: 120px;
+    letter-spacing: 1px;
+    color: #676770;
+    text-align: center; }
+    .m-project .bd .login-sign .tip a {
+      color: #0790ff; }
 .m-project .project-detail {
   width: 840px;
   background-color: #fff; }
@@ -618,6 +682,25 @@
   padding: 20px 40px 16px;
   font-size: 16px;
   color: #343440; }
+  .m-project .tabs-detail-1 .tit .tips {
+    top: -12px;
+    left: 100px;
+    padding: 5px;
+    line-height: 16px;
+    font-size: 10px;
+    box-shadow: 0 1px 6px 0 rgba(7, 144, 255, 0.15);
+    color: #0790ff;
+    background-color: #fff;
+    display: none; }
+    .m-project .tabs-detail-1 .tit .tips:after {
+      content: '';
+      position: absolute;
+      border-top: 7px solid #fff;
+      border-right: 7px solid transparent;
+      border-left: 7px solid transparent;
+      left: 56px;
+      bottom: -7px;
+      filter: drop-shadow(0 1px 6px rgba(7, 144, 255, 0.15)); }
 .m-project .tabs-detail-1 .progress-box ul {
   margin: 10px 0 18px; }
   .m-project .tabs-detail-1 .progress-box ul li {
@@ -675,11 +758,11 @@
   border: 1px solid #E3EAEF; }
   .m-project .tabs-detail-1 .table-box table tr {
     height: 42px;
-    line-height: 42px;
     border-bottom: 1px solid #E3EAEF; }
     .m-project .tabs-detail-1 .table-box table tr:last-child {
       border-bottom: none; }
   .m-project .tabs-detail-1 .table-box table td {
+    padding: 10px;
     border-right: 1px solid #E3EAEF;
     text-align: center; }
     .m-project .tabs-detail-1 .table-box table td:last-child {
@@ -710,9 +793,50 @@
       border-top: 7px solid transparent;
       left: -7px;
       margin-top: -6px; }
+    .m-project .tabs-detail-1 .table-box table .tips.tips1 {
+      left: 125px; }
+.m-project .tabs-detail-1 .table-box-1 table {
+  margin: 0 40px 20px;
+  width: 760px; }
+  .m-project .tabs-detail-1 .table-box-1 table tr {
+    height: 44px;
+    line-height: 44px; }
+  .m-project .tabs-detail-1 .table-box-1 table tbody tr:hover {
+    background-color: #ffede8; }
+  .m-project .tabs-detail-1 .table-box-1 table tbody tr:nth-child(even) {
+    background-color: #fbfcfd; }
+    .m-project .tabs-detail-1 .table-box-1 table tbody tr:nth-child(even):hover {
+      background-color: #ffede8; }
+  .m-project .tabs-detail-1 .table-box-1 table thead tr {
+    background-color: #f0f8fe; }
+  .m-project .tabs-detail-1 .table-box-1 table th, .m-project .tabs-detail-1 .table-box-1 table td {
+    text-align: center; }
+  .m-project .tabs-detail-1 .table-box-1 table th {
+    color: #343440;
+    width: 33.3%; }
+  .m-project .tabs-detail-1 .table-box-1 table td {
+    color: #676770;
+    border-bottom: 1px solid #F3F7FA; }
+.m-project .tabs-detail-1 .etable-box table {
+  margin: 0 40px 25px;
+  border: 1px solid #E3EAEF; }
+  .m-project .tabs-detail-1 .etable-box table td {
+    line-height: 28px;
+    letter-spacing: 1px;
+    color: #898990;
+    border-right: 1px solid #E3EAEF; }
+    .m-project .tabs-detail-1 .etable-box table td:last-child {
+      border-right: none; }
+    .m-project .tabs-detail-1 .etable-box table td:nth-child(odd) {
+      width: 158px;
+      background-color: #f4fafe;
+      text-align: center; }
+    .m-project .tabs-detail-1 .etable-box table td:nth-child(even) {
+      padding: 15px 30px; }
 .m-project .tabs-detail-1 .risk .detail, .m-project .tabs-detail-1 .record .detail, .m-project .tabs-detail-1 .repayment .detail {
   padding: 0 40px 16px; }
   .m-project .tabs-detail-1 .risk .detail p, .m-project .tabs-detail-1 .record .detail p, .m-project .tabs-detail-1 .repayment .detail p {
+    line-height: 28px;
     color: #898990; }
 .m-project .tabs-detail-1, .m-project .tabs-detail-2, .m-project .tabs-detail-3, .m-project .tabs-detail-4, .m-project .tabs-detail-5 {
   min-height: 730px; }
@@ -756,12 +880,17 @@
     top: 14.5px;
     width: 16px;
     height: 15px;
-    background-position: -12px 0; }
+    background-position: -28px 0; }
   .m-project .tabs-detail-4 .icon.app-icon, .m-project .tabs-detail-5 .icon.app-icon {
     top: 12px;
     width: 12px;
     height: 20px;
     background-position: 0 0; }
+  .m-project .tabs-detail-4 .icon.aicon, .m-project .tabs-detail-5 .icon.aicon {
+    top: 14px;
+    width: 16px;
+    height: 16px;
+    background-position: -12px 0; }
 .m-project .tabs-detail-5 .ptlr {
   padding: 35px 40px 0; }
 .m-project .tabs-detail-5 .credit-info li {

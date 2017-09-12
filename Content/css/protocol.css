@@ -1,0 +1,118 @@
+.m-nav .nav {
+  border-bottom: 1px solid #EBEFF3; }
+
+.m-protocol {
+  padding: 30px 0 80px;
+  background-color: #fff; }
+  .m-protocol .protocol {
+    padding: 25px 60px;
+    border: 1px solid #EBEFF3; }
+    .m-protocol .protocol .main p {
+      letter-spacing: 1px;
+      line-height: 32px;
+      color: #787880;
+      clear: both;
+      zoom: 1; }
+    .m-protocol .protocol .main .line {
+      font-weight: bold;
+      text-decoration: underline; }
+    .m-protocol .protocol .main .icon-print {
+      top: -12px;
+      left: 56px;
+      width: 50px;
+      height: 57px;
+      background: url(../../Content/images/fingerprint.png);
+      display: block;
+      position: absolute; }
+    .m-protocol .protocol .main .icon-cachet {
+      top: -74px;
+      left: 160px;
+      width: 159px;
+      height: 159px;
+      background: url(../../Content/images/cachet.png) no-repeat;
+      display: inline-block;
+      position: absolute; }
+  .m-protocol .protocol-1 {
+    position: relative; }
+    .m-protocol .protocol-1 .icon-download {
+      top: 20px;
+      right: 24px;
+      width: 28px;
+      height: 28px;
+      background: url(../../Content/images/download.png);
+      display: inline-block;
+      cursor: pointer; }
+    .m-protocol .protocol-1 .title {
+      padding: 10px 0 16px;
+      letter-spacing: 1px;
+      font-size: 24px;
+      font-weight: normal;
+      color: #454550;
+      text-align: center; }
+    .m-protocol .protocol-1 .number {
+      padding-bottom: 10px;
+      color: #787880;
+      float: right; }
+    .m-protocol .protocol-1 table {
+      margin: 16px 0;
+      width: 100%;
+      border: 1px solid #EBEFF3; }
+      .m-protocol .protocol-1 table tr {
+        height: 50px;
+        border-bottom: 1px solid #EBEFF3; }
+        .m-protocol .protocol-1 table tr:last-child {
+          border-bottom: none; }
+      .m-protocol .protocol-1 table td {
+        width: 25%;
+        color: #787880;
+        text-align: center;
+        border-right: 1px solid #EBEFF3; }
+        .m-protocol .protocol-1 table td:last-child {
+          border-right: none; }
+    .m-protocol .protocol-1 .main .tit {
+      padding: 15px 0;
+      font-size: 16px;
+      color: #565660; }
+    .m-protocol .protocol-1 .main label {
+      display: block; }
+    .m-protocol .protocol-1 .main p > span {
+      display: block; }
+    .m-protocol .protocol-1 .main label {
+      float: left; }
+    .m-protocol .protocol-1 .main span {
+      margin-left: 26px; }
+      .m-protocol .protocol-1 .main span span {
+        margin-left: 0; }
+    .m-protocol .protocol-1 .main .person {
+      padding-top: 30px; }
+      .m-protocol .protocol-1 .main .person p {
+        padding: 0;
+        clear: none; }
+        .m-protocol .protocol-1 .main .person p span {
+          z-index: 5;
+          margin-left: 0;
+          display: inline-block;
+          position: relative; }
+      .m-protocol .protocol-1 .main .person .w220 {
+        width: 220px; }
+      .m-protocol .protocol-1 .main .person .ml220 {
+        margin-left: 225px; }
+  .m-protocol .protocol3 .main .title {
+    padding: 15px 0 20px;
+    font-size: 18px;
+    color: #454550;
+    text-align: center; }
+  .m-protocol .protocol3 .main .lg {
+    padding-bottom: 10px;
+    font-size: 16px; }
+  .m-protocol .protocol3 .main .tin {
+    text-indent: 2em; }
+  .m-protocol .protocol3 .main .person {
+    padding-top: 12px; }
+    .m-protocol .protocol3 .main .person p span {
+      position: relative;
+      z-index: 5; }
+    .m-protocol .protocol3 .main .person p .icon-print {
+      left: 76px; }
+
+/*# sourceMappingURL=protocol.css.map */

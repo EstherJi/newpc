@@ -101,6 +101,20 @@
 .m-basic .item .img2 {
   width: 920px;
   height: 340px; }
+.m-basic .item .chart-box {
+  margin: 0 20px;
+  padding-bottom: 40px; }
+  .m-basic .item .chart-box.bb {
+    border-bottom: 1px dashed #CCD8E2; }
+  .m-basic .item .chart-box p {
+    padding: 20px 25px 10px;
+    letter-spacing: 1px;
+    font-size: 14px;
+    color: #676770; }
+  .m-basic .item .chart-box .chart {
+    margin: 0 20px;
+    width: 420px;
+    height: 280px; }
 
 .m-important .table-box {
   margin-top: 30px; }
@@ -208,6 +222,8 @@
       color: #565660; }
 .m-data .nbox1 {
   margin: 2px 25px 25px; }
+  .m-data .nbox1.mb0 {
+    margin-bottom: 0; }
   .m-data .nbox1 li {
     width: 458px;
     height: 50px;
@@ -215,6 +231,9 @@
     color: #565660;
     background-color: #f9fafc;
     text-align: center; }
+    .m-data .nbox1 li span {
+      font-size: 12px;
+      color: #676770; }
 .m-data .cbox {
   padding-top: 15px;
   margin: 0 25px; }

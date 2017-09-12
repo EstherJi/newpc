@@ -1195,6 +1195,84 @@ $borderColor: #EBEFF3;
 	}
 }
 
+.m-bid{
+	.table-box{
+		table{
+			th{
+				width: 14.3%;
+			}
+
+			td{
+				& > a{
+					position: relative;
+					color: #676770;
+					// z-index: 5;
+
+					&:hover{
+						color: $blueColor;
+					}
+				}
+
+				.icon-down{
+					margin-left: 10px;
+					width: 8px;
+					height: 8px;
+					border: 1px solid #b9bbbd;
+					border-bottom-width: 0;
+					border-right-width: 0;
+					transition: transform .5;
+					-webkit-transition: transform .5s;
+					transform: translateY(40%) rotate(-135deg);
+					position: absolute;
+				}
+
+				.down{
+					padding-top: 44px;
+					top: 0;
+					left: 20px;
+					width: 110px;
+					border-radius: 2px;
+					box-shadow: 0px 3px 4px 0px rgba(57, 166, 255, .12);
+					background-color: #fff;
+					transition: all .2s ease-in-out;
+					display: none;
+					z-index: 3;
+
+					& > a{
+						padding-bottom: 10px;
+						margin-left: -18px;
+						color: #676770;
+						display: block;
+
+						&:hover{
+							color: $blueColor;
+						}
+					}
+				}
+
+				&:hover{
+					& > a{
+						z-index: 5;
+					}
+
+					.icon-down{
+						z-index: 5;
+						transition: transform .5s;
+						-webkit-transition: transform .5s;
+						transform: translateY(70%) rotate(45deg);
+					}
+
+					.down{
+						transition: all .2s ease-in-out;
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+
 /* table */
 .m-funsflow, .m-bid, .m-wallet, .m-message, .m-invition, .m-autobid{
 	.table-box{

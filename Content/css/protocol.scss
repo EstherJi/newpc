@@ -1,0 +1,194 @@
+
+.m-nav .nav{
+	border-bottom: 1px solid #EBEFF3;
+}
+
+.m-protocol{
+	padding: 30px 0 80px;
+	background-color: #fff;
+
+	.protocol{
+		padding: 25px 60px;
+		border: 1px solid #EBEFF3;
+
+		.main{
+			p{
+				letter-spacing: 1px;
+				line-height: 32px;
+				color: #787880;
+				clear: both;
+				zoom: 1;
+			}
+
+			.line{
+				font-weight: bold;
+				text-decoration: underline;
+			}
+
+			.icon-print{
+				top: -12px;
+				left: 56px;
+				width: 50px;
+				height: 57px;
+				background: url(../../Content/images/fingerprint.png);
+				display: block;
+				position: absolute;
+			}
+
+			.icon-cachet{
+				top: -74px;
+				left: 160px;
+				width: 159px;
+				height: 159px;
+				background: url(../../Content/images/cachet.png) no-repeat;
+				display: inline-block;
+				position: absolute;
+			}
+		}
+	}
+
+	.protocol-1{
+		position: relative;
+
+		.icon-download{
+			top: 20px;
+			right: 24px;
+			width: 28px;
+			height: 28px;
+			background: url(../../Content/images/download.png);
+			display: inline-block;
+			cursor: pointer;
+		}
+
+		.title{
+			padding: 10px 0 16px;
+			letter-spacing: 1px;
+			font-size: 24px;
+			font-weight: normal;
+			color: #454550;
+			text-align: center;
+		}
+
+		.number{
+			padding-bottom: 10px;
+			color: #787880;
+			float: right;
+		}
+
+		table{
+			margin: 16px 0;
+			width: 100%;
+			border: 1px solid #EBEFF3;
+
+			tr{
+				height: 50px;
+				border-bottom: 1px solid #EBEFF3;
+
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+
+			td{
+				width: 25%;
+				color: #787880;
+				text-align: center;
+				border-right: 1px solid #EBEFF3;
+
+				&:last-child{
+					border-right: none;
+				}
+			}
+		}
+
+		.main{
+			.tit{
+				padding: 15px 0;
+				font-size: 16px;
+				color: #565660;
+			}
+
+			label{
+				display: block;
+			}
+
+			p{
+				& > span{
+					display: block;
+				}
+			}
+
+			label{
+				float: left;
+			}
+
+			span{
+				margin-left: 26px;
+
+				span{
+					margin-left: 0;
+				}
+			}
+
+			.person{
+				padding-top: 30px;
+
+				p{
+					padding: 0;
+					clear: none;
+
+					span{
+						z-index: 5;
+						margin-left: 0;
+						display: inline-block;
+						position: relative;
+					}
+				}
+
+				.w220{
+					width: 220px;
+				}
+
+				.ml220{
+					margin-left: 225px;
+				}
+			}
+		}
+	}
+
+	.protocol3{
+		.main{
+			.title{
+				padding: 15px 0 20px;
+				font-size: 18px;
+				color: #454550;
+				text-align: center;
+			}
+
+			.lg{
+				padding-bottom: 10px;
+				font-size: 16px;
+			}
+
+			.tin{
+				text-indent: 2em;
+			}
+
+			.person{
+				padding-top: 12px;
+				
+				p{
+					span{
+						position: relative;
+						z-index: 5;
+					}
+
+					.icon-print{
+						left: 76px;
+					}
+				}
+			}
+		}
+	}
+}
+

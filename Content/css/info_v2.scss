@@ -168,6 +168,28 @@ $redHoverColor: #ff5c33;
 			width: 920px;
 			height: 340px;
 		}
+
+		.chart-box{
+			margin: 0 20px;
+			padding-bottom: 40px;
+			
+			&.bb{
+				border-bottom: 1px dashed #CCD8E2;
+			}
+
+			p{
+				padding: 20px 25px 10px;
+				letter-spacing: 1px;
+				font-size: 14px;
+				color: #676770;
+			}
+
+			.chart{
+				margin: 0 20px;
+				width: 420px;
+				height: 280px;
+			}
+		}
 	}
 }
 
@@ -352,6 +374,10 @@ $redHoverColor: #ff5c33;
 	.nbox1{
 		margin: 2px 25px 25px;
 
+		&.mb0{
+			margin-bottom: 0;
+		}
+
 		li{
 			width: 458px;
 			height: 50px;
@@ -359,6 +385,11 @@ $redHoverColor: #ff5c33;
 			color: #565660;
 			background-color: #f9fafc;
 			text-align: center;
+
+			span{
+				font-size: 12px;
+				color: #676770;
+			}
 		}
 	}
 

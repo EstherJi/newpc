@@ -89,6 +89,9 @@
     width: 790px; }
     .modal.lg .btn {
       margin-left: 315px; }
+  .modal.blg {
+    width: 980px;
+    margin-left: -490px; }
   .modal .cwmodal p {
     margin: 40px 30px 54px;
     line-height: 26px;
@@ -488,5 +491,121 @@
         .modal .rsmodal .progress .pchild.p5 {
           width: 536px;
           background-position: 0 -32px; }
+  .modal .payment-modal {
+    margin: 24px 30px 44px; }
+    .modal .payment-modal p {
+      padding-bottom: 20px;
+      font-size: 16px;
+      color: #565660; }
+    .modal .payment-modal table {
+      width: 100%; }
+      .modal .payment-modal table tr {
+        height: 44px; }
+      .modal .payment-modal table th {
+        width: 20%;
+        color: #343440;
+        background-color: #f0f8fe;
+        text-align: center; }
+      .modal .payment-modal table td {
+        color: #676770;
+        text-align: center; }
+      .modal .payment-modal table tbody tr {
+        border-bottom: 1px dashed #CCD8E2; }
+        .modal .payment-modal table tbody tr:hover {
+          background-color: #ffede8; }
+  .modal.ymodal .icon {
+    background: url(../../Content/images/credit/yicon.png);
+    display: inline-block; }
+  .modal.ymodal .banner {
+    width: 600px;
+    height: 140px;
+    background: url(../../Content/images/credit/ybanner.png) no-repeat; }
+    .modal.ymodal .banner .close {
+      top: 20px;
+      right: 20px;
+      width: 15px;
+      height: 13px;
+      background-position: 0 0; }
+  .modal.ymodal .main {
+    padding: 40px 34px 45px; }
+    .modal.ymodal .main label {
+      width: 94px;
+      line-height: 48px;
+      color: #454550;
+      display: block;
+      float: left; }
+      .modal.ymodal .main label .qicon {
+        margin-right: 6px;
+        width: 15px;
+        height: 15px;
+        background-position: -15px 0;
+        vertical-align: middle; }
+        .modal.ymodal .main label .qicon:hover {
+          background-position: -30px 0; }
+          .modal.ymodal .main label .qicon:hover ~ .tips {
+            display: block; }
+      .modal.ymodal .main label .tips {
+        left: -126px;
+        top: 46px;
+        padding: 10px;
+        width: 256px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        font-size: 12px;
+        color: #0790ff;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 1px 6px 0 rgba(7, 144, 255, 0.15);
+        z-index: 2;
+        display: none; }
+        .modal.ymodal .main label .tips:after {
+          top: -19px;
+          left: 122px;
+          border-width: 10px;
+          border-style: solid;
+          border-color: transparent transparent #fff transparent;
+          position: absolute;
+          content: '';
+          filter: drop-shadow(0 1px 6px rgba(7, 144, 255, 0.15)); }
+    .modal.ymodal .main p {
+      margin-left: 110px; }
+      .modal.ymodal .main p input {
+        width: 418px;
+        height: 48px;
+        line-height: 48px;
+        border-radius: 4px;
+        border: 1px solid #E3EAEF;
+        color: #454550;
+        text-indent: 10px; }
+        .modal.ymodal .main p input:-webkit-input-placeholder {
+          color: #908f9a; }
+        .modal.ymodal .main p input:focus {
+          border-color: #0790ff; }
+      .modal.ymodal .main p .warning {
+        top: -25px;
+        padding-left: 10px;
+        width: 410px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        color: rgba(255, 51, 0, 0.8);
+        background-color: #ffe1d9; }
+    .modal.ymodal .main .btn {
+      width: 420px;
+      height: 50px;
+      line-height: 50px;
+      margin: 35px 0 0 110px;
+      background-color: #ced3d7; }
+      .modal.ymodal .main .btn.active {
+        background-color: #0790ff; }
+  .modal .ybmodal p {
+    padding: 36px 0 10px;
+    letter-spacing: 1px; }
+    .modal .ybmodal p.sm {
+      padding: 0 0 44px;
+      font-size: 14px; }
+      .modal .ybmodal p.sm span {
+        padding: 0 3px;
+        color: #0790ff; }
 
 /*# sourceMappingURL=modal.css.map */

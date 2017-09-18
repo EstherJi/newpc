@@ -607,5 +607,40 @@
       .modal .ybmodal p.sm span {
         padding: 0 3px;
         color: #0790ff; }
+  .modal .remodal p {
+    padding: 40px 0 30px;
+    font-size: 16px;
+    color: #676770;
+    text-align: center; }
+  .modal .remodal ~ .btn {
+    margin-left: 185px;
+    width: 230px; }
+  .modal .remodal ~ .tips {
+    padding: 6px 0 34px;
+    font-size: 12px;
+    text-align: center; }
+    .modal .remodal ~ .tips span {
+      padding-right: 4px;
+      color: #ff3300; }
+    .modal .remodal ~ .tips a {
+      padding-left: 12px;
+      color: #676770; }
+      .modal .remodal ~ .tips a:hover {
+        color: #0790ff; }
+  .modal .amodal p {
+    padding: 36px 0 32px;
+    font-size: 20px;
+    color: #454550;
+    text-align: center; }
+  .modal .amodal ~ .btn {
+    margin-left: 210px;
+    width: 180px; }
+  .modal .amodal ~ .tip {
+    padding: 8px 0 32px;
+    font-size: 12px;
+    text-align: center; }
+    .modal .amodal ~ .tip span {
+      padding-right: 4px;
+      color: #ff3300; }
 
 /*# sourceMappingURL=modal.css.map */

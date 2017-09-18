@@ -8,7 +8,6 @@
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/account_v2.css">
-		<link rel="stylesheet" type="text/css" href="../../Content/css/modal.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -99,18 +98,20 @@
 							<li><a href="#">充值提现</a></li>
 							<li><a href="#">投资记录</a></li>
 							<li><a href="#">资金流水</a></li>
+							<li><a href="#">自动投标</a></li>
 						</ul>
 					</div>
 					<div class="item">
 						<p><i class="side-icon icon-2"></i>我的奖励</p>
 						<ul>
 							<li><a href="#">红包奖券</a></li>
+							<li class="cur"><a href="#">体验金</a></li>
 						</ul>
 					</div>
 					<div class="item">
 						<p><i class="side-icon icon-3"></i>账号管理</p>
 						<ul>
-							<li class="cur"><a href="#">安全认证</a></li>
+							<li><a href="#">安全认证</a></li>
 							<li><a href="#">银行卡</a></li>
 							<li><a href="#">我的消息</a></li>
 						</ul>
@@ -123,76 +124,57 @@
 					</div>
 				</div>
 				<div class="main f-fr">
-					<div class="m-security">
-						<h3 class="title">安全认证</h3>
-						<div class="lbox">
-							<p class="ptb">
-								<label>您的账户安全级别：</label>
-								<span class="level low">
-									低
-									<span class="progress f-pr">
-										<span class="child f-pa" style="width: 33.3%"></span>
-									</span>
-								</span>
-								<span>建议您启动全部安全设置，以保障账户和资金安全</span>
-							</p>
-							<p class="pb20">
-								<label>上次登录：</label>
-								<span>移动端2017-07-13 11:19</span>
-							</p>
+					<div class="m-exper">
+						<div class="hd">
+							<h3 class="title">体验金</h3>
+							<div class="ainfo plr24 clearfix">
+								<div class="item w306 f-fl">
+									<p>体验金余额（元）</p>
+									<p class="num red">20000.00</p>
+								</div>
+								<div class="item w260 f-fl">
+									<p>已收收益（元）</p>
+									<p class="num">0.00</p>
+								</div>
+								<div class="item pl48 f-fl">
+									<p>待收益（元）</p>
+									<p class="num">0.00</p>
+								</div>
+							</div>
 						</div>
-						<ul class="slist">
-							<li class="pt">
-								<span class="yorn"><i class="sicon"></i>未开户</span>
-								<span class="tit">资金托管账户</span>
-								<span class="tip wauto">第三方资金托管账户即汇付天下，需开通后才能进行投资</span>
-								<span class="btn-box">
-									<a href="#" class="btn personal">个人开户</a>
-									<a href="#" class="btn enterprise">企业开户</a>
-								</span>
-							</li>
-							<li>
-								<span class="yorn cur"><i class="sicon"></i>已验证</span>
-								<span class="tit">手机认证</span>
-								<span class="tip">136******831</span>
-							</li>
-							<li>
-								<span class="yorn"><i class="sicon"></i>未认证</span>
-								<span class="tit">实名认证</span>
-								<span class="tip">完成实名认证，账户更安全、理财更放心</span>
-								<a class="auth f-fr">立即认证</a>
-							</li>
-							<li>
-								<span class="yorn cur"><i class="sicon"></i>已设置</span>
-								<span class="tit">交易密码</span>
-								<span class="tip">保障资金安全，修改银行卡、取现、充值等资金相关操作时使用</span>
-								<a class="tpwd f-fr">设置</a>
-							</li>
-							<li>
-								<span class="yorn cur"><i class="sicon"></i>已设置</span>
-								<span class="tit">登录密码</span>
-								<span class="tip mt16">安全性高的密码可以使账户更安全。建议您定期更换密码，且设置一个包含数字和字母，并长度超过6位以上的密码</span>
-								<a class="lpwd f-fr">修改</a>
-							</li>
-							<li>
-								<span class="yorn"><i class="sicon"></i>未认证</span>
-								<span class="tit">绑定银行卡</span>
-								<span class="tip">您尚未设置提现银行卡，无法进行充值、提现等操作</span>
-								<a class="bankcard f-fr">立即绑定</a>
-							</li>
-							<li>
-								<span class="yorn"><i class="sicon"></i>未认证</span>
-								<span class="tit">风险承受能力</span>
-								<span class="tip">风险承受能力评估（今年您还可以评估3次）</span>
-								<a class="risk f-fr">立即认证</a>
-							</li>
-							<li>
-								<span class="yorn"><i class="sicon"></i>未认证</span>
-								<span class="tit">邮箱认证</span>
-								<span class="tip">您尚未绑定邮箱，绑定邮箱可增加您的账户安全</span>
-								<a class="email f-fr">立即认证</a>
-							</li>
-						</ul>
+						<div class="bd mt10">
+							<div class="stabs plr24 clearfix">
+								<div class="tabs f-fl">
+									<a class="cur">获取记录</a>
+								</div>
+							</div>
+							<div class="tips">
+								<p class="tit">温馨提示</p>
+								<div class="detail">
+									<p><label>1、</label><span>体验标是无忧微贷奖励给平台新用户投资体验的虚拟项目。用户将体验金做为本金进行模拟投标，投标产生的收益归投资者所有项目到期后体验金本金由平台收回。</span></p>
+									<p><label>2、</label><span>获得体验金后，将体验金投资相应的体验标，计息方式和本金投资计息方式相同，到期还利息，收回相应的体验金。</span></p>
+									<p><label>3、</label><span>登录无忧微贷账户，在“个人中心--我的奖励--体验金”页面即可查款我的体验金详情。</span></p>
+								</div>
+							</div>
+							<div class="table-box">
+								<table>
+									<thead>
+										<tr>
+											<td>获取时间</td>
+											<td>获取金额（元）</td>
+											<td>获取来源</td>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>2017-01-11 13:54</td>
+											<td>20000</td>
+											<td>新手体验金</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -272,146 +254,7 @@
 			</ul>
 		</div>
 
-		<!-- 登录密码 -->
-		<div class="authmodal hide" id="pwdmodal">
-			<p>
-				<label>当前密码：</label>
-				<input type="text" placeholder="请输入当前密码">
-			</p>
-			<p>
-				<label>新密码：</label>
-				<input type="text" placeholder="请输入新登录密码">
-			</p>
-			<p>
-				<label>确认密码：</label>
-				<input type="text" placeholder="再次确认新登录密码">
-			</p>
-		</div>
-
-		<!-- 交易密码 -->
-		<div class="authmodal hide" id="tpwdmodal">
-			<p>
-				<label>手机号码：</label>
-				<span class="mobile">136***8831</span>
-			</p>
-			<p class="lh50">
-				<label>验证码：</label>
-				<input type="text" class="sm">
-				<a class="code f-fr">获取验证码</a>
-			</p>
-			<p class="lh50">
-				<label>支付密码：</label>
-				<input type="text" placeholder="请输入支付密码">
-			</p>
-			<p class="lh50">
-				<label>确认密码：</label>
-				<input type="text" placeholder="再次确认密码">
-			</p>
-		</div>
-
-		<!-- 添加银行卡 -->
-		<div class="abmodal hide" id="abmodal">
-			<ul class="ablist">
-				<li class="f-pr">
-					<label>银行卡号：</label>
-					<input type="text" class="ipt" placeholder="请输入本人银行卡号">
-					<span class="warning f-pa">请输入银行卡号！</span>
-				</li>
-				<li>
-					<label>选择银行：</label>
-					<select class="sel ml10">
-						<option value="0">请选择</option>
-						<option value="1">中国建设银行</option>
-						<option value="2">农业银行</option>
-						<option value="3">招商银行</option>
-					</select>
-				</li>
-				<li>
-					<label>开户支行：</label>
-					<input type="text" class="ipt" placeholder="请输入您的开户支行">
-				</li>
-				<li>
-					<label>所在城市：</label>
-					<select class="sel sm ml10">
-						<option value="0">请选择</option>
-						<option value="1">广东</option>
-					</select>
-					<select class="sel sm f-fr">
-						<option value="0">请选择</option>
-						<option value="1">深圳</option>
-					</select>
-				</li>
-				<li>
-					<label>手机号码：</label>
-					<span class="mobile">136***8831</span>
-				</li>
-				<li>
-					<label>验证码：</label>
-					<input type="text" class="ipt sm">
-					<!-- 不可点击 .disable -->
-					<a class="code f-fr">获取验证码</a>
-				</li>
-			</ul>
-		</div>
-
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
-		<script type="text/javascript" src="../../Scripts/modal.js"></script>
-
-		<script type="text/javascript">
-			new AlertModal({
-				content: '<p>第三方资金托管账户开户成功</p>',
-				title: '<i class="bricon sicon f-fl"></i>无忧微贷提醒您',
-				contentNodeCn: 'amodal',
-				confirm: '立即跳转',
-				success: function(){}
-			}).init();
-			$('.modal').append('<p class="tip"><span>8</span>秒后页面自动跳转到首页</p>');
-
-			$('.email').on('click', function(){
-				new AlertModal({
-					content: '<p><label>电子邮箱：</label><input type="text" placeholder="请输入您的邮箱"></p>',
-					title: '邮箱认证',
-					contentNodeCn: 'authmodal',
-					success: function(){}
-				}).init();
-			});
-
-			$('.lpwd').on('click', function(){
-				new AlertModal({
-					content: $('#pwdmodal').html(),
-					title: '登录密码',
-					contentNodeCn: 'authmodal',
-					success: function(){}
-				}).init();
-			});
-
-			$('.tpwd').on('click', function(){
-				new AlertModal({
-					content: $('#tpwdmodal').html(),
-					title: '交易密码',
-					contentNodeCn: 'authmodal',
-					success: function(){}
-				}).init();
-			});
-
-			$('.auth').on('click', function(){
-				new AlertModal({
-					content: '<p><label>真实姓名：</label><input type="text" placeholder="请输入真实姓名"></p><p><label>身份证号：</label><input type="text" placeholder="请输入身份证号"></p>',
-					title: '实名认证',
-					contentNodeCn: 'authmodal',
-					success: function(){}
-				}).init();
-			});
-
-			$('.bankcard').on('click', function(){
-				new AlertModal({
-					content: $('#abmodal').html(),
-					title: '添加银行卡',
-					contentNodeCn: 'abmodal',
-					success: function(){}
-				}).init();
-			});
-		</script>
 	</body>
 </html>

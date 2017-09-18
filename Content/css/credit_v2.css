@@ -154,6 +154,47 @@
         line-height: 18px;
         border: 1px solid #FF6600;
         color: #ff6600; }
+      .credit-list .credit h3 .tag {
+        margin-right: 3px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        border-radius: 2px;
+        background-color: #ff5b5b;
+        color: #fff;
+        display: inline-block;
+        text-align: center; }
+      .credit-list .credit h3 .award {
+        margin-left: 12px;
+        width: 87px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        color: #ff3300;
+        border-radius: 2px;
+        border: 1px solid #ff3300;
+        background-color: #fff5f2;
+        display: inline-block; }
+        .credit-list .credit h3 .award .bg {
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+          width: 47px;
+          background-color: #ff3300;
+          color: #fff;
+          text-align: center;
+          display: inline-block; }
+        .credit-list .credit h3 .award .num {
+          width: 40px;
+          text-align: center;
+          display: inline-block; }
+      .credit-list .credit h3 .redpackage {
+        margin-left: 10px;
+        width: 33px;
+        height: 36px;
+        background: url(../../Content/images/redpackage.gif) no-repeat;
+        display: inline-block;
+        vertical-align: bottom; }
     .credit-list .credit .info {
       padding-left: 40px; }
       .credit-list .credit .info .w170 {
@@ -1120,6 +1161,43 @@
           color: #ff3300; }
         .m-bidconfirm .detail .minfo p > span .bold {
           color: #565660; }
+        .m-bidconfirm .detail .minfo p > span a {
+          padding-left: 32px;
+          font-size: 12px;
+          color: #0790ff; }
+        .m-bidconfirm .detail .minfo p > span .qicon {
+          margin-left: 5px;
+          width: 14px;
+          height: 14px;
+          background: url(../../Content/images/credit/project-top-icon.png) no-repeat;
+          background-position: -38px 0;
+          cursor: pointer;
+          vertical-align: middle;
+          display: inline-block; }
+          .m-bidconfirm .detail .minfo p > span .qicon:hover {
+            background-position: -24px 0; }
+            .m-bidconfirm .detail .minfo p > span .qicon:hover ~ .tips {
+              display: inline-block; }
+        .m-bidconfirm .detail .minfo p > span .tips {
+          top: -12px;
+          margin-left: 12px;
+          padding: 4px 8px;
+          border-radius: 4px;
+          background-color: #fff;
+          box-shadow: 0 1px 6px 0 rgba(7, 144, 255, 0.15);
+          font-size: 10px;
+          color: #0790ff;
+          display: none;
+          position: absolute; }
+          .m-bidconfirm .detail .minfo p > span .tips:after {
+            content: '';
+            position: absolute;
+            border-right: 8px solid #fff;
+            border-bottom: 8px solid transparent;
+            border-top: 8px solid transparent;
+            left: -8px;
+            top: 15px;
+            filter: drop-shadow(0 1px 6px rgba(7, 144, 255, 0.15)); }
     .m-bidconfirm .detail .iptbox {
       padding: 30px 0 10px; }
       .m-bidconfirm .detail .iptbox p {
@@ -1169,6 +1247,11 @@
         width: 450px;
         height: 50px;
         line-height: 50px; }
+      .m-bidconfirm .detail .iptbox span {
+        margin-left: 10px;
+        color: #676770; }
+        .m-bidconfirm .detail .iptbox span .red {
+          color: #ff3300; }
     .m-bidconfirm .detail .btn {
       margin-left: 140px;
       width: 450px;
@@ -1182,6 +1265,77 @@
       text-align: center;
       display: block; }
       .m-bidconfirm .detail .btn:hover {
+        background-color: #39a6ff; }
+
+.m-bidresult {
+  margin: 30px 0;
+  height: 583px;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-bidresult .title {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #454550;
+    border-bottom: 1px solid #EBEFF3; }
+  .m-bidresult .bd p {
+    padding-top: 118px;
+    line-height: 38px;
+    font-size: 20px;
+    color: #676770;
+    text-align: center; }
+    .m-bidresult .bd p.sm {
+      padding-top: 10px;
+      line-height: 1;
+      font-size: 14px;
+      color: #908f9a; }
+      .m-bidresult .bd p.sm a {
+        color: #0790ff; }
+    .m-bidresult .bd p .icon {
+      margin-right: 20px;
+      width: 38px;
+      height: 38px;
+      display: inline-block;
+      vertical-align: middle; }
+      .m-bidresult .bd p .icon.sicon {
+        background: url(../../Content/images/credit/success.png) no-repeat; }
+      .m-bidresult .bd p .icon.eicon {
+        background: url(../../Content/images/credit/error.png) no-repeat; }
+    .m-bidresult .bd p span {
+      color: #ff3300; }
+  .m-bidresult .bd .btn {
+    margin: 0 auto;
+    width: 358px;
+    height: 42px;
+    line-height: 42px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    display: block; }
+    .m-bidresult .bd .btn.continue {
+      margin: 58px auto 20px;
+      border: 1px solid #ff3300;
+      background-color: #ff3300;
+      color: #fff; }
+      .m-bidresult .bd .btn.continue:hover {
+        border: 1px solid #ff5c33;
+        background-color: #ff5c33; }
+    .m-bidresult .bd .btn.view {
+      border: 1px solid #0790ff;
+      color: #0790ff; }
+      .m-bidresult .bd .btn.view:hover {
+        background-color: #0790ff;
+        color: #fff; }
+    .m-bidresult .bd .btn.back {
+      margin-top: 34px;
+      border: 1px solid #0790ff;
+      background-color: #0790ff;
+      color: #fff; }
+      .m-bidresult .bd .btn.back:hover {
+        border: 1px solid #39a6ff;
         background-color: #39a6ff; }
 
 /*# sourceMappingURL=credit_v2.css.map */

@@ -189,14 +189,15 @@ $borderColor: #EBEFF3;
 	}
 }
 
+
 .m-index{
 	.hd{
-		height: 208px;
+		height: 213px;
 		border: 1px solid $borderColor;
 		background-color: #fff;
 
 		.info-box{
-			margin: 34px 0 0;
+			margin: 30px 0 0;
 			width: 654px;
 			border-right: 1px dashed #CCD8E2;
 
@@ -241,6 +242,11 @@ $borderColor: #EBEFF3;
 							transition: all .3s ease-in-out;
 							display: block;
 						}
+					}
+
+					&.signed{
+						border-color: #DFE3E6;
+						color: #908f9a;
 					}
 				}
 
@@ -363,12 +369,12 @@ $borderColor: #EBEFF3;
 					margin-top: 6px;
 
 					.level{
-						padding: 0 28px 0 20px;
+						padding: 0 15px 0 8px;
 						line-height: 20px;
 						display: inline-block;
 
 						span{
-							padding-left: 28px;
+							padding-left: 8px;
 						}
 
 						.low{
@@ -404,19 +410,39 @@ $borderColor: #EBEFF3;
 				}
 
 				.sinfo{
-					padding-top: 20px;
+					padding-top: 15px;
 
-					.w156{
-						width: 156px;
+					.w188{
+						width: 188px;
+
+						label{
+							width: 60px;
+						}
 					}
+
+					.ml{
+						margin-left: 188px;
+					}
+
+					// .ml290{
+					// 	margin-left: 290px;
+
+					// 	label{
+					// 		width: 60px;
+					// 	}
+					// }
 
 					p{
 						line-height: 32px;
 						font-size: 18px;
 						color: #565660;
 
+						// &.w160{
+						// 	width: 160px;
+						// }
+
 						label{
-							width: 88px;
+							width: 82px;
 							font-size: 14px;
 							color: $lightColor;
 							display: inline-block;
@@ -431,6 +457,14 @@ $borderColor: #EBEFF3;
 						.time{
 							padding-left: 0;
 							color: #565660;
+						}
+
+						b{
+							font-weight: normal;
+
+							&:hover{
+								color: $redColor;
+							}
 						}
 					}
 				}
@@ -1079,7 +1113,7 @@ $borderColor: #EBEFF3;
 }
 
 /* wallet, bid */
-.m-wallet, .m-bid{
+.m-wallet, .m-bid, .m-exper{
 	.hd{
 		height: 188px;
 		border: 1px solid $borderColor;
@@ -1132,7 +1166,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid{
+.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid, .m-exper{
 	.stabs{
 		height: 59px;
 		line-height: 59px;
@@ -1274,7 +1308,7 @@ $borderColor: #EBEFF3;
 
 
 /* table */
-.m-funsflow, .m-bid, .m-wallet, .m-message, .m-invition, .m-autobid{
+.m-funsflow, .m-bid, .m-wallet, .m-message, .m-invition, .m-autobid, .m-exper{
 	.table-box{
 		margin: 25px 0 27px;
 
@@ -1468,7 +1502,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-recharge, .m-withdrawal, .m-coupon, .m-message{
+.m-recharge, .m-withdrawal, .m-coupon, .m-message, .m-exper, .m-invition{
 	.tips{
 		margin: 25px 24px 0;
 		padding: 20px;
@@ -1640,14 +1674,8 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-coupon{
-	border: 1px solid $borderColor;
-	background-color: #fff;
-	min-height: 757px;
-
+.m-coupon, .m-exper{
 	.tips{
-		margin-bottom: 24px;
-
 		.detail{
 			p{
 				label{
@@ -1661,6 +1689,16 @@ $borderColor: #EBEFF3;
 				}
 			}
 		}
+	}
+}
+
+.m-coupon{
+	border: 1px solid $borderColor;
+	background-color: #fff;
+	min-height: 757px;
+
+	.tips{
+		margin-bottom: 24px;
 	}
 
 	.tbox{
@@ -1994,6 +2032,10 @@ $borderColor: #EBEFF3;
 			height: 80px;
 			border-bottom: 1px solid #EBEFF3;
 
+			&.pt{
+				padding-top: 10px;
+			}
+
 			span{
 				margin-top: 28px;
 				float: left;
@@ -2033,6 +2075,15 @@ $borderColor: #EBEFF3;
 			.tip{
 				width: 425px;
 				color: #676770;
+
+				&.wauto{
+					width: auto;
+				}
+			}
+
+			.btn-box{
+				margin-top: 20px;
+				float: right;
 			}
 
 			a{
@@ -2041,10 +2092,42 @@ $borderColor: #EBEFF3;
 				color: $blueColor;
 				text-align: center;
 				display: inline-block;
+
+				&.btn{
+					margin-top: 0;
+					width: 88px;
+					height: 32px;
+					line-height: 32px;
+					border-radius: 4px;
+					text-align: center;
+					
+					&.personal{
+						margin: 0 8px 0 24px;
+						border: 1px solid #FD4444;
+						color: $redColor;
+
+						&:hover{
+							background-color: $redColor;
+							color: #fff;
+						}
+					}
+
+					&.enterprise{
+						border: 1px solid $blueColor;
+						color: $blueColor;
+
+						&:hover{
+							background-color: $blueColor;
+							color: #fff;
+						}
+					}
+				}
 			}
 		}
 	}
 }
+
+
 
 .m-message{
 	border: 1px solid $borderColor;
@@ -2360,7 +2443,43 @@ $borderColor: #EBEFF3;
 			}
 		}
 	}
+
+	.intable-box{
+		padding: 22px 0 36px;
+		margin: 0 24px;
+		border-bottom: 1px dashed #CCD8E2;
+
+		table{
+			width: 100%;
+			border: 1px solid #E3EAF0;
+
+			tr{
+				height: 48px;
+				border-bottom: 1px solid #E3EAF0;
+
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+
+			td{
+				border-right: 1px solid #E3EAF0;
+				color: #676770;
+				text-align: center;
+
+				&:last-child{
+					border-right: none;
+				}
+
+				&:first-child{
+					color: #565660;
+					background-color: #f0f8fe;
+				}
+			}
+		}
+	}
 }
+
 
 .m-autobid{
 	min-height: 757px;
@@ -2850,3 +2969,123 @@ $borderColor: #EBEFF3;
 	}
 }
 
+.m-exper{
+	.table-box{
+		margin: 44px 24px 27px;
+
+		table{
+			tbody{
+				tr{
+					&:last-child{
+						border-bottom: 1px solid #F3F7FA;
+					}
+				}
+			}
+		}
+	}
+}
+
+.m-enterprise{
+	min-height: 757px;
+	border: 1px solid $borderColor;
+	background-color: #fff;
+
+	.title{
+		a{
+			color: $blueColor;
+		}
+	}
+
+	.enterprise-list{
+		padding: 30px 0 0 24px;
+
+		li{
+			margin-bottom: 20px;
+
+			label{
+				width: 106px;
+				line-height: 50px;
+				color: #565660;
+				text-align: right;
+				float: left;
+			}
+
+			input{
+				margin-left: 15px;
+				width: 447px;
+				height: 48px;
+				line-height: 48px;
+				text-indent: 15px;
+				border-radius: 4px;
+				border: 1px solid #E3EAEF;
+				color: #676770;
+
+				&::-webkit-input-placeholder{
+					color: #908f9a;
+				}
+
+				&:focus{
+					border-color: $blueColor;
+					box-shadow: 0 1px 6px 2px rgba(7, 144, 255, .15);
+				}
+			}
+
+			.rbox{
+				margin-left: 125px;
+				line-height: 50px;
+
+				.icon{
+					margin-right: 12px;
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					border: 1px solid #BEBEC5;
+					display: inline-block;
+					position: relative;
+					vertical-align: middle;
+				}
+
+				span{
+					margin-right: 76px;
+					color: #676770;
+
+					&.cur{
+						color: $blueColor;
+
+						.icon{
+							border-color: $blueColor;
+
+							&:after{
+								content: '';
+								position: absolute;
+								width: 6px;
+								height: 6px;
+								border-radius: 50%;
+								background-color: $blueColor;
+								top: 3px;
+								left: 3px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.btn{
+		width: 449px;
+		height: 50px;
+		line-height: 50px;
+		margin: 10px 0 0 144px;
+		font-size: 16px;
+		border-radius: 4px;
+		background-color: $blueColor;
+		color: #fff;
+		text-align: center;
+		display: inline-block;
+
+		&:hover{
+			background-color: $blueHoverColor;
+		}
+	}
+}

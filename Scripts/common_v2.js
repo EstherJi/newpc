@@ -58,9 +58,9 @@ $(function(){
 
 	// 侧边工具栏显示弹框
 	$('.m-toolbar li').hover(function(){
-		$(this).children('.dropdown').show(300);
+		$(this).children('.dropdown').stop().fadeIn(300);
 	}, function(){
-		$(this).children('.dropdown').hide(300);
+		$(this).children('.dropdown').stop().fadeOut(300);
 	});
 
 	// 提示

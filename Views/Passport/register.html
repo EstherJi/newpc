@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/passport_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/modal.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -87,7 +88,11 @@
 		<div class="content">
 			<div class="m-passport">
 				<div class="ipt-box f-fl">
-					<h3>欢迎注册</h3>
+					<h3 class="pt">欢迎注册</h3>
+					<div class="ipt">
+						<span><i class="aicon"></i></span>
+						<input type="text" placeholder="请输入您的用户名">
+					</div>
 					<div class="ipt">
 						<span><i class="ricon ricon-1"></i></span>
 						<input type="text" placeholder="请输入您的手机号码">
@@ -115,7 +120,7 @@
 					<p class="tips"><i class="cicon"></i>我同意<a href="#">《无忧微贷金融平台在线服务协议》</a></p>
 					<a href="#" class="btn reg">注册</a>
 				</div>
-				<div class="ibox">
+				<div class="ibox pt">
 					<p class="tips f-fr">已有账号？<a href="#">立即登录</a></p>
 					<p class="img"><img src="../../Content/images/passport/register.png"></p>
 				</div>
@@ -198,5 +203,20 @@
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/modal.js"></script>
+
+		<script type="text/javascript">
+			// 注册成功弹窗
+			new AlertModal({
+				content: '<p>开通汇付天下资金托管账户，保障资金安全</p>',
+				title: '<i class="bricon sicon f-fl"></i>注册成功',
+				contentNodeCn: 'remodal',
+				confirmBtnCn: 'red',
+				confirm: '立即开通',
+				success: function(){}
+			}).init();
+
+			$('.modal').append('<p class="tips"><span>8</span>秒后自动跳转到汇付天下<a href="#">先去逛一逛</a></p>');
+		</script>
 	</body>
 </html>

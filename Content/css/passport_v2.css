@@ -12,6 +12,14 @@
     font-size: 20px;
     font-weight: normal;
     color: #454550; }
+    .m-passport .ipt-box h3.pt {
+      padding: 32px 0 20px; }
+  .m-passport .ipt-box .aicon {
+    margin: 14.5px 15px;
+    width: 15px;
+    height: 18px;
+    background: url(../../Content/images/passport/aicon.png) no-repeat;
+    display: inline-block; }
   .m-passport .ipt-box .ricon {
     background: url(../../Content/images/passport/ricon.png) no-repeat;
     display: inline-block; }
@@ -148,6 +156,10 @@
       width: 374px;
       height: 351px;
       margin: 70px auto; }
+    .m-passport .ibox.pt {
+      padding-top: 36px; }
+      .m-passport .ibox.pt .img {
+        margin: 94px auto 0; }
   .m-passport .slist {
     margin: 0 -70px;
     padding: 70px 0 85px; }

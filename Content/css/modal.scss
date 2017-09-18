@@ -941,5 +941,64 @@ $redHoverColor: #ff5c33;
 			}
 		}
 	}
+
+	.remodal{
+		p{
+			padding: 40px 0 30px;
+			font-size: 16px;
+			color: #676770;
+			text-align: center;
+		}
+
+		& ~ .btn{
+			margin-left: 185px;
+			width: 230px;
+		}
+
+		& ~ .tips{
+			padding: 6px 0 34px;
+			font-size: 12px;
+			text-align: center;
+
+			span{
+				padding-right: 4px;
+				color: $redColor;
+			}
+
+			a{
+				padding-left: 12px;
+				color: #676770;
+
+				&:hover{
+					color: $blueColor;
+				}
+			}
+		}
+	}
+
+	.amodal{
+		p{
+			padding: 36px 0 32px;
+			font-size: 20px;
+			color: #454550;
+			text-align: center;
+		}
+
+		& ~ .btn{
+			margin-left: 210px;
+			width: 180px;
+		}
+
+		& ~ .tip{
+			padding: 8px 0 32px;
+			font-size: 12px;
+			text-align: center;
+
+			span{
+				padding-right: 4px;
+				color: $redColor;
+			}
+		}
+	}
 }
 

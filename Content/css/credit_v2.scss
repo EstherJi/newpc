@@ -560,6 +560,12 @@ $redHoverColor: #ff5c33;
 
 				&.ytag{
 					background-color: #ff5b5b;
+
+					&:hover{
+						& ~ .ytips{
+							display: inline-block;
+						}
+					}
 				}
 			}
 
@@ -590,6 +596,12 @@ $redHoverColor: #ff5c33;
 					text-align: center;
 					display: inline-block;
 				}
+
+				&:hover{
+					& ~ .atips{
+						display: inline-block;
+					}
+				}
 			}
 
 			.redpackage{
@@ -599,6 +611,46 @@ $redHoverColor: #ff5c33;
 				background: url(../../Content/images/redpackage.gif) no-repeat;
 				display: inline-block;
 				vertical-align: middle;
+			}
+
+			.mtips{
+				top: 60px;
+				padding: 8px;
+				width: 245px;
+				line-height: 16px;
+				font-size: 12px;
+				color: $blueColor;
+				border-radius: 4px;
+				background-color: #fff;
+				box-shadow: 0 1px 6px 0 rgba(7, 144, 255, .15);
+				z-index: 3;
+				display: none;
+
+				&:after{
+					position: absolute;
+					content: '';
+					top: -8px;
+					border-right: 8px solid transparent;
+					border-left: 8px solid transparent;
+					border-bottom: 8px solid #fff;
+					filter: drop-shadow(0 1px 6px rgba(7, 144, 255, .15));
+				}
+			}
+
+			.ytips{
+				left: -82px;
+
+				&:after{
+					left: 82px;
+				}
+			}
+
+			.atips{
+				left: 216px;
+
+				&:after{
+					left: 50px;
+				}
 			}
 		}
 

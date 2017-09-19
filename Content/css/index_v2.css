@@ -221,8 +221,8 @@ a.btn {
     color: #fff;
     text-align: center; }
     .m-hot-recommend .left .more:hover, .m-invest .left .more:hover, .m-newbie .left .more:hover {
-      background-color: #fff;
-      color: #0790ff; }
+      background-color: rgba(255, 255, 255, 0.3);
+      border-color: rgba(255, 255, 255, 0.3); }
 .m-hot-recommend .right, .m-invest .right, .m-newbie .right {
   margin-left: 310px; }
 

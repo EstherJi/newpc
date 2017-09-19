@@ -627,30 +627,76 @@
             color: #676770; }
 
 /* wallet */
-.m-wallet .hd .ainfo .item .btn {
-  margin-top: 25px;
-  border-radius: 4px;
-  font-size: 16px;
-  text-align: center;
-  display: inline-block; }
-.m-wallet .hd .ainfo .item .recharge {
-  margin: 0 22px 0 47px;
-  width: 115px;
-  height: 40px;
-  line-height: 40px;
-  color: #fff;
-  background-color: #ff3300; }
-  .m-wallet .hd .ainfo .item .recharge:hover {
-    background-color: #ff5c33; }
-.m-wallet .hd .ainfo .item .withdrawal {
-  width: 113px;
-  height: 38px;
-  line-height: 38px;
-  border: 1px solid #0790ff;
-  color: #0790ff; }
-  .m-wallet .hd .ainfo .item .withdrawal:hover {
+.m-wallet .title {
+  border: 1px solid #ebeff3; }
+.m-wallet .transfer {
+  border: 1px solid #ebeff3;
+  border-top: none;
+  min-height: 598px;
+  background-color: #fff; }
+  .m-wallet .transfer .img {
+    width: 142px;
+    height: 98px;
+    padding: 120px 0 10px;
+    margin: 0 auto; }
+    .m-wallet .transfer .img img {
+      width: 142px;
+      height: 98px; }
+  .m-wallet .transfer .text {
+    font-size: 16px;
+    color: #676770;
+    text-align: center; }
+  .m-wallet .transfer .sm {
+    font-size: 12px;
+    text-align: center; }
+    .m-wallet .transfer .sm span {
+      padding-right: 6px;
+      color: #ff3300; }
+    .m-wallet .transfer .sm a {
+      padding-left: 12px;
+      color: #676770; }
+      .m-wallet .transfer .sm a:hover {
+        color: #0790ff; }
+  .m-wallet .transfer .open {
+    margin: 30px auto 6px;
+    width: 254px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #ff3300;
     color: #fff;
-    background-color: #0790ff; }
+    text-align: center;
+    display: block; }
+    .m-wallet .transfer .open:hover {
+      background-color: #ff5c33; }
+.m-wallet .hd {
+  height: 128px !important;
+  border-top: none !important; }
+  .m-wallet .hd .ainfo .item .btn {
+    margin-top: 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    display: inline-block; }
+  .m-wallet .hd .ainfo .item .recharge {
+    margin: 0 22px 0 47px;
+    width: 115px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #ff3300; }
+    .m-wallet .hd .ainfo .item .recharge:hover {
+      background-color: #ff5c33; }
+  .m-wallet .hd .ainfo .item .withdrawal {
+    width: 113px;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #0790ff;
+    color: #0790ff; }
+    .m-wallet .hd .ainfo .item .withdrawal:hover {
+      color: #fff;
+      background-color: #0790ff; }
 .m-wallet .stabs .sbox .status {
   color: #676770; }
   .m-wallet .stabs .sbox .status select {
@@ -694,22 +740,22 @@
   background-color: #fff;
   min-height: 456px; }
 
-.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs, .m-message .stabs, .m-autobid .stabs, .m-exper .stabs {
+.m-wallet .stabs, .m-bid .stabs, .m-coupon .stabs, .m-message .stabs, .m-autobid .stabs, .m-exper .stabs, .m-recharge .stabs {
   height: 59px;
   line-height: 59px;
   border-bottom: 1px solid #F7F9FA; }
-  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a, .m-message .stabs .tabs a, .m-autobid .stabs .tabs a, .m-exper .stabs .tabs a {
+  .m-wallet .stabs .tabs a, .m-bid .stabs .tabs a, .m-coupon .stabs .tabs a, .m-message .stabs .tabs a, .m-autobid .stabs .tabs a, .m-exper .stabs .tabs a, .m-recharge .stabs .tabs a {
     height: 58px;
     line-height: 58px;
     font-size: 16px;
     color: #454550;
     display: inline-block; }
-    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover, .m-message .stabs .tabs a:hover, .m-autobid .stabs .tabs a:hover, .m-exper .stabs .tabs a:hover {
+    .m-wallet .stabs .tabs a:hover, .m-bid .stabs .tabs a:hover, .m-coupon .stabs .tabs a:hover, .m-message .stabs .tabs a:hover, .m-autobid .stabs .tabs a:hover, .m-exper .stabs .tabs a:hover, .m-recharge .stabs .tabs a:hover {
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur, .m-message .stabs .tabs a.cur, .m-autobid .stabs .tabs a.cur, .m-exper .stabs .tabs a.cur {
+    .m-wallet .stabs .tabs a.cur, .m-bid .stabs .tabs a.cur, .m-coupon .stabs .tabs a.cur, .m-message .stabs .tabs a.cur, .m-autobid .stabs .tabs a.cur, .m-exper .stabs .tabs a.cur, .m-recharge .stabs .tabs a.cur {
       border-bottom: 2px solid #0790ff;
       color: #0790ff; }
-    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50, .m-message .stabs .tabs a.mr50, .m-autobid .stabs .tabs a.mr50, .m-exper .stabs .tabs a.mr50 {
+    .m-wallet .stabs .tabs a.mr50, .m-bid .stabs .tabs a.mr50, .m-coupon .stabs .tabs a.mr50, .m-message .stabs .tabs a.mr50, .m-autobid .stabs .tabs a.mr50, .m-exper .stabs .tabs a.mr50, .m-recharge .stabs .tabs a.mr50 {
       margin-right: 50px; }
 
 .m-wallet .stabs .sbox a, .m-bid .stabs .sbox a, .m-coupon .stabs .sbox a {
@@ -888,7 +934,7 @@
 
 /* recharge, withdrawal */
 .m-recharge, .m-withdrawal {
-  height: 757px;
+  min-height: 757px;
   border: 1px solid #EBEFF3;
   background-color: #fff; }
   .m-recharge .title a, .m-withdrawal .title a {
@@ -907,29 +953,110 @@
     color: #787880; }
 
 /* recharge */
-.m-recharge .bank-box {
-  margin: 50px 0 0 24px;
-  width: 360px;
-  height: 200px;
-  box-shadow: 0px 4px 10px 0px rgba(7, 144, 255, 0.15); }
-  .m-recharge .bank-box .bg {
-    bottom: 0;
-    width: 360px;
-    height: 90px;
-    background: url(../../Content/images/account/recharge.png) no-repeat;
-    display: inline-block; }
-  .m-recharge .bank-box .binfo {
-    padding: 22px 0 0 20px; }
-    .m-recharge .bank-box .binfo p {
-      padding-bottom: 10px;
-      color: #565660; }
-      .m-recharge .bank-box .binfo p .color {
-        color: #0790ff; }
-      .m-recharge .bank-box .binfo p label {
-        margin-right: 15px;
-        width: 80px;
-        text-align: right;
-        display: inline-block; }
+.m-recharge .tips {
+  margin-bottom: 30px; }
+.m-recharge .recharge {
+  margin: 30px 0 40px; }
+  .m-recharge .recharge .item {
+    padding-bottom: 25px; }
+    .m-recharge .recharge .item label {
+      width: 78px;
+      color: #565660;
+      float: left;
+      display: block; }
+      .m-recharge .recharge .item label.lh {
+        line-height: 50px; }
+    .m-recharge .recharge .item .lamount, .m-recharge .recharge .item .binfo {
+      margin-left: 88px; }
+    .m-recharge .recharge .item .lamount {
+      font-size: 16px;
+      color: #676770; }
+      .m-recharge .recharge .item .lamount .num {
+        padding-right: 6px;
+        color: #ff3300; }
+    .m-recharge .recharge .item .iptbox {
+      width: 320px;
+      height: 50px;
+      line-height: 50px;
+      margin-left: 8px;
+      display: inline-block; }
+      .m-recharge .recharge .item .iptbox .amount {
+        width: 318px;
+        height: 48px;
+        border-radius: 4px;
+        border: 1px solid #E3EAEF;
+        font-size: 16px;
+        text-indent: 15px;
+        color: #676770; }
+        .m-recharge .recharge .item .iptbox .amount:focus {
+          border-color: #0790ff;
+          box-shadow: 0 1px 6px 0 rgba(7, 144, 255, 0.15); }
+      .m-recharge .recharge .item .iptbox .unit {
+        top: 0;
+        right: 20px;
+        color: #676770; }
+    .m-recharge .recharge .item .tip {
+      font-size: 12px;
+      padding-left: 6px; }
+    .m-recharge .recharge .item .blist {
+      padding-bottom: 5px; }
+      .m-recharge .recharge .item .blist li {
+        margin: 0 20px 20px 0;
+        width: 148px;
+        height: 48px;
+        border-radius: 4px;
+        border: 1px solid #E3EAEF;
+        position: relative;
+        float: left; }
+        .m-recharge .recharge .item .blist li:nth-child(5n) {
+          margin-right: 0; }
+        .m-recharge .recharge .item .blist li img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 0;
+          right: 0;
+          margin: 0 auto; }
+        .m-recharge .recharge .item .blist li.cur {
+          width: 150px;
+          height: 50px;
+          border: none;
+          background: url(../../Content/images/bank/check.png) no-repeat; }
+    .m-recharge .recharge .item .limit-table {
+      border: 1px solid #E3EAEF; }
+      .m-recharge .recharge .item .limit-table tr {
+        height: 48px;
+        border-bottom: 1px solid #E3EAEF; }
+      .m-recharge .recharge .item .limit-table tbody tr:last-child {
+        border-bottom: none; }
+      .m-recharge .recharge .item .limit-table th, .m-recharge .recharge .item .limit-table td {
+        border-right: 1px solid #E3EAEF;
+        text-align: center; }
+        .m-recharge .recharge .item .limit-table th:last-child, .m-recharge .recharge .item .limit-table td:last-child {
+          border-right: none; }
+        .m-recharge .recharge .item .limit-table th:nth-child(1), .m-recharge .recharge .item .limit-table th:nth-child(2), .m-recharge .recharge .item .limit-table td:nth-child(1), .m-recharge .recharge .item .limit-table td:nth-child(2) {
+          width: 130px; }
+        .m-recharge .recharge .item .limit-table th:nth-child(3), .m-recharge .recharge .item .limit-table td:nth-child(3) {
+          width: 214px; }
+      .m-recharge .recharge .item .limit-table th {
+        color: #565660;
+        background-color: #f0f8fe; }
+      .m-recharge .recharge .item .limit-table td {
+        padding: 8px 15px;
+        color: #676770; }
+  .m-recharge .recharge .btn {
+    margin: 15px 0 0 88px;
+    width: 320px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 4px;
+    background-color: #ff3300;
+    display: block;
+    text-align: center; }
+    .m-recharge .recharge .btn:hover {
+      background-color: #ff5c33; }
 
 /* withdrawal */
 .m-withdrawal .tips .detail label, .m-withdrawal .tips .detail span {
@@ -1894,5 +2021,79 @@
     display: inline-block; }
     .m-enterprise .btn:hover {
       background-color: #39a6ff; }
+
+.m-success {
+  margin: 30px 0;
+  height: 583px;
+  border: 1px solid #EBEFF3;
+  background-color: #fff; }
+  .m-success .title {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #454550;
+    border-bottom: 1px solid #EBEFF3; }
+  .m-success .bd p {
+    padding-top: 118px;
+    line-height: 38px;
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #676770;
+    text-align: center; }
+    .m-success .bd p.sm {
+      padding-top: 0;
+      font-size: 12px;
+      color: #908f9a; }
+    .m-success .bd p.md {
+      padding-top: 16px;
+      line-height: 1;
+      font-size: 14px;
+      color: #908f9a; }
+    .m-success .bd p .icon {
+      margin-right: 20px;
+      width: 38px;
+      height: 38px;
+      display: inline-block;
+      vertical-align: middle; }
+      .m-success .bd p .icon.sicon {
+        background: url(../../Content/images/credit/success.png) no-repeat; }
+      .m-success .bd p .icon.eicon {
+        background: url(../../Content/images/credit/error.png) no-repeat; }
+    .m-success .bd p span {
+      color: #ff3300; }
+  .m-success .bd .btn {
+    margin: 0 auto;
+    width: 358px;
+    height: 42px;
+    line-height: 42px;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    display: block; }
+    .m-success .bd .btn.continue {
+      margin: 38px auto 20px;
+      border: 1px solid #ff3300;
+      background-color: #ff3300;
+      color: #fff; }
+      .m-success .bd .btn.continue:hover {
+        border: 1px solid #ff5c33;
+        background-color: #ff5c33; }
+    .m-success .bd .btn.view {
+      border: 1px solid #0790ff;
+      color: #0790ff; }
+      .m-success .bd .btn.view:hover {
+        background-color: #0790ff;
+        color: #fff; }
+    .m-success .bd .btn.jump {
+      margin-top: 58px;
+      border: 1px solid #0790ff;
+      background-color: #0790ff;
+      color: #fff; }
+      .m-success .bd .btn.jump:hover {
+        border: 1px solid #39a6ff;
+        background-color: #39a6ff; }
 
 /*# sourceMappingURL=account_v2.css.map */

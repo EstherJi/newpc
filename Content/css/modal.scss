@@ -1000,5 +1000,35 @@ $redHoverColor: #ff5c33;
 			}
 		}
 	}
+
+	.rtmodal{
+		padding: 36px 0;
+
+		p{
+			padding-left: 136px;
+			font-size: 16px;
+			line-height: 26px;
+			color: #676770;
+			
+			&.ta{
+				padding-left: 0;
+				text-align: center;
+			}
+
+			&.sm{
+				font-size: 14px;
+				color: #898990;
+			}
+
+			&.lg{
+				padding-bottom: 10px;
+				font-size: 18px;
+			}
+		}
+
+		& ~ .btn{
+			margin-bottom: 40px;
+		}
+	}
 }
 

@@ -1052,7 +1052,75 @@ $borderColor: #EBEFF3;
 
 /* wallet */
 .m-wallet{
+	.title{
+		border: 1px solid #ebeff3;
+	}
+
+	.transfer{
+		border: 1px solid #ebeff3;
+		border-top: none;
+		min-height: 598px;
+		background-color: #fff;
+
+		.img{
+			width: 142px;
+			height: 98px;
+			padding: 120px 0 10px;
+			margin: 0 auto;
+
+			img{
+				width: 142px;
+				height: 98px;
+			}
+		}
+
+		.text{
+			font-size: 16px;
+			color: #676770;
+			text-align: center;
+		}
+
+		.sm{
+			font-size: 12px;
+			text-align: center;
+
+			span{
+				padding-right: 6px;
+				color: $redColor;
+			}
+
+			a{
+				padding-left: 12px;
+				color: #676770;
+
+				&:hover{
+					color: $blueColor;
+				}
+			}
+		}
+
+		.open{
+			margin: 30px auto 6px;
+			width: 254px;
+			height: 44px;
+			line-height: 44px;
+			font-size: 16px;
+			border-radius: 4px;
+			background-color: $redColor;
+			color: #fff;
+			text-align: center;
+			display: block;
+
+			&:hover{
+				background-color: $redHoverColor;
+			}
+		}
+	}
+
 	.hd{
+		height: 128px !important;
+		border-top: none !important;
+
 		.ainfo{
 			.item{
 				.btn{
@@ -1166,7 +1234,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid, .m-exper{
+.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid, .m-exper, .m-recharge{
 	.stabs{
 		height: 59px;
 		line-height: 59px;
@@ -1491,7 +1559,7 @@ $borderColor: #EBEFF3;
 
 /* recharge, withdrawal */
 .m-recharge, .m-withdrawal{
-	height: 757px;
+	min-height: 757px;
 	border: 1px solid $borderColor;
 	background-color: #fff;
 
@@ -1525,37 +1593,168 @@ $borderColor: #EBEFF3;
 
 /* recharge */
 .m-recharge{
-	.bank-box{
-		margin: 50px 0 0 24px;
-		width: 360px;
-		height: 200px;
-		box-shadow: 0px 4px 10px 0px rgba(7, 144, 255, 0.15);
+	.tips{
+		margin-bottom: 30px;
+	}
 
-		.bg{
-			bottom: 0;
-			width: 360px;
-			height: 90px;
-			background: url(../../Content/images/account/recharge.png) no-repeat;
-			display: inline-block;
+	.recharge{
+		margin: 30px 0 40px;
+
+		.item{
+			padding-bottom: 25px;
+
+			label{
+				width: 78px;
+				color: #565660;
+				float: left;
+				display: block;
+
+				&.lh{
+					line-height: 50px;
+				}
+			}
+
+			.lamount, .binfo{
+				margin-left: 88px;
+			}
+
+			.lamount{
+				font-size: 16px;
+				color: #676770;
+
+				.num{
+					padding-right: 6px;
+					color: $redColor;
+				}
+			}
+
+			.iptbox{
+				width: 320px;
+				height: 50px;
+				line-height: 50px;
+				margin-left: 8px;
+				display: inline-block;
+
+				.amount{
+					width: 318px;
+					height: 48px;
+					border-radius: 4px;
+					border: 1px solid #E3EAEF;
+					font-size: 16px;
+					text-indent: 15px;
+					color: #676770;
+
+					&:focus{
+						border-color: $blueColor;
+						box-shadow: 0 1px 6px 0 rgba(7, 144, 255, .15);
+					}
+				}
+
+				.unit{
+					top: 0;
+					right: 20px;
+					color: #676770;
+				}
+			}
+
+			.tip{
+				font-size: 12px;
+				padding-left: 6px;
+			}
+
+			.blist{
+				padding-bottom: 5px;
+
+				li{
+					margin: 0 20px 20px 0;
+					width: 148px;
+					height: 48px;
+					border-radius: 4px;
+					border: 1px solid #E3EAEF;
+					position: relative;
+					float: left;
+
+					&:nth-child(5n){
+						margin-right: 0;
+					}
+
+					img{
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 0;
+						right: 0;
+						margin: 0 auto;
+					}
+
+					&.cur{
+						width: 150px;
+						height: 50px;
+						border: none;
+						background: url(../../Content/images/bank/check.png) no-repeat;
+					}
+				}
+			}
+
+			.limit-table{
+				border: 1px solid #E3EAEF;
+
+				tr{
+					height: 48px;
+					border-bottom: 1px solid #E3EAEF;
+				}
+
+				tbody{
+					tr{
+						&:last-child{
+							border-bottom: none;
+						} 
+					}
+				}
+
+				th, td{
+					border-right: 1px solid #E3EAEF;
+					text-align: center;
+
+					&:last-child{
+						border-right: none;
+					}
+
+					&:nth-child(1), &:nth-child(2){
+						width: 130px;
+					}
+
+					&:nth-child(3){
+						width: 214px;
+					}
+				}
+
+				th{
+					color: #565660;
+					background-color: #f0f8fe;
+				}
+
+				td{
+					padding: 8px 15px;
+					color: #676770;
+				}
+			}
 		}
 
-		.binfo{
-			padding: 22px 0 0 20px;
+		.btn{
+			margin: 15px 0 0 88px;
+			width: 320px;
+			height: 50px;
+			line-height: 50px;
+			font-size: 16px;
+			color: #fff;
+			border-radius: 4px;
+			background-color: $redColor;
+			display: block;
+			text-align: center;
 
-			p{
-				padding-bottom: 10px;
-				color: #565660;
-
-				.color{
-					color: $blueColor;
-				}
-
-				label{
-					margin-right: 15px;
-					width: 80px;
-					text-align: right;
-					display: inline-block;
-				}
+			&:hover{
+				background-color: $redHoverColor;
 			}
 		}
 	}
@@ -3086,6 +3285,113 @@ $borderColor: #EBEFF3;
 
 		&:hover{
 			background-color: $blueHoverColor;
+		}
+	}
+}
+
+.m-success{
+	margin: 30px 0;
+	height: 583px;
+	border: 1px solid #EBEFF3;
+	background-color: #fff;
+
+	.title{
+		height: 60px;
+		line-height: 60px;
+		padding-left: 50px;
+		font-size: 18px;
+		letter-spacing: 1px;
+		color: #454550;
+		border-bottom: 1px solid #EBEFF3;
+	}
+
+	.bd{
+		p{
+			padding-top: 118px;
+			line-height: 38px;
+			letter-spacing: 1px;
+			font-size: 20px;
+			color: #676770;
+			text-align: center;
+
+			&.sm{
+				padding-top: 0;
+				font-size: 12px;
+				color: #908f9a;
+			}
+
+			&.md{
+				padding-top: 16px;
+				line-height: 1;
+				font-size: 14px;
+				color: #908f9a;
+			}
+
+			.icon{
+				margin-right: 20px;
+				width: 38px;
+				height: 38px;
+				display: inline-block;
+				vertical-align: middle;
+
+				&.sicon{
+					background: url(../../Content/images/credit/success.png) no-repeat;
+				}
+
+				&.eicon{
+					background: url(../../Content/images/credit/error.png) no-repeat;
+				}
+			}
+
+			span{
+				color: $redColor;
+			}
+		}
+
+		.btn{
+			margin: 0 auto;
+			width: 358px;
+			height: 42px;
+			line-height: 42px;
+			letter-spacing: 1px;
+			border-radius: 4px;
+			font-size: 16px;
+			text-align: center;
+			display: block;
+
+			&.continue{
+				margin: 38px auto 20px;
+				border: 1px solid $redColor;
+				background-color: $redColor;
+				color: #fff;
+
+				&:hover{
+					border: 1px solid $redHoverColor;
+					background-color: $redHoverColor;
+				}
+			}
+
+			&.view{
+				border: 1px solid $blueColor;
+				color: $blueColor;
+
+				&:hover{
+					background-color: $blueColor;
+					color: #fff;
+				}
+			}
+
+			&.jump{
+				margin-top: 58px;
+				border: 1px solid $blueColor;
+				background-color: $blueColor;
+				color: #fff;
+
+				&:hover{
+					border: 1px solid $blueHoverColor;
+					background-color: $blueHoverColor;
+				}
+			}
 		}
 	}
 }

@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/account_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/modal.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -127,17 +128,148 @@
 						<div class="tips">
 							<p class="tit">温馨提示</p>
 							<div class="detail">
-								<p>1、用户可以通过以下汇款或转账方式进行账户充值操作。请仔细确认汇款账户信息以免出错。</p>
-								<p>2、汇款或转账后请把相关截图和平台账号、真实姓名发于我司财务，我司收到银行流水后会第一时间进行处理。</p>
+								<p><b>充值手续费：</b>充值不收取任何手续费，为避免充值失败，请留意支付限额。</p>
+								<p><b>普通网银充值手续费：</b>体现将会在审核成功后的下一个工作日到账；遇双休日、国家法定节假日，到账日期顺延。</p>
+								<p><b>快捷充值手续费：</b>所有银行按照1.5‰收取。</p>
+								<p>充值/提现必须为银行借记卡，不支持存折、信用卡充值。</p>
+								<p>充值前请确认您的银行卡限额，如充值成功后未能及时到账，请及时联系客服：136 3281 8831</p>
 							</div>
 						</div>
-						<div class="bank-box f-pr">
-							<i class="bg f-pa"></i>
-							<div class="binfo">
-								<p><label>开户名：</label>王志荣</p>
-								<p><label>开户账号：</label><span class="color">6216  9103  0165  1992</span></p>
-								<p><label>开户银行：</label>中国民生银行深圳海岸城支行</p>
+						<div class="stabs plr24 clearfix">
+							<div class="tabs f-fl">
+								<a class="cur mr50" data-id="1">网银充值</a>
+								<a data-id="2">快捷充值</a>
 							</div>
+						</div>
+						<div class="recharge plr24" id="recharge1">
+							<div class="item">
+								<label>账户余额：</label>
+								<p class="lamount"><span class="num">20.00</span>元</p>
+							</div> 
+							<div class="item">
+								<label class="lh">充值金额：</label>
+								<span class="iptbox f-pr">
+									<input type="text" class="amount">
+									<span class="unit f-pa">元</span>
+								</span>
+								<span class="tip">充值金额不得小于10元</span>
+							</div>
+							<div class="item">
+								<label class="lh">选择网银：</label>
+								<div class="binfo">
+									<ul class="blist clearfix">
+										<li class="cur"><img src="../../Content/images/bank/bank1.png"></li>
+										<li><img src="../../Content/images/bank/bank2.png"></li>
+										<li><img src="../../Content/images/bank/bank3.png"></li>
+										<li><img src="../../Content/images/bank/bank4.png"></li>
+										<li><img src="../../Content/images/bank/bank5.png"></li>
+										<li><img src="../../Content/images/bank/bank6.png"></li>
+										<li><img src="../../Content/images/bank/bank7.png"></li>
+										<li><img src="../../Content/images/bank/bank8.png"></li>
+										<li><img src="../../Content/images/bank/bank9.png"></li>
+										<li><img src="../../Content/images/bank/bank10.png"></li>
+									</ul>
+									<table class="limit-table">
+										<thead>
+											<tr>
+												<th>单笔限额（元）</th>
+												<th>每日限额（元）</th>
+												<th>需要满足条件</th>
+												<th>备注</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>300</td>
+												<td>300</td>
+												<td>柜面注册存量静态支付密码客户</td>
+												<td rowspan="4">如您是柜面注册存量静态支付密码客户，当您所做的网上支付交易达到总支付限额后，您将不能继续网上支付交易。如您仍需进行网上支付交易，请您到中国工商银行营业网点申领电子银行口令卡或个人客户证书(U盾）,当您成为电子银行口令卡客户或证书客户后，您将不再受到支付限额的限制。</td>
+											</tr>
+											<tr>
+												<td>2,000</td>
+												<td>5,000</td>
+												<td>电子银行口令卡动态支付密码客户—通过手机短信认证</td>
+											</tr>
+											<tr>
+												<td>500</td>
+												<td>1,000</td>
+												<td>电子银行口令卡动态支付密码客户—无手机短信认证</td>
+											</tr>
+											<tr>
+												<td>无限额</td>
+												<td>无限额</td>
+												<td>证书客户（U盾客户）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<a href="#" class="btn">确认充值</a>
+						</div>
+						<div class="recharge plr24 hide" id="recharge2">
+							<div class="item">
+								<label>账户余额：</label>
+								<p class="lamount"><span class="num">20.00</span>元</p>
+							</div> 
+							<div class="item">
+								<label class="lh">充值金额：</label>
+								<span class="iptbox f-pr">
+									<input type="text" class="amount">
+									<span class="unit f-pa">元</span>
+								</span>
+								<span class="tip">充值金额不得小于10元</span>
+							</div>
+							<div class="item">
+								<label class="lh">选择网银：</label>
+								<div class="binfo">
+									<ul class="blist clearfix">
+										<li class="cur"><img src="../../Content/images/bank/bank1.png"></li>
+										<li><img src="../../Content/images/bank/bank2.png"></li>
+										<li><img src="../../Content/images/bank/bank3.png"></li>
+										<li><img src="../../Content/images/bank/bank4.png"></li>
+										<li><img src="../../Content/images/bank/bank5.png"></li>
+										<li><img src="../../Content/images/bank/bank6.png"></li>
+										<li><img src="../../Content/images/bank/bank7.png"></li>
+										<li><img src="../../Content/images/bank/bank8.png"></li>
+										<li><img src="../../Content/images/bank/bank9.png"></li>
+										<li><img src="../../Content/images/bank/bank10.png"></li>
+									</ul>
+									<table class="limit-table">
+										<thead>
+											<tr>
+												<th>单笔限额（元）</th>
+												<th>每日限额（元）</th>
+												<th>需要满足条件</th>
+												<th>备注</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>300</td>
+												<td>300</td>
+												<td>柜面注册存量静态支付密码客户</td>
+												<td rowspan="4">如您是柜面注册存量静态支付密码客户，当您所做的网上支付交易达到总支付限额后，您将不能继续网上支付交易。如您仍需进行网上支付交易，请您到中国工商银行营业网点申领电子银行口令卡或个人客户证书(U盾）,当您成为电子银行口令卡客户或证书客户后，您将不再受到支付限额的限制。</td>
+											</tr>
+											<tr>
+												<td>2,000</td>
+												<td>5,000</td>
+												<td>电子银行口令卡动态支付密码客户—通过手机短信认证</td>
+											</tr>
+											<tr>
+												<td>500</td>
+												<td>1,000</td>
+												<td>电子银行口令卡动态支付密码客户—无手机短信认证</td>
+											</tr>
+											<tr>
+												<td>无限额</td>
+												<td>无限额</td>
+												<td>证书客户（U盾客户）</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<a href="#" class="btn">确认充值</a>
 						</div>
 					</div>
 				</div>
@@ -220,5 +352,35 @@
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/modal.js"></script>
+
+		<script type="text/javascript">
+			tab('.m-recharge .tabs a', '#recharge', 2, 'cur');
+
+			$('.m-recharge, .list').on('click', 'li', function(){
+				if(!$(this).hasClass('cur')){
+					$(this).addClass('cur').siblings().removeClass('cur');
+				}
+			});
+
+			// 选择银行提示
+			$('.recharge .btn').on('click', function(){
+				new AlertModal({
+					content: '<p class="ta">请选择充值银行！</p>',
+					title: '<i class="warning f-fl"></i>温馨提示',
+					contentNodeCn: 'rtmodal',
+					success: function(){}
+				}).init();
+			});
+
+			// 充值问题反馈
+			new AlertModal({
+				content: '<p class="lg">请您在新打开的汇付充值页面完成付款</p><p class="sm">付款完成前，请不要关闭此窗口。</p><p class="sm">如付款受阻，请拨打客服热线： 136 3281 8831</p>',
+				title: '<i class="warning f-fl"></i>充值遇到问题？',
+				contentNodeCn: 'rtmodal',
+				confirm: '已完成充值',
+				success: function(){}
+			}).init();
+		</script>
 	</body>
 </html>

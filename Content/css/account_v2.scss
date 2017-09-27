@@ -1234,7 +1234,7 @@ $borderColor: #EBEFF3;
 	}
 }
 
-.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid, .m-exper, .m-recharge{
+.m-wallet, .m-bid, .m-coupon, .m-message, .m-autobid, .m-exper, .m-recharge, .m-invition{
 	.stabs{
 		height: 59px;
 		line-height: 59px;
@@ -1585,6 +1585,7 @@ $borderColor: #EBEFF3;
 		.detail{
 			p{
 				line-height: 26px;
+				letter-spacing: 1px;
 				color: #787880;
 			}
 		}
@@ -1595,6 +1596,16 @@ $borderColor: #EBEFF3;
 .m-recharge{
 	.tips{
 		margin-bottom: 30px;
+
+		.block{
+			display: block;
+			float: left;
+		}
+
+		span{
+			margin-left: 108px;
+			display: block;
+		}
 	}
 
 	.recharge{
@@ -1685,6 +1696,20 @@ $borderColor: #EBEFF3;
 						left: 0;
 						right: 0;
 						margin: 0 auto;
+						transition: all .3s ease-in-out;
+					}
+
+					&:hover{
+						img{
+							z-index: 5;
+							transition: all .3s ease-in-out;
+						}
+
+						.limit{
+							opacity: 1;
+							visibility: visible;
+							transition: all .3s ease-in-out;
+						}
 					}
 
 					&.cur{
@@ -1692,6 +1717,20 @@ $borderColor: #EBEFF3;
 						height: 50px;
 						border: none;
 						background: url(../../Content/images/bank/check.png) no-repeat;
+
+						&:hover{
+							// background: none;    
+							
+							.limit{
+								left: 0;
+								top: 0;
+								background: url(../../Content/images/bank/checkhover.png) no-repeat;
+
+								p{
+									color: $blueColor;
+								}
+							}
+						}
 					}
 				}
 			}
@@ -1756,9 +1795,98 @@ $borderColor: #EBEFF3;
 			&:hover{
 				background-color: $redHoverColor;
 			}
+
+			&.btn-1{
+				margin-top: -5px;
+			}
+
+			&.btn-2{
+				margin-top: 5px;
+			}
+		}
+
+		.limit{
+			top: -1px;
+			left: -1px;
+			width: 150px;
+			height: 120px;
+			background-color: #fff;
+			box-shadow: 0 2px 6px 0 rgba(7, 144, 255, .12);
+			z-index: 3;
+			opacity: 0;
+			visibility: hidden;
+			transition: all .3s ease-in-out;
+
+			.info{
+				margin: 50px 10px 0;
+				border-top: 1px dashed #E3EAEF;
+			}
+
+			p{
+				line-height: 26px;
+				font-size: 12px;
+				color: #676770;
+
+				&:first-child{
+					padding-top: 10px;
+				}
+			}
+		}
+
+		.bank{
+			margin: 25px 24px 32px;
+			width: 291px;
+			height: 153px;
+			border-radius: 4px;
+			border: 1px solid #E3EAEF;
+
+			p{
+				letter-spacing: 1px;
+				color: #565660;
+			}
+
+			.name{
+				padding-left: 20px;
+				height: 40px;
+				line-height: 40px;
+				background-color: #fbfcfd;
+				border-top-left-radius: 4px;
+				border-top-right-radius: 4px;
+			}
+
+			.number{
+				padding: 26px 0 20px;
+				font-size: 20px;
+				text-align: center;
+
+				small{
+					padding-right: 10px;
+					font-size: 14px;
+				}
+			}
+
+			.op{
+				margin-right: 25px;
+
+				a{
+					font-size: 12px;
+				}
+
+				.default{
+					padding-right: 15px;
+					border-right: 1px solid #CCD8E2;
+					color: #908f9a;
+				}
+
+				.untie{
+					padding-left: 10px;
+					color: $blueColor;
+				}
+			}
 		}
 	}
 }
+
 
 /* withdrawal */
 .m-withdrawal{
@@ -2526,6 +2654,10 @@ $borderColor: #EBEFF3;
 			border-bottom: 1px dashed #CCD8E2;
 
 			&:last-child{
+				padding-bottom: 15px;
+			}
+
+			&:last-child{
 				border-bottom: none;
 			}
 
@@ -2617,20 +2749,29 @@ $borderColor: #EBEFF3;
 		}
 	}
 
-	.irecord{
-		padding: 0 24px 16px;
-		border-bottom: 1px solid #F7F9FA;
-		font-size: 16px;
-		color: #454550;
+	// .irecord{
+	// 	padding: 0 24px 16px;
+	// 	border-bottom: 1px solid #F7F9FA;
+	// 	font-size: 16px;
+	// 	color: #454550;
 
-		span{
-			font-size: 14px;
-			color: $lightColor;
+	// 	span{
+	// 		font-size: 14px;
+	// 		color: $lightColor;
 
-			b{
-				padding: 0 5px;
-				font-weight: normal;
-				color: #565660;
+	// 		b{
+	// 			padding: 0 5px;
+	// 			font-weight: normal;
+	// 			color: #565660;
+	// 		}
+	// 	}
+	// }
+
+	.stabs{
+		.tabs{
+			span{
+				font-size: 14px;
+				color: #908f9a;
 			}
 		}
 	}
@@ -2639,6 +2780,24 @@ $borderColor: #EBEFF3;
 		table{
 			.no{
 				color: $redColor;
+			}
+
+			.remind, .already{
+				width: 64px;
+				height: 26px;
+				line-height: 26px;
+				border-radius: 4px;
+				display: inline-block;
+			}
+
+			.remind{
+				border: 1px solid $blueColor;
+				color: $blueColor;
+			}
+
+			.already{
+				border: 1px solid #E3EAF0;
+				color: #898990;
 			}
 		}
 	}

@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="../../Content/css/reset.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/public_v2.css">
 		<link rel="stylesheet" type="text/css" href="../../Content/css/account_v2.css">
+		<link rel="stylesheet" type="text/css" href="../../Content/css/modal.css">
 	</head>
 	<body>
 		<div class="m-nav">
@@ -185,14 +186,44 @@
 								</div>
 							</li>
 						</ul>
-						<p class="irecord">邀请记录<span>（累计推荐<b>6</b>人）</span></p>
-						<div class="table-box plr24">
+						<!-- <p class="irecord">邀请记录<span>（累计推荐<b>6</b>人）</span></p> -->
+						<div class="stabs plr24">
+							<div class="tabs">
+								<a class="mr50 cur" data-id="1">奖励明细</a>
+								<a data-id="2">邀请记录</a><span>（累计推荐<b>6</b>人）</span>
+							</div>
+						</div>
+						<div class="table-box plr24" id="table1">
+							<table>
+								<thead>
+									<tr>
+										<th>日期</th>
+										<th>被邀请人</th>
+										<th>奖励</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2017-07-17  13:54</td>
+										<td>135***5532</td>
+										<td>1%加息券</td>
+									</tr>
+									<tr>
+										<td>2017-07-17  13:54</td>
+										<td>135***5532</td>
+										<td>8元代金券</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="table-box plr24 hide" id="table2">
 							<table>
 								<thead>
 									<tr>
 										<th>推荐账户</th>
 										<th>注册时间</th>
 										<th>是否已投资</th>
+										<th>操作</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -200,16 +231,25 @@
 										<td>135***5532</td>
 										<td>2017-07-17 13:54</td>
 										<td>是</td>
+										<td>&nbsp;</td>
 									</tr>
 									<tr>
 										<td>135***5532</td>
 										<td>2017-07-17 13:54</td>
 										<td>是</td>
+										<td>&nbsp;</td>
 									</tr>
 									<tr>
 										<td>135***5532</td>
 										<td>2017-07-17 13:54</td>
 										<td class="no">否</td>
+										<td><a class="remind">提醒Ta</a></td>
+									</tr>
+									<tr>
+										<td>135***5532</td>
+										<td>2017-07-17 13:54</td>
+										<td class="no">否</td>
+										<td><a class="already">已提醒</a></td>
 									</tr>
 								</tbody>
 							</table>
@@ -295,6 +335,30 @@
 
 		<script type="text/javascript" src="../../Scripts/jquery-1.12.4.min.js"></script>
 		<script type="text/javascript" src="../../Scripts/common_v2.js"></script>
+		<script type="text/javascript" src="../../Scripts/modal.js"></script>
 		<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+
+		<script type="text/javascript">
+			tab('.m-invition .tabs a', '#table', 2, 'cur');
+
+			$('.already').on('click', function(){
+				new AlertModal({
+					content: '<p>提醒Ta后，48小时后可再次提醒！</p>',
+					title: '<i class="warning f-fl"></i>温馨提示',
+					contentNodeCn: 'inmodal',
+					success: function(){}
+				}).init();
+			});
+
+			$('.remind').on('click', function(){
+				new AlertModal({
+					content: '<p>无忧微贷将会给您的好友发送一条提醒短信：“【无忧微贷】上海银行资金存管上线啦！更合规、更安全、拥抱监管，厚积薄发，为您的财富增值保驾护航！更有多重壕礼，等您来领！退订回TD”</p>',
+					title: '<i class="warning f-fl"></i>短信提醒',
+					contentNodeCn: 'inmodal',
+					confirm: '我知道了',
+					success: function(){}
+				}).init();
+			});
+		</script>
 	</body>
 </html>

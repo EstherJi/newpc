@@ -1030,5 +1030,19 @@ $redHoverColor: #ff5c33;
 			margin-bottom: 40px;
 		}
 	}
+
+	.inmodal{
+		p{
+			padding: 40px 40px 32px;
+			font-size: 16px;
+			letter-spacing: 1px;
+			color: #676770;
+			text-align: center;
+		}
+
+		& ~ .btn{
+			margin-bottom: 40px;
+		}
+	}
 }
 

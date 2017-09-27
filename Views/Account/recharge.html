@@ -206,70 +206,86 @@
 							</div>
 							<a href="#" class="btn">确认充值</a>
 						</div>
-						<div class="recharge plr24 hide" id="recharge2">
-							<div class="item">
-								<label>账户余额：</label>
-								<p class="lamount"><span class="num">20.00</span>元</p>
-							</div> 
-							<div class="item">
-								<label class="lh">充值金额：</label>
-								<span class="iptbox f-pr">
-									<input type="text" class="amount">
-									<span class="unit f-pa">元</span>
-								</span>
-								<span class="tip">充值金额不得小于10元</span>
-							</div>
-							<div class="item">
-								<label class="lh">选择网银：</label>
-								<div class="binfo">
-									<ul class="blist clearfix">
-										<li class="cur"><img src="../../Content/images/bank/bank1.png"></li>
-										<li><img src="../../Content/images/bank/bank2.png"></li>
-										<li><img src="../../Content/images/bank/bank3.png"></li>
-										<li><img src="../../Content/images/bank/bank4.png"></li>
-										<li><img src="../../Content/images/bank/bank5.png"></li>
-										<li><img src="../../Content/images/bank/bank6.png"></li>
-										<li><img src="../../Content/images/bank/bank7.png"></li>
-										<li><img src="../../Content/images/bank/bank8.png"></li>
-										<li><img src="../../Content/images/bank/bank9.png"></li>
-										<li><img src="../../Content/images/bank/bank10.png"></li>
-									</ul>
-									<table class="limit-table">
-										<thead>
-											<tr>
-												<th>单笔限额（元）</th>
-												<th>每日限额（元）</th>
-												<th>需要满足条件</th>
-												<th>备注</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>300</td>
-												<td>300</td>
-												<td>柜面注册存量静态支付密码客户</td>
-												<td rowspan="4">如您是柜面注册存量静态支付密码客户，当您所做的网上支付交易达到总支付限额后，您将不能继续网上支付交易。如您仍需进行网上支付交易，请您到中国工商银行营业网点申领电子银行口令卡或个人客户证书(U盾）,当您成为电子银行口令卡客户或证书客户后，您将不再受到支付限额的限制。</td>
-											</tr>
-											<tr>
-												<td>2,000</td>
-												<td>5,000</td>
-												<td>电子银行口令卡动态支付密码客户—通过手机短信认证</td>
-											</tr>
-											<tr>
-												<td>500</td>
-												<td>1,000</td>
-												<td>电子银行口令卡动态支付密码客户—无手机短信认证</td>
-											</tr>
-											<tr>
-												<td>无限额</td>
-												<td>无限额</td>
-												<td>证书客户（U盾客户）</td>
-											</tr>
-										</tbody>
-									</table>
+						<div class="recharge hide" id="recharge2">
+							<div class="unbind hide">
+								<div class="tips">
+									<div class="detail">
+										<p><b>选择银行卡：</b>第一次快捷充值需到汇付天下绑定银行卡。</p>
+										<p><b class="block">快捷充值说明：</b><span>为了保障您的资金安全，汇付天下规定，每个用户只能绑定1张银行卡。绑定后只能用此卡取现，不可再使用其他取现卡，请谨慎选择。</span></p>
+									</div>
+								</div>
+								<div class="plr24">
+									<div class="item">
+										<label>账户余额：</label>
+										<p class="lamount"><span class="num">20.00</span>元</p>
+									</div> 
+									<div class="item">
+										<label class="lh">充值金额：</label>
+										<span class="iptbox f-pr">
+											<input type="text" class="amount">
+											<span class="unit f-pa">元</span>
+										</span>
+									</div>
+									<div class="item">
+										<label class="lh">选择网银：</label>
+										<div class="binfo">
+											<ul class="blist clearfix">
+												<li class="cur">
+													<img src="../../Content/images/bank/bank1.png">
+													<div class="limit f-pa">
+														<div class="info">
+															<p>单笔限额：5万</p>
+															<p>单日限额：5万</p>
+														</div>
+													</div>
+												</li>
+												<li>
+													<img src="../../Content/images/bank/bank2.png">
+													<div class="limit f-pa">
+														<div class="info">
+															<p>单笔限额：5万</p>
+															<p>单日限额：5万</p>
+														</div>
+													</div>
+												</li>
+												<li><img src="../../Content/images/bank/bank3.png"></li>
+												<li><img src="../../Content/images/bank/bank4.png"></li>
+												<li><img src="../../Content/images/bank/bank5.png"></li>
+												<li><img src="../../Content/images/bank/bank6.png"></li>
+												<li><img src="../../Content/images/bank/bank7.png"></li>
+												<li><img src="../../Content/images/bank/bank8.png"></li>
+												<li><img src="../../Content/images/bank/bank9.png"></li>
+												<li><img src="../../Content/images/bank/bank10.png"></li>
+											</ul>
+										</div>
+									</div>
+									<a href="#" class="btn btn-1">确认充值</a>
 								</div>
 							</div>
-							<a href="#" class="btn">确认充值</a>
+							<div class="bind">
+								<div class="bank">
+									<p class="name">工商银行</p>
+									<p class="number"><small>账号：</small>6216  ****  ****  1992</p>
+									<p class="op f-fr">
+										<a href="javascript:;" class="default">默认</a>
+										<a href="javascript:;" class="untie">解绑银行卡</a>
+									</p>
+								</div>
+								<div class="plr24">
+									<div class="item">
+										<label>账户余额：</label>
+										<p class="lamount"><span class="num">20.00</span>元</p>
+									</div> 
+									<div class="item">
+										<label class="lh">充值金额：</label>
+										<span class="iptbox f-pr">
+											<input type="text" class="amount">
+											<span class="unit f-pa">元</span>
+										</span>
+									</div>
+									<a href="#" class="btn btn-2">确认充值</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -374,13 +390,13 @@
 			});
 
 			// 充值问题反馈
-			new AlertModal({
-				content: '<p class="lg">请您在新打开的汇付充值页面完成付款</p><p class="sm">付款完成前，请不要关闭此窗口。</p><p class="sm">如付款受阻，请拨打客服热线： 136 3281 8831</p>',
-				title: '<i class="warning f-fl"></i>充值遇到问题？',
-				contentNodeCn: 'rtmodal',
-				confirm: '已完成充值',
-				success: function(){}
-			}).init();
+			// new AlertModal({
+			// 	content: '<p class="lg">请您在新打开的汇付充值页面完成付款</p><p class="sm">付款完成前，请不要关闭此窗口。</p><p class="sm">如付款受阻，请拨打客服热线： 136 3281 8831</p>',
+			// 	title: '<i class="warning f-fl"></i>充值遇到问题？',
+			// 	contentNodeCn: 'rtmodal',
+			// 	confirm: '已完成充值',
+			// 	success: function(){}
+			// }).init();
 		</script>
 	</body>
 </html>

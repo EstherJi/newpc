@@ -660,5 +660,13 @@
         font-size: 18px; }
     .modal .rtmodal ~ .btn {
       margin-bottom: 40px; }
+  .modal .inmodal p {
+    padding: 40px 40px 32px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #676770;
+    text-align: center; }
+  .modal .inmodal ~ .btn {
+    margin-bottom: 40px; }
 
 /*# sourceMappingURL=modal.css.map */
